@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui" />
+    <title>리멤버드</title>
+    <style>
+        *{margin:0; padding:0;}
+        .container_wrap{margin:20px; font-size: 12px; color: #000; font-family: 'Malgun Gothic', '맑은고딕', 'dotum', '돋움';}
+        .container .title{margin-bottom: 20px; font-size: 13px; font-weight: bold;}
+        .container .section{margin-bottom: 40px;}
+        .container img{width: 100%; vertical-align: top;}
+        .container ul li{list-style: none;}
+
+        .sec1 .cont_title{margin-bottom: 30px; line-height: 1.2; font-size: 28px; font-weight: bold; text-align: center;}
+        .sec1 .cont_title>span{display: block; font-size: 24px; font-weight: normal;}
+        .sec1 .main{margin-bottom: 35px; text-align: center;}
+        .sec1 .main .img{display: inline-block; width: 70%;}
+        .sec1 .main .date{display: block; margin:6px 0 4px;}
+        .sec1 .main .txt{font-weight: bold; line-height: 1.6;}
+        .sec1 .content{position: relative;}
+        .sec1 .content .txt_area{width: 57%; word-break: break-all;}
+        .sec1 .content .txt{font-weight: bold; margin-bottom: 14px;}
+        .sec1 .content .img{position: absolute; top:0; right: 0; width: 40%;}
+        
+        .sec2 ul{margin-bottom: 20px;}
+        .sec2 ul::after{display: block; content: ""; clear: both;}
+        .sec2 ul li{width: 48%; margin-left: 4%; float: left; line-height: 1.8; text-align: center;}
+        .sec2 ul li:first-child{margin-left: 0;}
+        .sec2 li .img_sub{display: block; margin:4px 0 8px; font-size: 13px;}
+        .sec2 li .img_txt{font-size: 11px;  word-break: keep-all;}
+        .sec2 .info{ color: #808080;  word-break: keep-all;}
+        .sec3 .img_area img{margin-bottom: 4px;}
+        .sec3 .txt_title{font-size:15px;}
+        @media (min-width: 480px) {
+        }
+    </style>
+</head>
+<body>
+    <div class="container_wrap">
+        <div class="container">
+            
+            <h1 class="title">1. 고인의 삶</h1>
+            <div class="section sec1">
+                <h2 class="cont_title">명랑 소녀 ㅇㅇㅇ 여사 <span>인생길 이야기</span></h2>
+                <div class="main">
+                    <span class="img"><img src="./images/img1_1.jpg"></span>
+                    <span class="date">(1939.12.05~2021.10.06)</span>
+                    <p class="txt">사랑과 정성으로 저희들 키워주시고 
+                    <br> 마지막 순간까지 인생의 진리를 가르쳐 주셔서 감사합니다.
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="txt_area">
+                        <p class="txt">말씀도 못하시고, 수저도 못 드시고, 움직이지도 못하시지만 세상 그 누구보다 큰 일을 행하신 어머님.</p>
+                        <p>아버님을 변화시키고 자녀와 손주들에게 어떻게 살며 서로 사랑하여야 하는지 가르쳐주셨습니다.</p>
+                    </div>
+                    <span class="img"><img src="./images/img1_2.jpg"></span>
+                </div>
+            </div>
+
+            <h1 class="title">2. 꿈 많던 학창 시절</h1>
+            <div class="section sec2">
+                <ul>
+                    <li>
+                        <img src="./images/img2_1.jpg">
+                        <span class="img_sub">초등 시절 학예회 발표시간</span>
+                        <p class="img_txt">노래와 춤 연극 발표 때 마다 활약, 샘도 많고 재능도 많으셨던 분</p>
+                    </li>
+                    <li>
+                        <img src="./images/img2_2.jpg">
+                        <span class="img_sub">초등 시절 학예회 발표시간</span>
+                        <p class="img_txt">최영섭선생이 지도하신 합창단 단원으로 활동하며 친구들과 즐거운 학창시절을 보내셨음</p>
+                    </li>
+                </ul>
+                <p class="info">
+                    어머님은 초등학생 시절 학예회 발표 시간에 3 가지 이상의 역할에 뽑히지 않으면 샘을 냈다고 하십니다. 샘도 많고 그 만큼 재능도 많아서 노래와 춤 연극 발표 때 마다 명랑소녀 강명희 여사는 활약을 하셨죠. 고등학생 시절 그 당시 ‘그리운 금강산’ 을 작곡하신 최영섭선생이 지도하신 합창단 단원으로 활동하시며 친구들과 즐거운 학창시절을 보내셨다고 합니다.   
+                    그 때 7명의 친한 친구들끼리 만든 북두칠성 클럽은 그 후 어머님의 인생길 구비 마다 함께 우정을 나누며 힘이 되어 주셨습니다.
+                </p>
+            </div>
+            <h1 class="title">3. 단란한 가정생활</h1>
+            <div class="section sec3">
+                <div class="img_area">
+                    <img src="./images/img3_1.jpg">
+                    <img src="./images/img3_2.jpg">
+                    <img src="./images/img3_3.jpg">
+                </div>
+                <h3 class="txt_title">고학생 아버지와 혼인, 3남매 출산</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
