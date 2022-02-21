@@ -10,8 +10,7 @@ fieldset{border: 0;}
 i{font-style: normal;}
 button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
 .blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
-@media (max-width: 480px) {
-}
+
 
 .content_wrap{background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif;}
 .register_content{width: 736px; margin:0 auto; padding:65px 0 124px;}
@@ -53,3 +52,10 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .reg_info2 .row{margin-bottom: 36px;}
 .reg_info2 .row .input_tit{display: inline-block; width: 90px;}
 .reg_info2 .input{width: 380px;}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 480px) {
+}
