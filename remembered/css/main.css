@@ -1,0 +1,22 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+img{border:0;}
+button{border: 0; background-color: transparent; cursor: pointer;}
+a{text-decoration: none; color: #404b59;}
+ul li{list-style: none;}
+em{font-style: normal;}
+fieldset{border: 0;}
+i{font-style: normal;}
+button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
+.blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+@media (max-width: 480px) {
+}
+
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main_content{ font-family: 'Arita-buri-SemiBold';}

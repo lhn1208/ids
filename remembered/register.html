@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="content_wrap">
+        <div class="register_content">
+            <div class="register">
+                <div class="relation_info">
+                    <select name="relation" class="select">
+                        <option value="">고인관계</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <div class="input_box">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="register">
+                <div class="reg_info reg_style">
+                    <div class="row reg_top">                            
+                        <span class="col">
+                            <label for="name" class="input_tit">이름<i class="ico_chk">*</i></label>
+                            <input type="text" id="name">
+                        </span>
+                        <span class="col">
+                            <label for="position" class="input_tit">직위</label>
+                            <input type="text" id="position">
+                        </span>
+                        
+                    </div>
+                    <div class="row">
+                        <label for="birth" class="input_tit">생년월일<i class="ico_chk">*</i></label>
+                        <select name="relation" id="birth" class="select reg_select">
+                            <option value="">생년월일</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>     
+                    </div>
+                    <div class="row">
+                        <label for="day1" class="input_tit">임종일자<i class="ico_chk">*</i></label>
+                        <select name="relation" id="day1" class="select reg_select">
+                            <option value="">임종일자</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>     
+                        <select name="relation" class="select reg_select2">
+                            <option value="">시간</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>     
+                    </div>
+                    <div class="row">
+                        <label for="day2" class="input_tit">발인일자<i class="ico_chk">*</i></label>
+                        <select name="relation" id="day1" class="select reg_select">
+                            <option value="">발인일자</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>     
+                        <select name="relation" class="select reg_select2">
+                            <option value="">시간</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>     
+                    </div>
+                    <div class="row">
+                        <div class="filebox">
+                            <span class="input_tit">영정사진<i class="ico_chk">*</i></span>
+                            <input type="text" class="upload_input" placeholder="영정사진을 등록해 주세요">
+                            <label for="file" class="file">파일찾기</label><input type="file" id="file">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="register">
+                    <div class="funeral_info reg_style">
+                    <div class="row">
+                        <input type="text" class="funeral_input" placeholder="장례식장을 검색해 주세요">
+                        <button class="reg_btn">검색하기</button>
+                        <input type="text" class="room_nm" placeholder="빈소명">
+                    </div>
+                    <p class="bt_txt">등록된 장례식장 정보가 없습니다.</p>
+                </div>
+            </div>
+            <div class="register">
+                <div class="relation_info">
+                    <select name="relation" class="select">
+                        <option value="">고인관계</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <div class="input_box w450">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <button class="add_btn">추가</button>
+                </div>
+            </div>
+            <div class="register">
+                <div class="account_info reg_style">
+                    <div class="row">
+                        <input type="text" class="input_nm" placeholder="이름">
+                        <select name="bank" class="select bank_select">
+                            <option value="">은행</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>     
+                        <input type="text" class="input_account" placeholder="계좌번호를 입력하세요">
+                        <button class="add_btn">추가</button>
+                    </div>
+                    <div class="row">
+                        <label for="transfer" class="input_tit">카카오페이 송금 <a href="#">[방법]</a></label>
+                        <input type="text" id="transfer" class="link_input" placeholder="링크를 등록해주세요">
+                    </div>
+                </div>
+            </div>
+            <div class="register">
+                <div class="reg_info2 reg_style">
+                    <div class="row">
+                        <label for="address" class="input_tit">장지<i class="ico_chk">*</i></label>
+                        <input type="text" id="address" class="input" placeholder="장지주소를 입력해주세요">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

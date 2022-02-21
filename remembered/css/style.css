@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+*{margin:0; padding:0;}
+img{border:0;}
+button{border: 0; background-color: transparent; cursor: pointer;}
+a{text-decoration: none; color: #404b59;}
+ul li{list-style: none;}
+em{font-style: normal;}
+fieldset{border: 0;}
+i{font-style: normal;}
+button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
+.blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+@media (max-width: 480px) {
+}
+
+.content_wrap{background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif;}
+.register_content{width: 736px; margin:0 auto; padding:65px 0 124px;}
+.register{padding-top: 36px; padding-bottom: 36px;  border-bottom:2px solid #e8edf3}
+.register .select{position: relative; width: 152px; height: 45px; padding:8px; letter-spacing: -0.05em; border: 1px solid #ced5e4; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("../images/common/select_bg_off.png") 92% 50% no-repeat #fff; box-sizing: border-box;}
+.register .select::-ms-expand {display: none;}
+.register  .select:after{ content: '▼';position: absolute; top: 7px; right: 10px; transform: none; border: 0;}
+
+.register .ico_chk{color:#c26836}
+.register input[type="text"] {height: 45px; padding:10px; border: 1px solid #bcc4d7; box-sizing: border-box;}
+.relation_info{display: flex; padding-left: 15px;}
+.relation_info .input_box{margin-left: 10px;}
+.relation_info .input_box input[type="text"]{display: block; width: 550px; margin-bottom: 10px;}
+.reg_style{padding-left: 15px; padding-right: 35px;}
+.reg_info .reg_top{display: flex; align-items: center; }
+.reg_info .reg_top .col{display: inline-block; width: 50%; border-bottom: 2px solid #dae1e9;}
+.reg_info .reg_top .col:first-child{margin-right: 30px;}
+.reg_info .reg_top .col .input_tit{width: auto;}
+.reg_info .reg_top input[type="text"] {width: 220px; margin-left: 20px; background-color: #f6fbfe; border: none;}
+
+.reg_info .row{margin-bottom: 28px;}
+.reg_info .row .input_tit {display: inline-block; width: 160px;}
+.reg_info .reg_select, .reg_info .upload_input{width: 380px;}
+.reg_info .row .reg_select2{margin-left: 10px; width: 120px;}
+.reg_info .filebox input[type="file"]{position: absolute;  top:0; left:0; width:0; height:0; line-height:0; overflow: hidden; border: 0;}
+.reg_info .filebox .file{display: inline-block; margin-left: 10px; width: 120px; height: 45px; line-height: 43px; border-radius: 5px; color: #fff; background-color: #192c57; text-align: center; cursor: pointer;}
+.register .funeral_info .funeral_input{width: 414px;}
+.register .funeral_info .reg_btn{width: 120px; height: 45px; line-height: 43px; margin-left: 2px; border-radius: 5px; color: #fff; background-color: #192c57}
+.register .funeral_info .room_nm{width: 120px; margin-left: 2px;}
+.register .funeral_info .row{margin-bottom: 24px;}
+.register .add_btn{position: relative; width: 46px; height: 46px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57;}
+.relation_info .input_box.w450 input[type="text"]{width: 450px;}
+.account_info .row{display: flex; align-items: center; margin-bottom: 28px;}
+.account_info .row .input_nm{width: 150px; margin-right: 10px;}
+.account_info .row .input_account{width: 290px; border-left: none;}
+.account_info .row .input_tit a{color: #c26836;}
+.account_info .row .link_input{width: 380px; margin-left: 10px;}
+
+.reg_info2 .row{margin-bottom: 36px;}
+.reg_info2 .row .input_tit{display: inline-block; width: 90px;}
+.reg_info2 .input{width: 380px;}
