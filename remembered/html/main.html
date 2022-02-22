@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body>
+    <div class="main_content_wrap">
+      <div class="main_top">
+          <div class="main_top_inner">
+            <div class="main_slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../images/main/img_main1.jpg"></div>
+                  <div class="swiper-slide"><img src="../images/main/img_main2.jpg"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>     
+            <div class="cont_area">
+                <h2><img src="../images/main/pc/main_title.png"></h2>    
+                <p class="txt">사랑하는 고인의 가족, 친지분들에게 부고를 알리며 <br>온라인 장례를 통해 조문을 하실 수 있습니다.</p>
+            </div>
+          </div>             
+      </div>
+      <div class="main_content">
+        <div class="section1">
+          <h2 class="title">추모관</h2>
+          <p class="txt">고인의 추모관을 방문해 고인에 대한 그리운 마음과<br>생전에 하지 못한 이야기를 나누세요.</p>
+          <a href="#" class="main_btn">신청하기</a>
+          <div class="content_slide_wrap">
+            <div class="content_slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../images/main/img_slide1_1.jpg"></div>
+                  <div class="swiper-slide"><img src="../images/main/img_slide1_1.jpg"></div>
+                  <div class="swiper-slide"><img src="../images/main/img_slide1_1.jpg"></div>
+                  <div class="swiper-slide"><img src="../images/main/img_slide1_1.jpg"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>     
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script>
+      //main silde
+      var swiper = new Swiper(".main_slide", {
+        effect: 'fade',
+        // autoplay: {
+        //     delay: 2000,
+        // },
+        navigation: {
+          nextEl: ".main_slide .swiper-button-next",
+          prevEl: ".main_slide .swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".content_slide", {
+        // autoplay: {
+        //     delay: 2000,
+        // },
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centeredSlides:true,
+        loop:true,
+        navigation: {
+          nextEl: ".content_slide .swiper-button-next",
+          prevEl: ".content_slide .swiper-button-prev",
+        },
+        breakpoints: {
+          760: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            centeredSlides:false,
+          }
+        }
+      });
+   </script>
+</body>
+</html>
