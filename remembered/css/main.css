@@ -13,7 +13,7 @@
     font-weight:normal;
 }
 @font-face { 
-    font-family:'Spoqa Han Sans Thin'; 
+    font-family:'AritaBuri-Semi'; 
     src:url('../font/AritaBuriSB.woff') format('woff');
     font-style:normal;       
     font-weight:normal;
@@ -43,9 +43,9 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_gnb .right{position: absolute; right: 0; top: 68px; width: 302px; display: flex;}
 .remember_gnb .gnb_search_form{position: relative;}
 .remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
-.remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri';  font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
-.remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right: -34px; width: 34px; height: 34px; background-image: url("../images/main/gnb_search.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
-.remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/main/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
+.remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri'; font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
+.remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right: -34px; width: 34px; height: 34px; background-image: url("../images/ico_search_blue.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
+.remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb .menu{display: none;}
 
 #remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
@@ -71,7 +71,7 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .main_top .search_form .search_input{display: inline-block; width: 100%; height: 48px; margin:10px; padding:0 10px; color: #fff; font-size: 20px; font-family: 'AritaBuri'; border: 0; border-radius: 50px; box-sizing: border-box; background-color: transparent;}
 .main_top .search_form .search_input::placeholder{color: #fff; font-size: 20px; font-family: 'AritaBuri';}
 .main_top .search_form .search_input:focus{outline: none;}
-.main_top .search_form .ico_sch{display: inline-block; position: absolute; top:25%; right: 18px; width: 36px; height: 36px; font-size:0; line-height:0; text-indent:-9999px; background: url("../images/main/ico_search.png") no-repeat; }
+.main_top .search_form .ico_sch{display: inline-block; position: absolute; top:25%; right: 18px; width: 36px; height: 36px; font-size:0; line-height:0; text-indent:-9999px; background: url("../images/ico_search_white.png") no-repeat; }
 
 .main_content{position: relative; width: 1542px; margin:0 auto; font-family: 'AritaBuri'; background: url("../images//main/bg_content.png") no-repeat center 59%;}
 .main_content .intro_section{padding-top: 108px;  background: url("../images/main/bg_intro.png") no-repeat right -508px;}
@@ -117,15 +117,32 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_service {background: url("../images/main/bg_cont_service.png") no-repeat; background-size: 100%;}
 .remember_service .service_content{display: flex; justify-content:space-between; width: 1542px; margin:0 auto; padding:270px 0 140px;}
 .remember_service a{display: block; width: 304px; height: 364px; padding:70px 0; color: #fff; text-align: center; background-repeat: no-repeat; box-sizing: border-box;}
-.remember_service a i{display: block; margin-bottom: 32px;}
-.remember_service a strong{display: block; margin-bottom: 10px; font-size: 26px;}
+.remember_service a i{display: block; height: 67px; margin-bottom: 32px;}
+.remember_service a strong{display: block; margin-bottom: 20px; font-size: 26px; font-family: 'AritaBuri-Semi';}
 .remember_service a .desc{font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 .remember_service .sv1{background-image: url("../images/main/bg_service1.png");}
 .remember_service .sv2{background-image: url("../images/main/bg_service2.png");}
 .remember_service .sv3{background-image: url("../images/main/bg_service3.png");}
 .remember_service .sv4{background-image: url("../images/main/bg_service4.png");}
 
+#remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+#remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
+.remember_footer .term_list::after{display: block; content: ""; clear: both;}
+.remember_footer .term_list{margin-bottom: 10px;}
+.remember_footer .term_list li{float: left; position: relative;}
+.remember_footer .term_list li a{color: #fff;}
+.remember_footer .bar{display: inline-block; width: 1px; height: 10px; margin:0 10px; background-color: #fff; content: "";}
+.remember_footer .term_list .bar{height: 12px;}
+.remember_footer .compay_info{margin-bottom: 50px; line-height: 1.6; font-size: 15px; color: #667292;}
+.remember_footer .compay_info .bar{background-color: #667292;}
+.remember_footer .compay_info .customer{display: block;}
+.remember_footer address{display: inline-block; font-style: normal;}
+.remember_footer .ico_wrap{display: flex; position: absolute; top:0; right: 0; margin-top: 50px;}
+.remember_footer .ico_wrap a{display: inline-block;}
+.remember_footer .ico_wrap a:first-child{margin-right: 10px;}   
+
 @media (max-width: 760px) {
+    /*gnb*/
     #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{width: 120px; height: 45px; margin-top: 20px;}
@@ -133,14 +150,13 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .remember_gnb .gnb_search_form .search_input,
     .remember_gnb .member{display: none;}
     .remember_gnb .right{width: auto; top: 23px; right: 20px;}
-    .remember_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/main/ico_search.png");}
-    .remember_gnb .menu{display: block; width: 23px; height: 20px; margin-top: 5px; margin-left: 20px; background-image:url("../images/main/ico_allmenu.png"); background-repeat: no-repeat; background-size: 100%; font-size:0;  line-height:0;  text-indent:-9999px;}
-
+    .remember_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_white.png");}
+    .remember_gnb .menu{display: block; width: 23px; height: 20px; margin-top: 5px; margin-left: 20px; background-image:url("../images/ico_allmenu.png"); background-repeat: no-repeat; background-size: 100%; font-size:0;  line-height:0;  text-indent:-9999px;}
     #remember_gnb.fix_on{height: 60px;}
     .remember_gnb.fix_on .logo{margin-top: 10px;}
     .remember_gnb.fix_on .right{top: 11px;}
-    .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/main/gnb_search.png");}
-    .remember_gnb.fix_on .menu{background-image:url("../images/main/ico_allmenu_on.png")}
+    .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
+    .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}
 
     .main_content_wrap img{width: 100%;}
     .main_content_wrap{width: 100%; background-color: #EEF8FB;}
@@ -189,5 +205,18 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .remember_service a{margin: 0 auto 20px;}
     .remember_service a i{width: 25%; margin:0 auto 32px;}
     .remember_service a strong{margin-bottom: 30px;}
+    /*footer*/
+    #remember_footer .footer_inner{width: 86%;}
+    .remember_footer .term_list li a{font-size: 14px;}
+    .remember_footer .compay_info{font-size: 13px; word-wrap: break-word; word-break: keep-all;}
+    .remember_footer .compay_info .customer{margin-top: 7px;}
+    .remember_footer .compay_info .mb_block{display: block;}
+    .remember_footer .compay_info .email{display: none;}
+    .remember_footer .compay_info .mb_none{width: 0;}
+    .remember_footer .compay_info .fax{margin-left: 20px;}
+    .remember_footer .ico_wrap a{width: 26px; height: 26px;}
+    .remember_footer .ico_wrap a:first-child{margin-right: 8px;}
+    .remember_footer .ico_wrap a img{width: 100%;}
+    
 }
  
