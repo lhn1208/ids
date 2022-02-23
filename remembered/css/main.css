@@ -180,7 +180,7 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .main_content .title{margin-bottom: 16px; font-size: 30px;}
     .main_content .txt{font-size: 14px;}
     .main_content .more_btn{width: 100px; height: 32px;}
-    .main_content .logo_content{width: 98%; margin:65px auto; font-size: 40px;}
+    .main_content .logo_content{width: 98%; margin:65px auto; font-size: 36px;}
     .main_content .intro_section{width: 100%; margin-left: 6%; padding-top: 57px; background: url("../images/main/bg_mb_intro.png") no-repeat 0 38px; background-size: 100%;}
     .main_content .intro_section .intro_slide{margin-top: 38px; margin-bottom: 66px; width: 80%;}
     .main_content .intro_section .intro_slide .swiper-slide-active{margin-top:0 ;}
