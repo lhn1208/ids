@@ -7,23 +7,10 @@
     <title>리멤버드</title>
     <script src="../js/jquery-3.6.min.js"></script>
     <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
-<script>
-   $(document).ready(function () {
-      $(window).scroll(function(){
-        var scTop = $(window).scrollTop();
-        var gnb=$('.remember_gnb');
-          if(scTop>0){							
-            gnb.addClass('fix_on');						
-          }else{
-            gnb.removeClass('fix_on');
-          }
-      });
-   });
-</script>
-
 <body>
     <div id="remember_gnb" class="remember_gnb">
         <div class="gnb_inner">
