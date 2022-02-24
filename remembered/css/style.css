@@ -1,5 +1,8 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@font-face { font-family:'AritaBuri'; src:url('../font/AritaBuriB.woff') format('woff'); font-style:normal; font-weight:normal;}
+
+/*공통 [s]*/
 *{margin:0; padding:0;}
 img{border:0;}
 button{border: 0; background-color: transparent; cursor: pointer;}
@@ -10,52 +13,159 @@ fieldset{border: 0;}
 i{font-style: normal;}
 button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
 .blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+/*gnb*/
+#remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
+#remember_gnb .gnb_inner{display: flex; width: 1780px; margin: 0 auto; position: relative;}
+.remember_gnb .logo{width: 174px; height: 64px; margin-top: 63px; font-size:0; line-height:0; text-indent:-9999px;  background-image: url("../images/main/logo_on.png"); background-repeat: no-repeat; background-size: 100%;}
+.remember_gnb .gnb{margin-left: 336px;}
+.remember_gnb .gnb ul::after{display: block; clear: both; content: "";}
+.remember_gnb .gnb ul{width: 760px; line-height: 180px;}
+.remember_gnb .gnb li{float: left; margin-left: 77px;}
+.remember_gnb .gnb li:first-child{margin-left: 0;}
+.remember_gnb .gnb li a{color: #192B57; font-family: 'AritaBuri'; font-size: 20px;}
+.remember_gnb .right{position: absolute; right: 0; top: 68px; width: 302px; display: flex;}
+.remember_gnb .gnb_search_form{position: relative;}
+.remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+.remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri'; font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
+.remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right: -34px; width: 34px; height: 34px; background-image: url("../images/ico_search_blue.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
+.remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
+.remember_gnb .menu{display: none;}
+#remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
+.remember_gnb.fix_on .logo{margin-top: 28px;}
+.remember_gnb.fix_on .gnb ul{line-height: 106px;}
+.remember_gnb.fix_on .right{top: 37px;}
+/*footer*/
+#remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+#remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
+.remember_footer .term_list::after{display: block; content: ""; clear: both;}
+.remember_footer .term_list{margin-bottom: 10px;}
+.remember_footer .term_list li{float: left; position: relative;}
+.remember_footer .term_list li a{color: #fff;}
+.remember_footer .bar{display: inline-block; width: 1px; height: 10px; margin:0 10px; background-color: #fff; content: "";}
+.remember_footer .term_list .bar{height: 12px;}
+.remember_footer .compay_info{margin-bottom: 50px; line-height: 1.6; font-size: 15px; color: #667292; line-height: initial;}
+.remember_footer .compay_info .bar{background-color: #667292;}
+.remember_footer .compay_info .customer{display: block;}
+.remember_footer address{display: inline-block; font-style: normal;}
+.remember_footer .ico_wrap{display: flex; position: absolute; top:0; right: 0; margin-top: 50px;}
+.remember_footer .ico_wrap a{display: inline-block;}
+.remember_footer .ico_wrap a:first-child{margin-right: 10px;}   
+.right_banner{position: fixed; right: 60px; bottom: 40px; z-index: 180;}
+.right_banner a{display: block; width: 80px; height: 80px; line-height: 4.3; margin-bottom: 12px; text-align: center; font-size: 18px; color: #fff; font-family: 'AritaBuri-Semi'; background-color: #192B57; border-radius: 50%;}
+.right_banner a.kakao{display: block; color: #192B57; background-color: #FBCC34; letter-spacing: -0.06em; font-weight: bold; font-family: "Noto Sans KR", sans-serif;}
+/*공통 [e]*/
 
 
-.content_wrap{background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif;}
-.register_content{width: 736px; margin:0 auto; padding:65px 0 124px;}
-.register{padding-top: 36px; padding-bottom: 36px;  border-bottom:2px solid #e8edf3}
-.register .select{position: relative; width: 152px; height: 45px; padding:8px; letter-spacing: -0.05em; border: 1px solid #ced5e4; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("../images/common/select_bg_off.png") 92% 50% no-repeat #fff; box-sizing: border-box;}
+.content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
+.bg_register1,.bg_register2{position: absolute; background-repeat: no-repeat;}
+.bg_register1{width: 337px; height: 681px; top:220px; left: 0; background-image: url("../images/bg_reg1.png");}
+.bg_register2{width: 326px; height: 381px; bottom: 460px; right: 0; background-image: url("../images/bg_reg2.png");}
+.register_content{position: relative; width: 750px; margin:0 auto;}
+.register_content .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri'; font-size: 60px;}
+.register_content .register_inner{padding:262px 0 66px;}
+.register_content .title{display: inline-block; position: relative; margin-bottom: 26px; font-family: 'AritaBuri'; font-size: 19px;}
+.register{position: relative; padding-bottom: 36px; margin-bottom: 34px; border-bottom:2px solid #e8edf3}
+.register_content .register .sub_txt{margin-left: 50px; color: #8893AA; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+.register .select{position: relative; width: 152px; height: 47px; padding:8px 14px; letter-spacing: -0.05em; border: 1px solid #ced5e4; border-radius: 5px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("../images/ico_select.png") 92% 50% no-repeat #fff; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
 .register .select::-ms-expand {display: none;}
-.register  .select:after{ content: '▼';position: absolute; top: 7px; right: 10px; transform: none; border: 0;}
+.register .select:after{ content: '▼';position: absolute; top: 7px; right: 10px; transform: none; border: 0;}
+.register input[type="text"] {height: 47px; padding:10px 16px;  border-radius: 5px; border: 1px solid #BBC4D7; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif}
+.register input[type="text"]::placeholder{color: #8893AA; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
 
-.register .ico_chk{color:#c26836}
-.register input[type="text"] {height: 45px; padding:10px; border: 1px solid #bcc4d7; box-sizing: border-box;}
+.register .ico_chk{position: absolute; top:-6px; right: -12px; color:#c26836}
 .relation_info{display: flex; padding-left: 15px;}
 .relation_info .input_box{margin-left: 10px;}
 .relation_info .input_box input[type="text"]{display: block; width: 550px; margin-bottom: 10px;}
+.register .input_tit{position: relative;}
+.register .input_tit .ico_chk{top:-2px; right: -10px;}
+.register .reg_btn_w47{width: 47px; height: 47px; line-height: 38px; margin-left: 10px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
+
 .reg_style{padding-left: 15px; padding-right: 35px;}
 .reg_info .reg_top{display: flex; align-items: center; }
 .reg_info .reg_top .col{display: inline-block; width: 50%; border-bottom: 2px solid #dae1e9;}
 .reg_info .reg_top .col:first-child{margin-right: 30px;}
 .reg_info .reg_top .col .input_tit{width: auto;}
-.reg_info .reg_top input[type="text"] {width: 220px; margin-left: 20px; background-color: #f6fbfe; border: none;}
-
+.reg_info .reg_top input[type="text"] {width: 220px; height: 16px; margin-left: 20px; margin-bottom: 12px; background-color: #f6fbfe; border: none;}
+.register .reg_btn{width: 120px; height: 40px; line-height: 38px; margin-top: 3px; margin-left: 10px; border-radius: 5px; color: #fff; font-size: 14px; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
 .reg_info .row{margin-bottom: 28px;}
-.reg_info .row .input_tit {display: inline-block; width: 160px;}
+.reg_info .row .input_tit {display: inline-block; margin-right: 106px;}
 .reg_info .reg_select, .reg_info .upload_input{width: 380px;}
+.reg_info .upload_input{height: 47px; padding: 8px 14px; border-radius: 5px; border:1px solid #ced5e4; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
 .reg_info .row .reg_select2{margin-left: 10px; width: 120px;}
 .reg_info .filebox input[type="file"]{position: absolute;  top:0; left:0; width:0; height:0; line-height:0; overflow: hidden; border: 0;}
-.reg_info .filebox .file{display: inline-block; margin-left: 10px; width: 120px; height: 45px; line-height: 43px; border-radius: 5px; color: #fff; background-color: #192c57; text-align: center; cursor: pointer;}
+.reg_info .filebox .file{display: inline-block; margin-left: 10px; width: 120px; height: 40px; line-height: 38px; font-size: 14px; font-family: "Noto Sans KR", sans-serif; border-radius: 5px; color: #fff; background-color: #192c57; text-align: center; cursor: pointer;}
 .register .funeral_info .funeral_input{width: 414px;}
-.register .funeral_info .reg_btn{width: 120px; height: 45px; line-height: 43px; margin-left: 2px; border-radius: 5px; color: #fff; background-color: #192c57}
-.register .funeral_info .room_nm{width: 120px; margin-left: 2px;}
-.register .funeral_info .row{margin-bottom: 24px;}
-.register .add_btn{position: relative; width: 46px; height: 46px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57;}
-.relation_info .input_box.w450 input[type="text"]{width: 450px;}
-.account_info .row{display: flex; align-items: center; margin-bottom: 28px;}
-.account_info .row .input_nm{width: 150px; margin-right: 10px;}
-.account_info .row .input_account{width: 290px; border-left: none;}
-.account_info .row .input_tit a{color: #c26836;}
-.account_info .row .link_input{width: 380px; margin-left: 10px;}
+.register .funeral_info .room_nm{width: 120px; margin-left: 10px;}
+.register .funeral_info .row{margin-bottom: 18px;}
+.register .funeral_info .bt_txt{margin-left: 16px; font-size: 16px;}
+.register.reg_type .row{margin-bottom: 18px;}
+.register.reg_type .reg_input{width: 655px; margin-left: 50px;}
+.register.reg_type .reg_input_w598{width: 598px; margin-left: 50px;}
+.relation_info2{display: flex; padding-left: 15px;}
+.relation_info2 .select{margin-right: 10px;}
+.register .relation_info2 .reg_input{width: 168px; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.register .relation_info2 .ph_input{width:345px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+.register .add_btn,.register .minus_btn{position: relative; width: 46px; height: 46px; display: block; margin-bottom: 10px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57; border-radius: 5px; background: url("../images/bg_plus_btn.png") no-repeat center #fff; }
+.register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
 
-.reg_info2 .row{margin-bottom: 36px;}
-.reg_info2 .row .input_tit{display: inline-block; width: 90px;}
-.reg_info2 .input{width: 380px;}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
+.register .account_info .row{display: flex; align-items: center; margin-bottom: 28px;}
+.register .account_info .input_nm{width: 150px; margin-right: 10px;}
+.register .account_info .link_input{width: 380px; margin-left: 14px;}
+.register .account_info .bank_select{border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.register .account_info .input_account{width: 290px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+.register .message{position: relative;}
+.register .view_area{position: absolute; top:0; right: 0;}
+.register .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
+.register .view_area .sample::before,.register .view_area .preview::before{display: inline-block; margin-right: 8px; width: 24px; height: 24px; vertical-align: -6px; background-repeat: no-repeat; content: "";}
+.register .view_area .sample::before{background-image: url("../images/ico_sample.png");}
+.register .view_area .preview::before{background-image: url("../images/ico_preview.png");}
+.register .message .editor_box{position: relative; width: 672px; min-height: 234px; margin-left: 15px; padding: 10px; background-color: #fff; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
+.register .btn_wrap{position: absolute; top:62px; right: 0;}
+.register .message .editor_box .subject{position: relative; display: flex; margin-bottom: 12px;}
+.register .message .editor_box .subject .select{width: 240px; color: #8893AA; border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.register .message .editor_box .subject .max_opt{width: 300px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-left: none;}
+.register .message .editor_box .subject .arr_btn{width: 47px; height: 47px; margin-left: 10px; border:1px solid #192B57; border-radius: 5px; background-image: url("../images/bg_arr_up.png"); background-repeat: no-repeat; background-position:center; font-size:0; line-height:0; text-indent:-9999px;
 }
+.register .message .editor_box .subject .arr_btn.down{ background-image: url("../images/bg_arr_down.png"); }
+.register .message .editor_box .reg_btn{margin-left: 0; margin-bottom: 10px;}
+.register .message .open_opt{position: absolute; top:70px; right: 15px; font-size: 14px;}
+.register .message .switch{display: inline-block; position: relative; width: 38px; height: 18px; margin-left: 8px; vertical-align: middle; background: linear-gradient(180deg, rgba(201,201,205,1) 0%, rgba(224,225,229,1) 100%); transition: all 0.2s ease; border-radius: 10px;}
+.register .message .switch::after{content: ""; display: block; position: absolute; left: -3px; top:-3px; width: 22px; height: 22px; background: #fff; border-radius: 50%; border: 1px solid #ccc; transition: all 0.2s ease;}
+.register .message .switch.active{background: #192B57;}
+.register .message .switch.active::after{left: 16px;}
+.register_content .register_btn{text-align: center;}
+.register_content .register_btn button{width: 174px; height: 54px; margin:0 5px; color: #fff; font-size: 16px; font-family: "Noto Sans KR", sans-serif; background-color: #192B57; border-radius: 50px;}
+.register_content .register_btn .cancel{background-color: #fff; color: #666; border: 1px solid #ABBFC6;}
 
-@media (max-width: 480px) {
+@media (max-width: 760px) {
+    /*공통[s]*/
+    #remember_gnb{height: 60px;}
+    #remember_gnb .gnb_inner{width: 100%;}
+    .remember_gnb .logo{width: 120px; height: 45px; margin-top: 20px;}
+    .remember_gnb .gnb, 
+    .remember_gnb .gnb_search_form .search_input,
+    .remember_gnb .member{display: none;}
+    .remember_gnb .right{width: auto; top: 23px; right: 20px;}
+    .remember_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_white.png");}
+    .remember_gnb .menu{display: block; width: 23px; height: 20px; margin-top: 5px; margin-left: 20px; background-image:url("../images/ico_allmenu.png"); background-repeat: no-repeat; background-size: 100%; font-size:0;  line-height:0;  text-indent:-9999px;}
+    #remember_gnb.fix_on{height: 60px;}
+    .remember_gnb.fix_on .logo{margin-top: 10px;}
+    .remember_gnb.fix_on .right{top: 11px;}
+    .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
+    .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}
+     /*footer*/
+     #remember_footer .footer_inner{width: 86%;}
+     .remember_footer .term_list li a{font-size: 14px;}
+     .remember_footer .compay_info{font-size: 13px; word-wrap: break-word; word-break: keep-all;}
+     .remember_footer .compay_info .customer{margin-top: 7px;}
+     .remember_footer .compay_info .mb_block{display: block;}
+     .remember_footer .compay_info .email{display: none;}
+     .remember_footer .compay_info .mb_none{width: 0;}
+     .remember_footer .compay_info .none_type{display: none;}
+     .remember_footer .compay_info .fax{margin-left: 20px;}
+     .remember_footer .ico_wrap a{width: 26px; height: 26px;}
+     .remember_footer .ico_wrap a:first-child{margin-right: 8px;}
+     .remember_footer .ico_wrap a img{width: 100%;}
+     .right_banner{display: none;}
+     /*공통[e]*/
 }
