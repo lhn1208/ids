@@ -4,6 +4,7 @@
 @font-face { font-family:'AritaBuri'; src:url('../font/AritaBuriB.woff') format('woff'); font-style:normal; font-weight:normal;}
 @font-face { font-family:'AritaBuri-Semi'; src:url('../font/AritaBuriSB.woff') format('woff'); font-style:normal; font-weight:normal;}
 
+/*공통 [s]*/
 *{margin:0; padding:0;}
 img{border:0;}
 button{border: 0; background-color: transparent; cursor: pointer;}
@@ -14,7 +15,7 @@ fieldset{border: 0;}
 i{font-style: normal;}
 button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
 .blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
-
+/*gnb*/
 #remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
 #remember_gnb .gnb_inner{display: flex; width: 1780px; margin: 0 auto; position: relative;}
 .remember_gnb .logo{width: 174px; height: 64px; margin-top: 60px; font-size:0; line-height:0; text-indent:-9999px; background-image: url("../images/main/logo.png"); background-repeat: no-repeat; background-size: 100%;}
@@ -36,10 +37,27 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_gnb.fix_on .gnb ul{line-height: 106px;}
 .remember_gnb.fix_on .gnb li a{color: #192B57;}
 .remember_gnb.fix_on .right{top: 37px;}
+/*footer*/
+#remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+#remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
+.remember_footer .term_list::after{display: block; content: ""; clear: both;}
+.remember_footer .term_list{margin-bottom: 10px;}
+.remember_footer .term_list li{float: left; position: relative;}
+.remember_footer .term_list li a{color: #fff;}
+.remember_footer .bar{display: inline-block; width: 1px; height: 10px; margin:0 10px; background-color: #fff; content: "";}
+.remember_footer .term_list .bar{height: 12px;}
+.remember_footer .compay_info{margin-bottom: 50px; line-height: 1.6; font-size: 15px; color: #667292; line-height: initial;}
+.remember_footer .compay_info .bar{background-color: #667292;}
+.remember_footer .compay_info .customer{display: block;}
+.remember_footer address{display: inline-block; font-style: normal;}
+.remember_footer .ico_wrap{display: flex; position: absolute; top:0; right: 0; margin-top: 50px;}
+.remember_footer .ico_wrap a{display: inline-block;}
+.remember_footer .ico_wrap a:first-child{margin-right: 10px;}   
+/*공통 [e]*/
 
 .main_content_wrap{width: 100%; background-color: #EEF8FB; overflow: hidden; font-size: 16px;}
 .main_content_wrap .swiper-button-prev, .main_content_wrap .swiper-button-next{background-repeat: no-repeat; background-color: transparent; background-size: 100%;}
-.main_top{font-family: 'AritaBuri'; background: url("../images/main/main_top_bg.jpg") no-repeat;}
+.main_top{width: 1920px; margin:0 auto; font-family: 'AritaBuri'; background: url("../images/main/main_top_bg.jpg") no-repeat;}
 .main_top .main_top_inner{position: relative; width: 1542px; margin:0 auto}
 .main_top .main_slide{position: relative; padding-top:215px; margin-left: 385px;}
 .main_top .main_slide .swiper-slide{width: 1184px; height: 634px; overflow: hidden;}
@@ -107,25 +125,10 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .right_banner{position: fixed; right: 60px; bottom: 40px; z-index: 180;}
 .right_banner a{display: block; width: 80px; height: 80px; line-height: 4.3; margin-bottom: 12px; text-align: center; font-size: 18px; color: #fff; font-family: 'AritaBuri-Semi'; background-color: #192B57; border-radius: 50%;}
 .right_banner a.kakao{display: block; color: #192B57; background-color: #FBCC34; letter-spacing: -0.06em; font-weight: bold; font-family: "Noto Sans KR", sans-serif;}
-/*footer*/
-#remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
-#remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
-.remember_footer .term_list::after{display: block; content: ""; clear: both;}
-.remember_footer .term_list{margin-bottom: 10px;}
-.remember_footer .term_list li{float: left; position: relative;}
-.remember_footer .term_list li a{color: #fff;}
-.remember_footer .bar{display: inline-block; width: 1px; height: 10px; margin:0 10px; background-color: #fff; content: "";}
-.remember_footer .term_list .bar{height: 12px;}
-.remember_footer .compay_info{margin-bottom: 50px; line-height: 1.6; font-size: 15px; color: #667292; line-height: initial;}
-.remember_footer .compay_info .bar{background-color: #667292;}
-.remember_footer .compay_info .customer{display: block;}
-.remember_footer address{display: inline-block; font-style: normal;}
-.remember_footer .ico_wrap{display: flex; position: absolute; top:0; right: 0; margin-top: 50px;}
-.remember_footer .ico_wrap a{display: inline-block;}
-.remember_footer .ico_wrap a:first-child{margin-right: 10px;}   
+
 
 @media (max-width: 760px) {
-    /*gnb*/
+    /*공통[s]*/
     #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{width: 120px; height: 45px; margin-top: 20px;}
@@ -140,10 +143,23 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .remember_gnb.fix_on .right{top: 11px;}
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}
-
+     /*footer*/
+     #remember_footer .footer_inner{width: 86%;}
+     .remember_footer .term_list li a{font-size: 14px;}
+     .remember_footer .compay_info{font-size: 13px; word-wrap: break-word; word-break: keep-all;}
+     .remember_footer .compay_info .customer{margin-top: 7px;}
+     .remember_footer .compay_info .mb_block{display: block;}
+     .remember_footer .compay_info .email{display: none;}
+     .remember_footer .compay_info .mb_none{width: 0;}
+     .remember_footer .compay_info .none_type{display: none;}
+     .remember_footer .compay_info .fax{margin-left: 20px;}
+     .remember_footer .ico_wrap a{width: 26px; height: 26px;}
+     .remember_footer .ico_wrap a:first-child{margin-right: 8px;}
+     .remember_footer .ico_wrap a img{width: 100%;}
+     /*공통[e]*/
     .main_content_wrap img{width: 100%;}
     .main_content_wrap{width: 100%; background-color: #EEF8FB;}
-    .main_top{ background: url("../images/main/mb_top_bg.jpg") no-repeat; background-size: cover;}
+    .main_top{background: url("../images/main/mb_top_bg.jpg") no-repeat; background-size: cover;}
     .main_top .main_top_inner{width: 100%; margin: 0; padding-bottom: 66px;}
     .main_top .main_slide{margin-left: 6%; padding-top: 97px;}
     .main_top .main_slide .swiper-slide{height: 265px;}
@@ -189,20 +205,7 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .remember_service a{width: 230px; height: 276px; margin: 0 auto 20px; padding:50px 0; background-size: 100%;}
     .remember_service a i{width: 25%; height: 44px; margin:0 auto 24px;}
     .remember_service a strong{margin-bottom: 14px; font-size: 18px;}
-    .remember_service a .desc{font-size: 14px;}
-    /*footer*/
-    #remember_footer .footer_inner{width: 86%;}
-    .remember_footer .term_list li a{font-size: 14px;}
-    .remember_footer .compay_info{font-size: 13px; word-wrap: break-word; word-break: keep-all;}
-    .remember_footer .compay_info .customer{margin-top: 7px;}
-    .remember_footer .compay_info .mb_block{display: block;}
-    .remember_footer .compay_info .email{display: none;}
-    .remember_footer .compay_info .mb_none{width: 0;}
-    .remember_footer .compay_info .none_type{display: none;}
-    .remember_footer .compay_info .fax{margin-left: 20px;}
-    .remember_footer .ico_wrap a{width: 26px; height: 26px;}
-    .remember_footer .ico_wrap a:first-child{margin-right: 8px;}
-    .remember_footer .ico_wrap a img{width: 100%;}
+    .remember_service a .desc{font-size: 14px;}   
     .right_banner{display: none;}
 }
  
