@@ -5,19 +5,9 @@
     font-weight: normal;
     font-style: normal;
 } */
-
-@font-face { 
-    font-family:'AritaBuri'; 
-    src:url('../font/AritaBuriB.woff') format('woff');
-    font-style:normal;       
-    font-weight:normal;
-}
-@font-face { 
-    font-family:'AritaBuri-Semi'; 
-    src:url('../font/AritaBuriSB.woff') format('woff');
-    font-style:normal;       
-    font-weight:normal;
-}
+@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family:'AritaBuri'; src:url('../font/AritaBuriB.woff') format('woff'); font-style:normal; font-weight:normal;}
+@font-face { font-family:'AritaBuri-Semi'; src:url('../font/AritaBuriSB.woff') format('woff'); font-style:normal; font-weight:normal;}
 
 *{margin:0; padding:0;}
 img{border:0;}
@@ -39,7 +29,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_gnb .gnb li{float: left; margin-left: 77px;}
 .remember_gnb .gnb li:first-child{margin-left: 0;}
 .remember_gnb .gnb li a{color:#fff; font-family: 'AritaBuri'; font-size: 20px;}
-
 .remember_gnb .right{position: absolute; right: 0; top: 68px; width: 302px; display: flex;}
 .remember_gnb .gnb_search_form{position: relative;}
 .remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
@@ -47,7 +36,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right: -34px; width: 34px; height: 34px; background-image: url("../images/ico_search_blue.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
 .remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb .menu{display: none;}
-
 #remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
 .remember_gnb.fix_on .logo{margin-top: 28px; background-image: url("../images/main/logo_on.png");}
 .remember_gnb.fix_on .gnb ul{line-height: 106px;}
@@ -58,7 +46,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .main_content_wrap .swiper-button-prev, .main_content_wrap .swiper-button-next{background-repeat: no-repeat; background-color: transparent; background-size: 100%;}
 .main_top{font-family: 'AritaBuri'; background: url("../images/main/main_top_bg.jpg") no-repeat;}
 .main_top .main_top_inner{position: relative; width: 1542px; margin:0 auto}
-
 .main_top .main_slide{position: relative; padding-top:215px; margin-left: 385px;}
 .main_top .main_slide .swiper-slide{width: 1184px; height: 634px; overflow: hidden;}
 .main_top .main_slide .swiper-button-prev, .main_top .main_slide .swiper-button-next{width: 42px; height: 12px; top: auto; bottom: 60px;}
@@ -72,7 +59,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .main_top .search_form .search_input::placeholder{color: #fff; font-size: 20px; font-family: 'AritaBuri';}
 .main_top .search_form .search_input:focus{outline: none;}
 .main_top .search_form .ico_sch{display: inline-block; position: absolute; top:25%; right: 18px; width: 36px; height: 36px; font-size:0; line-height:0; text-indent:-9999px; background: url("../images/ico_search_white.png") no-repeat; }
-
 .main_content{position: relative; width: 1542px; margin:0 auto; font-family: 'AritaBuri'; background: url("../images//main/bg_content.png") no-repeat center 59%;}
 .main_content .intro_section{padding-top: 108px;  background: url("../images/main/bg_intro.png") no-repeat right -508px;}
 .main_content .title{margin-bottom: 32px; font-size: 60px; font-family: 'AritaBuri'; font-weight: bold;}
@@ -81,7 +67,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .main_content .more_btn_area{text-align: center; margin-left: -7%;}
 .main_content .more_btn{width: 126px; height: 40px; color: #0C1622; border:1px solid #192B57; border-radius: 50px; background-color: transparent; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 .main_content .logo_content{display: block; width: 1413px; margin: 138px auto 83px; font-size: 150px; color: #9CB0B8; text-transform: uppercase; letter-spacing: -0.06em; text-align: center;}
-
 .intro_section{position: relative; width: 1542px; overflow: hidden;}
 .intro_section .intro_slide {margin-top: 73px; width: 1542px;}
 .intro_section .intro_slide .swiper-slide{position: relative;}
@@ -95,16 +80,17 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .intro_section .swiper-button-prev, .memorial_section .swiper-button-prev:before{background-image: url("../images/main/arr_prev.png");}
 .intro_section .swiper-button-next,.memorial_section .swiper-button-next::before{background-image: url("../images/main/arr_next.png");}
 .intro_section .more_btn{margin:20px auto 0; }
-
 .main_content .memorial_section{position: relative;}
-.memorial_section .memorial_slide{margin-top: 40px; padding-bottom: 68px;}
+.memorial_section .memorial_slide{margin-top: 40px; padding-bottom: 180px;}
 .memorial_section .memorial_slide .swiper-slide{height: 400px;  transform: scale(0.8);}
 .memorial_section .memorial_slide .swiper-slide-active{margin-top: -55px; height: 575px;  transform: scale(1);}
-.memorial_section .memorial_slide .swiper-slide img{width: 100%;}
+.memorial_section .memorial_slide .swiper-slide img{width: 100%; vertical-align: bottom;}
+/* .memorial_section .memorial_slide .swiper-slide-active img{box-shadow:0px 20px 30px -15px rgba(0,0,0,0.4); display: inline-block;} */
 .memorial_section .memorial_slide .text{margin-top: 40px; margin-bottom: 13px; font-size: 28px;}
 .memorial_section .memorial_slide .info{color: #7C7C7C; font-size: 22px;}
-.memorial_section .memorial_slide .info em{display: block;}
-
+.memorial_section .memorial_slide dt{margin-bottom: 17px; font-family: 'NotoSerifKR';}
+.memorial_section .memorial_slide dd{margin-bottom: 6px; font-size: 18px; font-family: "Noto Sans KR", sans-serif;}
+.memorial_section .memorial_slide dd span{display: inline-block; width: 57px; height: 30px; margin-right: 14px; border:1px solid #0C1622; color:#0C1622; border-radius: 50px; text-align: center;}
 .memorial_section .swiper-button-prev,.memorial_section .swiper-button-next{ top:auto; bottom: 0;  height: auto; color: #192B57; background: none; font-family: "Noto Sans KR", sans-serif;}
 .memorial_section .swiper-button-next{right: inherit; right: 40px;}
 .memorial_section .swiper-button-prev:before, .memorial_section .swiper-button-next:before{position: absolute; top:4px; left: 0; width: 12px; height: 17px; content: "";}
@@ -113,10 +99,9 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .memorial_section .swiper-button-next span{display: inline-block; margin-right: 30px;}
 .memorial_section .swiper-pagination{top: auto; bottom: 0; left: 50%; width: 600px; margin-left: -300px;}
 .memorial_section .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background: #192B57;}
-
 .remember_service {background: url("../images/main/bg_cont_service.png") no-repeat; background-size: 100%;}
 .remember_service .service_content{display: flex; justify-content:space-between; width: 1542px; margin:0 auto; padding:270px 0 140px;}
-.remember_service a{display: block; width: 304px; height: 364px; padding:70px 0; color: #fff; text-align: center; background-repeat: no-repeat; box-sizing: border-box;}
+.remember_service a{display: block; width: 304px; height: 364px; padding:70px 0; color: rgba(255, 255, 255, 0.8);; text-align: center; background-repeat: no-repeat; box-sizing: border-box;}
 .remember_service a i{display: block; height: 67px; margin-bottom: 32px;}
 .remember_service a strong{display: block; margin-bottom: 20px; font-size: 26px; font-family: 'AritaBuri-Semi';}
 .remember_service a .desc{font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
@@ -124,7 +109,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_service .sv2{background-image: url("../images/main/bg_service2.png");}
 .remember_service .sv3{background-image: url("../images/main/bg_service3.png");}
 .remember_service .sv4{background-image: url("../images/main/bg_service4.png");}
-
 #remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 #remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
 .remember_footer .term_list::after{display: block; content: ""; clear: both;}
@@ -172,8 +156,9 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .main_top .cont_area{position: relative; top:auto; left: auto; width: 80%; margin-left: 7%;}
     .main_top .cont_area .txt{margin-top: 15px; line-height: 1.6; font-size: 14px;}
     .main_top .search_form{width: 184px; height: 60px; font-size: 14px;}
-    .main_top .search_form .ico_sch{top: 20%;}
-    .main_top .search_form .search_input{height: 38px;}
+    .main_top .search_form .ico_sch{top: 25%; width: 28px; height: 28px; background-size: 100%;}
+    .main_top .search_form .search_input{height: 38px; font-size: 14px;}
+    .main_top .search_form .search_input::placeholder{font-size: 14px;}
     .main_content .main_btn{width: 96px; height: 33px; line-height: 2.1; font-size: 16px;}
 
     .main_content{width: 100%;  background-size: 100%;}
@@ -193,18 +178,20 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .memorial_section{margin-bottom: 54px;}
     .memorial_section .section_style{margin-left: 6%; margin-bottom: 104px;}
     .memorial_section .swiper-button-prev,.memorial_section .swiper-button-next{display: none;}
-    .memorial_section .memorial_slide{margin-top: 0px;}
+    .memorial_section .memorial_slide{margin-top: 0px; padding-bottom: 60px;}
     .memorial_section .memorial_slide .swiper-slide{height: auto;  transform: scale(0.9);}
     .memorial_section .memorial_slide .swiper-slide-active{margin-top: -23px;  height: auto;  transform: scale(1.2);}
     .memorial_section .memorial_slide .swiper-slide img{width: 100%; }
-    .memorial_section .memorial_slide .text{margin-top: 22px; margin-bottom: 10px; font-size: 18px; word-wrap: break-word; word-break: keep-all;}
+    .memorial_section .memorial_slide .text{margin-top: 22px; margin-bottom: 4px; font-size: 18px; word-wrap: break-word; word-break: keep-all;}
     .memorial_section .memorial_slide .info{line-height: 1.4; font-size: 14px;}
-    .memorial_section .memorial_slide .info em{font-size: 12px;}
+    .memorial_section .memorial_slide dd{font-size: 14px;}
+    .memorial_section .memorial_slide dd span{width: 45px; height: 18px; margin-right: 7px; font-size: 12px;}
     .memorial_section .swiper-pagination{width: 80%; left: 10%; margin-left: 0;}
     .remember_service .service_content{width: 100%; padding:55px 0 60px; flex-direction: column; background: url("../images/main/bg_mb_cont_service.png") no-repeat 0 0; background-size: 100%;}
-    .remember_service a{margin: 0 auto 20px;}
-    .remember_service a i{width: 25%; margin:0 auto 32px;}
-    .remember_service a strong{margin-bottom: 30px;}
+    .remember_service a{width: 230px; height: 276px; margin: 0 auto 20px; padding:50px 0; background-size: 100%;}
+    .remember_service a i{width: 25%; height: 44px; margin:0 auto 24px;}
+    .remember_service a strong{margin-bottom: 14px; font-size: 18px;}
+    .remember_service a .desc{font-size: 14px;}
     /*footer*/
     #remember_footer .footer_inner{width: 86%;}
     .remember_footer .term_list li a{font-size: 14px;}
@@ -213,10 +200,10 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .remember_footer .compay_info .mb_block{display: block;}
     .remember_footer .compay_info .email{display: none;}
     .remember_footer .compay_info .mb_none{width: 0;}
+    .remember_footer .compay_info .none_type{display: none;}
     .remember_footer .compay_info .fax{margin-left: 20px;}
     .remember_footer .ico_wrap a{width: 26px; height: 26px;}
     .remember_footer .ico_wrap a:first-child{margin-right: 8px;}
     .remember_footer .ico_wrap a img{width: 100%;}
-    
 }
  
