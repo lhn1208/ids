@@ -52,7 +52,8 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .main_top .main_slide .swiper-button-prev{background-image: url("../images/main/main_arr_prev.png"); left: auto; right: 150px;}
 .main_top .main_slide .swiper-button-next{background-image: url("../images/main/main_arr_next.png"); right: 80px}
 .main_top .cont_area{position: absolute; top:417px; left: 0; z-index: 110;}
-.main_top .cont_area .txt{margin-top: 30px; font-size: 20px; line-height: 34px; color: #fff;}
+.main_top .cont_area .txt{margin-top: 30px; font-size: 20px; line-height: 34px; color: #fff; word-wrap: break-word; word-break: keep-all;}
+.main_top .cont_area .txt .block{display: block;}
 .main_top .search_form{position: relative; width: 260px; height: 70px; margin-bottom: 30px; padding-right: 60px; border: 2px solid rgba(255, 255, 255, 0.5); border-radius: 50px; box-sizing: border-box;}
 .main_top .search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 .main_top .search_form .search_input{display: inline-block; width: 100%; height: 48px; margin:10px; padding:0 10px; color: #fff; font-size: 20px; font-family: 'AritaBuri'; border: 0; border-radius: 50px; box-sizing: border-box; background-color: transparent;}
@@ -152,8 +153,9 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .main_top .main_slide .swiper-button-prev, .main_top .main_slide .swiper-button-next{bottom: 0; background-size: 80%;}
     .main_top .main_slide .swiper-button-prev{right: 84px;}
     .main_top .main_slide .swiper-button-next{right: 25px;}
-    .main_top .cont_area{position: relative; top:auto; left: auto; width: 80%; margin-left: 7%;}
+    .main_top .cont_area{position: relative; top:auto; left: auto;  margin-left: 7%;} 
     .main_top .cont_area .txt{width: 96%; margin-top: 15px; line-height: 1.6; font-size: 14px;}
+    .main_top .cont_area .txt .block{display: inline;}
     .main_top .search_form{width: 184px; height: 60px; font-size: 14px;}
     .main_top .search_form .ico_sch{top: 25%; width: 28px; height: 28px; background-size: 100%;}
     .main_top .search_form .search_input{height: 38px; font-size: 14px;}
