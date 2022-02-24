@@ -141,7 +141,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .remember_gnb.fix_on .right{top: 11px;}
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}
-
     .main_content_wrap img{width: 100%;}
     .main_content_wrap{width: 100%; background-color: #EEF8FB;}
     .main_top{ background: url("../images/main/mb_top_bg.jpg") no-repeat; background-size: cover;}
@@ -154,13 +153,12 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .main_top .main_slide .swiper-button-prev{right: 84px;}
     .main_top .main_slide .swiper-button-next{right: 25px;}
     .main_top .cont_area{position: relative; top:auto; left: auto; width: 80%; margin-left: 7%;}
-    .main_top .cont_area .txt{margin-top: 15px; line-height: 1.6; font-size: 14px;}
+    .main_top .cont_area .txt{width: 96%; margin-top: 15px; line-height: 1.6; font-size: 14px;}
     .main_top .search_form{width: 184px; height: 60px; font-size: 14px;}
     .main_top .search_form .ico_sch{top: 25%; width: 28px; height: 28px; background-size: 100%;}
     .main_top .search_form .search_input{height: 38px; font-size: 14px;}
     .main_top .search_form .search_input::placeholder{font-size: 14px;}
     .main_content .main_btn{width: 96px; height: 33px; line-height: 2.1; font-size: 16px;}
-
     .main_content{width: 100%;  background-size: 100%;}
     .main_content .title{margin-bottom: 16px; font-size: 30px;}
     .main_content .txt{font-size: 14px;}
@@ -174,7 +172,6 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
     .intro_section .intro_slide .text{width: 90%; top:58%; left: 5%; line-height: 1.4; font-size: 18px;}
     .intro_section .intro_slide .info{font-size: 14px;}
     .intro_section .intro_slide .info em{margin-top: 20px; font-size: 16px;}
-
     .memorial_section{margin-bottom: 54px;}
     .memorial_section .section_style{margin-left: 6%; margin-bottom: 104px;}
     .memorial_section .swiper-button-prev,.memorial_section .swiper-button-next{display: none;}
