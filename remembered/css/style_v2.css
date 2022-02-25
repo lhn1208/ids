@@ -1,0 +1,13 @@
+.content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
+
+
+/*모바일~노트북 해상도*/
+@media (min-width: 760px) and (max-width: 1760px) {
+    #remember_gnb .gnb_inner{width: 100%;}
+    .remember_gnb .gnb{margin-left: 22%;}
+    .remember_gnb .logo{margin-left: -860px;}
+    #remember_footer .footer_inner{width: 90%;}
+}
+/*모바일 해상도*/
+@media (max-width: 760px) {
+}
