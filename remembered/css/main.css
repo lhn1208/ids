@@ -1,7 +1,7 @@
 /*gnb*/
 #remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
 #remember_gnb .gnb_inner{display: flex; width: 1780px; margin: 0 auto; position: relative;}
-.remember_gnb .logo{position: absolute; top:0; left: 50%; width: 174px; height: 64px; margin-top: 60px; margin-left: -934px; font-size:0; line-height:0; text-indent:-9999px; background-image: url("../images/main/logo.png"); background-repeat: no-repeat; background-size: 100%;}
+.remember_gnb .logo{position: absolute; top: 60px; left: 50%; width: 174px; height: 64px;  margin-left: -934px; font-size:0; line-height:0; text-indent:-9999px; background-image: url("../images/main/logo.png"); background-repeat: no-repeat; background-size: 100%;}
 .remember_gnb .gnb{margin-left: 410px;}
 .remember_gnb .gnb ul::after{display: block; clear: both; content: "";}
 .remember_gnb .gnb ul{width: 760px; line-height: 170px;}
@@ -16,7 +16,7 @@
 .remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb .menu{display: none;}
 #remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
-.remember_gnb.fix_on .logo{margin-top: 28px; background-image: url("../images/main/logo_on.png");}
+.remember_gnb.fix_on .logo{top: 28px; background-image: url("../images/main/logo_on.png");}
 .remember_gnb.fix_on .gnb ul{line-height: 106px;}
 .remember_gnb.fix_on .gnb li a{color: #192B57;}
 .remember_gnb.fix_on .right{padding-top: 37px;}
@@ -97,44 +97,31 @@
     .remember_gnb .gnb li{margin-left: 7%;}
     .remember_gnb .right{width: 24%; margin-left: 6%;}
     .remember_gnb .member{margin-left: 18%;}
-    #remember_footer .footer_inner{width: 90%;}
-    
+    #remember_footer .footer_inner{width: 90%;}    
     .intro_section{width: 100%;}
     .main_content{width: 98%;}
     .remember_service .service_content{width: 98%;}
 }
 @media (max-width: 760px) {
-    /*공통[s]*/
     #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
-    .remember_gnb .logo{width: 120px; height: 45px; margin-top: 20px;}
+    .remember_gnb .logo{top: 20px; left: 0; margin-left: 0; width: 120px; height: 45px;}
     .remember_gnb .gnb, 
     .remember_gnb .gnb_search_form .search_input,
     .remember_gnb .member{display: none;}
-    .remember_gnb .right{width: auto; top: 23px; right: 20px;}
+    .remember_gnb .right{position: absolute; top: 23px; right: 20px; padding-top: 0;}
     .remember_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_white.png");}
+    .remember_gnb .log_info{padding-top: 2px;}
+    .remember_gnb .log_info a{color: #fff;}
     .remember_gnb .menu{display: block; width: 23px; height: 20px; margin-top: 5px; margin-left: 20px; background-image:url("../images/ico_allmenu.png"); background-repeat: no-repeat; background-size: 100%; font-size:0;  line-height:0;  text-indent:-9999px;}
     #remember_gnb.fix_on{height: 60px;}
-    .remember_gnb.fix_on .logo{margin-top: 10px;}
-    .remember_gnb.fix_on .right{top: 11px;}
+    .remember_gnb.fix_on .logo{top: 10px;}
+    .remember_gnb.fix_on .right{top: 11px; padding-top: 0;}
+    .remember_gnb.fix_on .log_info a{color: #192B57;}
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}
-     /*footer*/
-     #remember_footer .footer_inner{width: 86%;}
-     .remember_footer .term_list li a{font-size: 14px;}
-     .remember_footer .compay_info{font-size: 13px; word-wrap: break-word; word-break: keep-all;}
-     .remember_footer .compay_info .customer{margin-top: 7px;}
-     .remember_footer .compay_info .mb_block{display: block;}
-     .remember_footer .compay_info .email{display: none;}
-     .remember_footer .compay_info .mb_none{width: 0;}
-     .remember_footer .compay_info .none_type{display: none;}
-     .remember_footer .compay_info .fax{margin-left: 20px;}
-     .remember_footer .ico_wrap a{width: 26px; height: 26px;}
-     .remember_footer .ico_wrap a:first-child{margin-right: 8px;}
-     .remember_footer .ico_wrap a img{width: 100%;}
-     .right_banner{display: none;}
-     /*공통[e]*/
-    .main_content_wrap img{width: 100%;}
+    
+     .main_content_wrap img{width: 100%;}
     .main_content_wrap{width: 100%; background-color: #EEF8FB;}
     .main_top{width: 100%; background: url("../images/main/mb_top_bg.jpg") no-repeat; background-size: cover;}
     .main_top .main_top_inner{width: 100%; margin: 0; padding-bottom: 66px;}
