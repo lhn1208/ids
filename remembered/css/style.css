@@ -127,3 +127,6 @@
     #remember_footer .footer_inner{width: 90%;}
     .content_wrap .content_title{margin-left: -96%;}
 }
+@media (max-width: 760px) {
+    #remember_gnb .gnb_inner{width: 100%;}
+}
