@@ -1,31 +1,14 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
-@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family:'AritaBuri'; src:url('../font/AritaBuriB.woff') format('woff'); font-style:normal; font-weight:normal;}
-@font-face { font-family:'AritaBuri-Semi'; src:url('../font/AritaBuriSB.woff') format('woff'); font-style:normal; font-weight:normal;}
-
-/*공통 [s]*/
-*{margin:0; padding:0;}
-img{border:0;}
-button{border: 0; background-color: transparent; cursor: pointer;}
-a{text-decoration: none; color: #404b59;}
-ul li{list-style: none;}
-em{font-style: normal;}
-fieldset{border: 0;}
-i{font-style: normal;}
-button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
-.blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 /*gnb*/
 #remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
 #remember_gnb .gnb_inner{display: flex; width: 1780px; margin: 0 auto; position: relative;}
 .remember_gnb .logo{position: absolute; top:0; left: 50%; width: 174px; height: 64px; margin-top: 60px; margin-left: -934px; font-size:0; line-height:0; text-indent:-9999px; background-image: url("../images/main/logo.png"); background-repeat: no-repeat; background-size: 100%;}
-.remember_gnb .gnb{margin-left: 500px;}
+.remember_gnb .gnb{margin-left: 410px;}
 .remember_gnb .gnb ul::after{display: block; clear: both; content: "";}
 .remember_gnb .gnb ul{width: 760px; line-height: 170px;}
 .remember_gnb .gnb li{float: left; margin-left: 77px;}
 .remember_gnb .gnb li:first-child{margin-left: 0;}
 .remember_gnb .gnb li a{color:#fff; font-family: 'AritaBuri'; font-size: 20px;}
-.remember_gnb .right{margin-left: 222px; padding-top: 63px; width: 302px; display: flex;}
+.remember_gnb .right{margin-left: 160px; padding-top: 63px; display: flex;}
 .remember_gnb .gnb_search_form{position: relative;}
 .remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 .remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri'; font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
@@ -37,25 +20,7 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_gnb.fix_on .gnb ul{line-height: 106px;}
 .remember_gnb.fix_on .gnb li a{color: #192B57;}
 .remember_gnb.fix_on .right{padding-top: 37px;}
-/*footer*/
-#remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
-#remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
-.remember_footer .term_list::after{display: block; content: ""; clear: both;}
-.remember_footer .term_list{margin-bottom: 10px;}
-.remember_footer .term_list li{float: left; position: relative;}
-.remember_footer .term_list li a{color: #fff;}
-.remember_footer .bar{display: inline-block; width: 1px; height: 10px; margin:0 10px; background-color: #fff; content: "";}
-.remember_footer .term_list .bar{height: 12px;}
-.remember_footer .compay_info{margin-bottom: 50px; line-height: 1.6; font-size: 15px; color: #667292; line-height: initial;}
-.remember_footer .compay_info .bar{background-color: #667292;}
-.remember_footer .compay_info .customer{display: block;}
-.remember_footer address{display: inline-block; font-style: normal;}
-.remember_footer .ico_wrap{display: flex; position: absolute; top:0; right: 0; margin-top: 50px;}
-.remember_footer .ico_wrap a{display: inline-block;}
-.remember_footer .ico_wrap a:first-child{margin-right: 10px;}   
-.right_banner{position: fixed; right: 60px; bottom: 40px; z-index: 180;}
-.right_banner a{display: block; width: 80px; height: 80px; line-height: 4.3; margin-bottom: 12px; text-align: center; font-size: 18px; color: #fff; font-family: 'AritaBuri-Semi'; background-color: #192B57; border-radius: 50%;}
-.right_banner a.kakao{display: block; color: #192B57; background-color: #FBCC34; letter-spacing: -0.06em; font-weight: bold; font-family: "Noto Sans KR", sans-serif;}
+.remember_gnb .log_info a{display: inline-block; line-height: 1.6; margin-left: 14px; letter-spacing:-0.06em; font-size: 14px; font-family: "Noto Sans KR", sans-serif;}
 /*공통 [e]*/
 
 .main_content_wrap{width: 100%; background-color: #EEF8FB; overflow: hidden; font-size: 16px;}
@@ -127,9 +92,16 @@ button{display: inline-block; cursor: pointer; box-sizing: border-box; text-alig
 .remember_service .sv4{background-image: url("../images/main/bg_service4.png");}
 @media (min-width: 760px) and (max-width: 1760px) {
     #remember_gnb .gnb_inner{width: 100%;}
-    .remember_gnb .gnb{margin-left: 22%;}
-    .remember_gnb .logo{margin-left: -860px;}
+    .remember_gnb .logo{margin-left: -50%;}
+    .remember_gnb .gnb{width: 46%; margin-left: 22%;}
+    .remember_gnb .gnb li{margin-left: 7%;}
+    .remember_gnb .right{width: 24%; margin-left: 6%;}
+    .remember_gnb .member{margin-left: 18%;}
     #remember_footer .footer_inner{width: 90%;}
+    
+    .intro_section{width: 100%;}
+    .main_content{width: 98%;}
+    .remember_service .service_content{width: 98%;}
 }
 @media (max-width: 760px) {
     /*공통[s]*/
