@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리멤버드</title>
+    <script src="../js/jquery-3.6.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<style>
+   
+</style>
+<!--layer pop활성화시 body에 fixed 클래스 추가-->
+<body class="fixed">
+     <!--layer_pop-->
+     <div class="dim"></div>
+     <div class="layer_pop pop_templet">
+         <div class="pop_inner">
+             <!--팝업헤더--><div class="pop_header"><h2 class="top_title">조문보 템플릿 선택</h2><a href="#" class="close">닫기</a></div>
+             <div class="layer_cont_wrap">
+                 <div class="layer_cont">
+                     <div class="layer_cont_inner">
+                        <!--팝업 내용[S]-->
+                        <div class="select_form">
+                            <form>
+                                <fieldset>
+                                     <legend>원하시는 템플릿을 선택하세요.</legend>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet"  id="templet1">
+                                        <label for="templet1">추도사</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet2">
+                                        <label for="templet2">고인의 삶</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet3">
+                                        <label for="templet3">출생과 어린시절</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet4">
+                                        <label for="templet4">혼인과 가족 탄생</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet5">
+                                        <label for="templet5">생애 보람과 열매</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet6">
+                                        <label for="templet6">잊지 못할 일화</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet7">
+                                        <label for="templet7">자주 하신 지혜의 말씀</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet8">
+                                        <label for="templet8">남기신 유언</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet9">
+                                        <label for="templet9">약전</label>
+                                    </span>
+                                    <span class="radio_item">
+                                        <input type="radio" class="radio" name="radio_templet" id="templet10">
+                                        <label for="templet10">기타</label>
+                                    </span>
+                                 
+                                </fieldset>
+                            </form>
+                            
+                        </div>
+                        <div class="memorial_txt_wrap">
+                            <div class="memorial_txt">
+                                <h3 class="pop_title">추도사</h3>
+                                <div class="pic_box">
+                                    <i class="ico_camera"></i>
+                                </div>
+                                <div class="cont_layout">
+                                    <h4 class="txt_title">고인을 애도하며...</h4>
+                                    <p class="desc">OOO, 저는 아직 준비가 안되었는데……</p>
+                                </div>
+                                <div class="cont_layout">
+                                    <h4 class="txt_title">고인에 대한 단상, 그리움의 회고</h4>
+                                    <p class="desc">“OO 하지 마라”, “뒤 돌아봐라”, “OO 해라”, “OO 조심해라” ...... 잔소리 더 들어야 하는데</p>
+                                </div>
+                                <div class="cont_layout">
+                                    <h4 class="txt_title">고인과의 추억과 일화</h4>
+                                    <p class="desc">평소 부엌엔 얼씬도 한 하시지만 OOO만큼은 손수 만들어 주셔서 OO하는 날 만큼은 세상 어떤 식당 부럽지 않았습니다. ……
+                                        우리가 어릴 때는 도배를 집에서 할 때가 종종 있었습니다. 온 가족이 모여서 풀도 바르고 잡아주고 밀어주며 함께 했던 기억이 있습니다. ……
+                                        동그랗고 크게 생긴 OO 기계를 온 동네 사람들 모아놓고 팔던 시절이 있었습니다. 그 어려운 시절 맛난 것을 해 먹이겠다는 일념으로 대여해서 계란을 깨고 설탕을 넣어 보드랍고 노랗게 부푼 맛난 OO을 만들어 주셨습니다. ……
+                                        OOOO년 파킨슨병 진단을 받으시고 신체기능이 서서히 저하 되셔서……
+                                    </p>
+                                </div>
+                                <div class="cont_layout">
+                                    <h4 class="txt_title">남겨주신 유훈과 사랑</h4>
+                                    <p class="desc">자녀와 손주들 에게도 어떻게 살며 서로 사랑하여야 하는지 가르쳐주셨습니다. ……
+                                        왕소금이 되어라, 100원을 받으면 300원어치의 돈을 벌어줘라, ……
+                                        너무 OO하지 마라, 그래도 다 살아지더라……
+                                        너무도 OO하신 OOO, 사랑합니다.  
+                                        
+                                        OOO의 가르침 잊지 않고 제 삶 속에 깊이 새겨 살아가겠습니다. 감사합니다.
+                                    </p>
+                                </div>
+                                <p class="from_txt">
+                                    OOOO.OO.OO OO의 사랑하는 
+                                    <br>OOO 올림
+                                </p>
+                                <div class="pop_btn_wrap">
+                                    <button class="pop_btn">선택</button>
+                                    <button class="pop_btn close">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--팝업내용[E]-->
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!--//layer_pop-->
+</body>
+</html>
