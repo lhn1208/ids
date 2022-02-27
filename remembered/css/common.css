@@ -73,7 +73,7 @@ body.fixed{overflow-y: hidden;}
 
 /*모바일 해상도*/
 @media (max-width: 760px) {   
-    .layer_pop.type_short .pop_inner{position: fixed; right: 2%; left: 2%; top: 12%;}
+    .layer_pop.type_short .pop_inner{position: fixed; top: 20%; right: 6%; left: 6%;}
     .layer_pop.type_short .layer_cont{height: 180px;}
 
     /*layer*/
