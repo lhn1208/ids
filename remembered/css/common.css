@@ -79,7 +79,7 @@ body.fixed{overflow-y: hidden;}
     .layer_pop .pop_btn{width: 88px; height: 40px; font-size: 14px;}
     .layer_pop .pop_btn.close{border: 1px solid #ABBFC6;}
     .layer_pop.type .pop_inner{top: 12%;}
-    .layer_pop.type .layer_cont_wrap{bottom: 40%;}
+    .layer_pop.type .layer_cont_wrap{bottom: 30%;}
     /*radio, check*/
     .layer_pop .radio_item label{font-size: 14px;}
     .layer_pop .radio_item label:before{width: 20px; height: 20px; margin-right: 8px;}
