@@ -45,7 +45,7 @@ body.fixed{overflow-y: hidden;}
 .dim{position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); z-index: 990;}
 .layer_pop{position: relative;}
 .layer_pop .pop_inner{width: 750px; margin-left: -375px; position: fixed; top:40px; right: 0; bottom: 0; left: 50%; z-index: 999;  height: auto;}
-.layer_pop .pop_header{position: relative; padding: 40px; background-color: #fff; box-sizing: border-box;}
+.layer_pop .pop_header{position: relative; padding: 40px 5%; background-color: #fff; box-sizing: border-box;}
 .layer_pop .pop_header .top_title{color: #0C1622; font-family: 'AritaBuri'; font-size: 40px;}
 .layer_pop .pop_header .close{display: block; position: absolute; top: 45px; right: 40px; width: 30px; height: 30px; background: url("../images/pop_close.png") no-repeat; font-size:0;  line-height:0;  text-indent:-9999px;}
 .layer_cont_wrap{position: absolute; top:128px; right: 0; bottom: 20px; left: 0;}
@@ -76,7 +76,7 @@ body.fixed{overflow-y: hidden;}
 
     /*layer*/
     .layer_pop .pop_inner{width: auto; margin-left: 0; position: fixed; top:0; left: 0; right: 0; bottom: 0;}
-    .layer_pop .pop_header{padding: 3% 20px;}
+    .layer_pop .pop_header{padding: 20px 5%;}
     .layer_pop .pop_header .top_title{font-size: 20px;}
     .layer_pop .pop_header .close{width: 15px; height: 15px; right: 15px; top: 50%; transform: translateY(-50%); background-size: 100%;}   
     .layer_pop .layer_cont_wrap{top:64px; right: 0; bottom: 0; left: 0;}
