@@ -147,6 +147,9 @@
 .pop_message .message.kakao{background-image: url("../images/bg_message1.png");}
 .pop_message .message.ms{margin-left: 5%; background-image: url("../images/bg_message2.png");}
 .pop_message .pop_btn{width: 260px;}
+
+/* .layer_pop.type .layer_cont_wrap{bottom: 30%;} */
+
 @media (min-width: 760px) and (max-width: 1760px) {
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{margin-left: -50%;}
