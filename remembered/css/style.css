@@ -207,7 +207,7 @@
     .sample_pop .layer_cont_wrap .layer_cont_inner{padding-bottom: 35px;}    
     .sample_pop .pop_title{padding-top: 50px; font-size: 24px;}
     .sample_pop .sub_title{margin-bottom: 28px; font-size: 14px;}
-    /* .pop_templet .select_form{padding: 30px 0;} */
+    .pop_templet .select_form{padding: 30px 0;}
     .pop_templet .select_form legend{font-size: 14px;} 
     .pop_templet .memorial_txt{padding:20px 0;}
     .pop_templet .pop_title{margin-bottom: 24px; font-size: 20px;}
