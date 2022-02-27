@@ -113,7 +113,7 @@
 .layer_pop .cont_layout .img{display: inline-block; margin-bottom: 30px;}
 .layer_pop .cont_layout .desc{width: 90%; margin:0 auto;  color: #666; font-family: "Noto Sans KR", sans-serif; font-size: 30px;}
 .layer_pop .cont_layout .txt_title{margin-bottom: 20px; color: #192B57; font-family: 'AritaBuri'; font-size: 36px; }
-.layer_pop .pop_contents{width: 90%; margin:0 auto 60px;}
+.layer_pop .pop_contents{width: 90%; margin:0 auto}
 .sample_pop .pop_title{margin-bottom: 20px; padding-top: 100px; font-size: 48px; font-family: 'AritaBuri'; }
 .sample_pop .sub_title{display: inline-block; margin-bottom: 56px;  color: #7C7C7C; font-size: 26px; font-family: 'AritaBuri'; }
 .sample_pop .layer_cont{background-color: #F5F5F5; text-align: center;}
@@ -233,6 +233,6 @@
     .pop_transfer .transfer .qr_box{padding:12px 18px; font-size: 16px;}
     .pop_transfer .transfer .qr_box .qr{margin-top: 10px;}
     .pop_sms .pop_title{font-size: 14px;}   
-    .pop_sms .pop_btn_wrap{margin-top: 30px;}
+    .pop_sms .pop_btn_wrap{margin-top: 15px;}
 
 }
