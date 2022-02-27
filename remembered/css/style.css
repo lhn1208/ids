@@ -228,7 +228,7 @@
     .pop_transfer .transfer .inform .account_nm{font-size: 14px;}
     .pop_transfer .transfer .inform .bank_info{font-size: 18px;}
     .pop_transfer .transfer .inform .copy{width: 36px; height: 20px; padding: 2px 0; font-size: 12px;}
-    .pop_transfer .transfer .trans_box a{height: 44px; margin-bottom: 6px; padding:10px 24px; font-size: 16px; background-position: 20px center; background-size: 10%;}
+    .pop_transfer .transfer .trans_box a{height: 44px; margin-bottom: 6px; padding:10px 18px; font-size: 16px; background-position: 20px center; background-size: 10%;}
     .pop_transfer .transfer .trans_box a i{width: 55px; height: 24px; background-size: 86%; vertical-align: middle;}
     .pop_transfer .transfer .trans_box a.kakao i{background-size: 40%;}
     .pop_transfer .transfer .trans_box a.toss i{vertical-align: 13px;}
