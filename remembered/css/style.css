@@ -139,16 +139,26 @@
 .pop_address .address_search .ad_info .ad_nm{color: #0C1622;}
 .pop_address .address_search .ad_info .address{color: #8893AA;}
 .pop_address .address_search .row .radio_item{position: absolute; top: 32px; right: 10px;}
-
 .pop_message{text-align: center;}
+.pop_message .layer_cont_wrap{bottom: 50px;}
 .pop_message .pop_title{margin-bottom: 30px; color: #8893AA; font-size: 30px; font-weight: normal;}
 .pop_message .pop_contents{width: 94%; margin:0 auto 60px;}
 .pop_message .message{display: inline-block; width: 276px; height: 276px; padding-top: 160px; color: #0C1622; font-size: 40px; background-color: #EEF8FB; border-radius: 50%; background-repeat: no-repeat; background-position: center 25%; box-sizing: border-box;}
 .pop_message .message.kakao{background-image: url("../images/bg_message1.png");}
 .pop_message .message.ms{margin-left: 5%; background-image: url("../images/bg_message2.png");}
 .pop_message .pop_btn{width: 260px;}
-
-/* .layer_pop.type .layer_cont_wrap{bottom: 30%;} */
+.pop_transfer .transfer{width: 94%; margin:0 auto; padding-top:30px; padding-bottom: 50px; border-top: 2px solid #0C1622;}
+.pop_transfer .transfer .inform{position: relative; margin-bottom: 77px; text-align: center;}
+.pop_transfer .transfer .inform span{display: block; color: #0C1622;}
+.pop_transfer .transfer .inform .account_nm{margin-bottom: 16px; font-size: 26px;}
+.pop_transfer .transfer .inform .bank_info{font-size: 36px;}
+.pop_transfer .transfer .inform .copy{position: absolute; top: 0; right: 0; width: 72px; height: 40px; padding:4px 0; font-size: 20px; border: 1px solid #192B57; border-radius: 50px; box-sizing: border-box; text-align: center;}
+.pop_transfer .transfer .trans_box{width: 94%; margin:0 auto;}
+.pop_transfer .transfer .trans_box a{display: block; width: 100%; height: 88px; margin-bottom: 10px; padding:22px 43px; font-size: 30px; border:1px solid #0C1622; border-radius: 5px; box-sizing: border-box;}
+.pop_transfer .transfer .trans_box a i{display: inline-block; width: 110px; height: 48px; background-repeat: no-repeat; font-size:0; line-height:0; text-indent:-9999px; vertical-align: 28px;}
+.pop_transfer .transfer .trans_box a.kakao i{background-image: url("../images/ico_kakao.png"); vertical-align: top;}
+.pop_transfer .transfer .trans_box a.toss i{background-image: url("../images/ico_toss.png");}
+.pop_transfer .transfer .trans_box a.kakaopay i{background-image: url("../images/ico_kakaopay.png");}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     #remember_gnb .gnb_inner{width: 100%;}
@@ -161,10 +171,15 @@
     .content_wrap .content_title{margin-left: -96%;}    
 }
 @media (max-width: 760px) {
-
-    .pop_message .pop_title{margin-bottom: 16px; font-size: 16px;}
-    .pop_message .message{width: 140px; height: 140px; padding-top: 80px; font-size: 20px; background-size: 40%;}
-    .pop_message .pop_btn{width: 130px;}
+    .pop_transfer .transfer{padding-top:15px; padding-bottom: 25px; border-top: 1px solid #0C1622; }
+    .pop_transfer .transfer .inform{margin-bottom: 38px;}
+    .pop_transfer .transfer .inform .account_nm{font-size: 14px;}
+    .pop_transfer .transfer .inform .bank_info{font-size: 18px;}
+    .pop_transfer .transfer .inform .copy{width: 36px; height: 20px; padding: 2px 0; font-size: 12px;}
+    .pop_transfer .transfer .trans_box a{height: 44px; margin-bottom: 6px; padding:10px 24px; font-size: 16px; background-position: 20px center; background-size: 10%;}
+    .pop_transfer .transfer .trans_box a i{width: 55px; height: 24px; background-size: 86%; vertical-align: middle;}
+    .pop_transfer .transfer .trans_box a.kakao i{background-size: 40%;}
+   
 
 
     #remember_gnb{height: 60px;}
@@ -204,5 +219,8 @@
     .pop_address .address_search .row{padding:16px 0;}
     .pop_address .address_search .ad_info span{font-size: 14px;}
     .pop_address .address_search .row .radio_item{right:4px; transform: translateY(-44%)}
+    .pop_message .pop_title{margin-bottom: 16px; font-size: 16px;}
+    .pop_message .message{width: 140px; height: 140px; padding-top: 80px; font-size: 20px; background-size: 40%;}
+    .pop_message .pop_btn{width: 130px;}
 
 }
