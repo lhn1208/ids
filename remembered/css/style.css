@@ -182,10 +182,6 @@
 }
 @media (max-width: 760px) {    
 
-    .pop_sms .pop_title{font-size: 14px;}
-    .pop_sms .input{height: 32px; padding: 10px; font-size: 14px;}
-    .pop_sms .pop_btn_wrap{margin-top: 30px;}
-
     #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{top: 20px; left: 0; margin-left: 0; width: 120px; height: 45px;}
@@ -237,5 +233,8 @@
     .pop_transfer .transfer .trans_box a.toss i{vertical-align: 13px;}
     .pop_transfer .transfer .qr_box{padding:12px 18px; font-size: 16px;}
     .pop_transfer .transfer .qr_box .qr{margin-top: 10px;}
+    .pop_sms .pop_title{font-size: 14px;}
+    .pop_sms .input{height: 32px; padding: 10px; font-size: 14px;}
+    .pop_sms .pop_btn_wrap{margin-top: 30px;}
 
 }

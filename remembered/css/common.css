@@ -72,13 +72,11 @@ body.fixed{overflow-y: hidden;}
 .layer_pop .check_item .check:checked + label:before {background-image: url('../images/bg_check_on.png'); background-size: 100%;}
 
 /*모바일 해상도*/
-@media (max-width: 760px) {   
-    .layer_pop.type_short .pop_inner{position: fixed; top: 20%; right: 6%; left: 6%;}
-    .layer_pop.type_short .layer_cont{height: 180px;}
+@media (max-width: 760px) {    
 
     /*layer*/
     .layer_pop .pop_inner{width: auto; margin-left: 0; position: fixed; top:0; left: 0; right: 0; bottom: 0;}
-    .layer_pop .pop_header{padding: 20px;}
+    .layer_pop .pop_header{padding: 3% 20px;}
     .layer_pop .pop_header .top_title{font-size: 20px;}
     .layer_pop .pop_header .close{width: 15px; height: 15px; right: 15px; top: 50%; transform: translateY(-50%); background-size: 100%;}   
     .layer_pop .layer_cont_wrap{top:64px; right: 0; bottom: 0; left: 0;}
@@ -86,6 +84,8 @@ body.fixed{overflow-y: hidden;}
     .layer_pop .pop_btn.close{border: 1px solid #ABBFC6;}
     .layer_pop.type .pop_inner{top: 12%; left: 2%; right: 2%;}
     .layer_pop.type .layer_cont_wrap{bottom: 26%;}
+    .layer_pop.type_short .pop_inner{position: fixed; top: 20%; right: 6%; left: 6%;}
+    .layer_pop.type_short .layer_cont{height: 180px;}
     /*radio, check*/
     .layer_pop .radio_item label{font-size: 14px;}
     .layer_pop .radio_item label:before{width: 20px; height: 20px; margin-right: 8px;}
