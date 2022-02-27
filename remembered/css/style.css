@@ -203,6 +203,6 @@
     .pop_address .ad_search_form input[type="text"]{padding:10px 3%; font-size: 16px;}
     .pop_address .address_search .row{padding:16px 0;}
     .pop_address .address_search .ad_info span{font-size: 14px;}
-    .pop_address .address_search .row .radio_item{transform: translateY(-44%)}
+    .pop_address .address_search .row .radio_item{right:4px; transform: translateY(-44%)}
 
 }
