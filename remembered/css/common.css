@@ -55,10 +55,11 @@ body.fixed{overflow-y: hidden;}
 .layer_cont_wrap .layer_cont_inner::-webkit-scrollbar-thumb{border-radius: 10px; background-color:rgba(196, 196, 196, 0.5);}
 .layer_pop .pop_btn_wrap{text-align: center;}
 .layer_pop .pop_btn{width: 174px; height: 80px; font-size: 26px; color: #fff; background-color: #192B57; border-radius: 50px;}
-.layer_pop .pop_btn.close{color: #666; background-color: #fff; border: 2px solid #ABBFC6;}
+.layer_pop .pop_btn.type{color: #666; background-color: #fff; border: 2px solid #ABBFC6;}
 .layer_pop.type_short .pop_inner{top: 120px;}
 .layer_pop.type_short .layer_cont{ height: 350px; background-color: #fff;}
-
+.layer_pop .pop_txt{padding: 20px 0 40px; text-align: center; color: #0C1622; font-size: 26px; line-height: 1.6;}
+.layer_pop .pop_txt .red{color: #f35056;}
 /*radio,check*/
 .layer_pop .radio{display: none;}
 .layer_pop .radio_item{display: inline-block;}
@@ -86,6 +87,7 @@ body.fixed{overflow-y: hidden;}
     .layer_pop.type .layer_cont_wrap{bottom: 26%;}
     .layer_pop.type_short .pop_inner{position: fixed; top: 20%; right: 6%; left: 6%;}
     .layer_pop.type_short .layer_cont{height: 180px;}
+    .layer_pop .pop_txt{padding: 10px 0 20px; font-size: 14px;}
     /*radio, check*/
     .layer_pop .radio_item label{font-size: 14px;}
     .layer_pop .radio_item label:before{width: 20px; height: 20px; margin-right: 8px;}

@@ -111,9 +111,9 @@
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
 .layer_pop .cont_layout:last-of-type{border-bottom: none;}
 .layer_pop .cont_layout .img{display: inline-block; margin-bottom: 30px;}
-.layer_pop .cont_layout .desc{width: 94%; margin:0 auto;  color: #666; font-family: "Noto Sans KR", sans-serif; font-size: 30px;}
+.layer_pop .cont_layout .desc{width: 90%; margin:0 auto;  color: #666; font-family: "Noto Sans KR", sans-serif; font-size: 30px;}
 .layer_pop .cont_layout .txt_title{margin-bottom: 20px; color: #192B57; font-family: 'AritaBuri'; font-size: 36px; }
-.layer_pop .pop_contents{width: 94%; margin:0 auto 60px;}
+.layer_pop .pop_contents{width: 90%; margin:0 auto 60px;}
 .sample_pop .pop_title{margin-bottom: 20px; padding-top: 100px; font-size: 48px; font-family: 'AritaBuri'; }
 .sample_pop .sub_title{display: inline-block; margin-bottom: 56px;  color: #7C7C7C; font-size: 26px; font-family: 'AritaBuri'; }
 .sample_pop .layer_cont{background-color: #F5F5F5; text-align: center;}
@@ -136,9 +136,9 @@
 .pop_address{font-family: "Noto Sans KR", sans-serif;}
 .pop_address .ad_search_form{margin-top: 16px; border-bottom: 1px solid #0C1622;}
 .pop_address .ad_search_form legend{font-size:0;  line-height:0;  text-indent:-9999px;}
-.pop_address .ad_search_form input[type="text"]{width: 100%; padding:20px 3%; border: 0; box-sizing: border-box; font-size: 30px;}
+.pop_address .ad_search_form input[type="text"]{width: 100%; padding:20px 5%; border: 0; box-sizing: border-box; font-size: 30px;}
 .pop_address .ad_search_form input[type="text"]::placeholder{color: #8893AA;}
-.pop_address .address_search .row{position: relative; width: 94%; margin:0 auto; padding:30px 0; border-bottom:1px solid #BBC4D7}
+.pop_address .address_search .row{position: relative; width: 90%; margin:0 auto; padding:30px 0; border-bottom:1px solid #BBC4D7}
 .pop_address .address_search .ad_info{width: 80%;}
 .pop_address .address_search .ad_info span{display: block; font-size: 26px;}
 .pop_address .address_search .ad_info .ad_nm{color: #0C1622;}
@@ -151,13 +151,13 @@
 .pop_message .message.kakao{background-image: url("../images/bg_message1.png");}
 .pop_message .message.ms{margin-left: 5%; background-image: url("../images/bg_message2.png");}
 .pop_message .pop_btn{width: 260px;}
-.pop_transfer .transfer{width: 94%; margin:0 auto; padding-top:30px; padding-bottom: 50px; border-top: 2px solid #0C1622;}
+.pop_transfer .transfer{width: 90%; margin:0 auto; padding-top:30px; padding-bottom: 50px; border-top: 2px solid #0C1622;}
 .pop_transfer .transfer .inform{position: relative; margin-bottom: 77px; text-align: center;}
 .pop_transfer .transfer .inform span{display: block; color: #0C1622;}
 .pop_transfer .transfer .inform .account_nm{margin-bottom: 16px; font-size: 26px;}
 .pop_transfer .transfer .inform .bank_info{font-size: 36px;}
 .pop_transfer .transfer .inform .copy{position: absolute; top: 0; right: 0; width: 72px; height: 40px; padding:4px 0; font-size: 20px; border: 1px solid #192B57; border-radius: 50px; box-sizing: border-box; text-align: center;}
-.pop_transfer .transfer .trans_box{width: 94%; margin:0 auto;}
+.pop_transfer .transfer .trans_box{width: 100%;}
 .pop_transfer .transfer .trans_box a{display: block; width: 100%; height: 88px; margin-bottom: 10px; padding:22px 43px; font-size: 30px; border:1px solid #0C1622; border-radius: 5px; box-sizing: border-box;}
 .pop_transfer .transfer .trans_box a i{display: inline-block; width: 110px; height: 48px; background-repeat: no-repeat; font-size:0; line-height:0; text-indent:-9999px; vertical-align: 28px;}
 .pop_transfer .transfer .trans_box a.kakao i{background-image: url("../images/ico_kakao.png"); vertical-align: top;}
@@ -215,7 +215,7 @@
     .pop_templet .memorial_txt .pic_box .ico_camera{width: 88px; height: 88px; margin-left: 0; background-size: 60%;}
     .pop_templet .memorial_txt .from_txt{margin-bottom: 26px; font-size: 18px;}
     .pop_address .ad_search_form{margin-top: 8px;}
-    .pop_address .ad_search_form input[type="text"]{padding:10px 3%; font-size: 16px;}
+    .pop_address .ad_search_form input[type="text"]{padding:10px 5%; font-size: 16px;}
     .pop_address .address_search .row{padding:16px 0;}
     .pop_address .address_search .ad_info span{font-size: 14px;}
     .pop_address .address_search .row .radio_item{right:4px; transform: translateY(-44%)}
