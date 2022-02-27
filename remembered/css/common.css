@@ -71,7 +71,7 @@ body.fixed{overflow-y: hidden;}
 /*모바일 해상도*/
 @media (max-width: 760px) {   
     /*layer*/
-    .layer_pop .pop_inner{width: auto; margin-left: 0; position: fixed; top:0; right: 0; bottom: 0; left: 0;}
+    .layer_pop .pop_inner{width: auto; margin-left: 0; position: fixed; top:0; left: 2%; right: 2%; bottom: 0;}
     .layer_pop .pop_header{padding: 20px;}
     .layer_pop .pop_header .top_title{font-size: 20px;}
     .layer_pop .pop_header .close{width: 15px; height: 15px; right: 15px; top: 50%; transform: translateY(-50%); background-size: 100%;}   
