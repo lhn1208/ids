@@ -109,8 +109,6 @@
 .layer_pop .cont_layout .img{display: inline-block; margin-bottom: 30px;}
 .layer_pop .cont_layout .desc{width: 94%; margin:0 auto;  color: #666; font-family: "Noto Sans KR", sans-serif; font-size: 30px;}
 .layer_pop .cont_layout .txt_title{margin-bottom: 20px; color: #192B57; font-family: 'AritaBuri'; font-size: 36px; }
-
-
 .sample_pop .pop_title{margin-bottom: 20px; padding-top: 100px; font-size: 48px; font-family: 'AritaBuri'; }
 .sample_pop .sub_title{display: inline-block; margin-bottom: 56px;  color: #7C7C7C; font-size: 26px; font-family: 'AritaBuri'; }
 .sample_pop .layer_cont{background-color: #F5F5F5; text-align: center;}
@@ -119,11 +117,7 @@
 .pop_templet .layer_cont{border-top: 1px solid #BBC4D7;}
 .pop_templet .select_form{width: 94%; margin:0 auto; padding:60px 0;}
 .pop_templet .select_form legend{margin-bottom: 15px; color: #8893AA; font-size: 26px; font-family: "Noto Sans KR", sans-serif;}
-.pop_templet .radio{display: none;}
-.pop_templet .radio_item{display: inline-block; width: 48%;  margin-bottom: 14px;}
-.pop_templet .radio_item label{color: #0C1622; font-size: 28px; font-family: "Noto Sans KR", sans-serif; letter-spacing: -0.06em;}
-.pop_templet .radio_item label:before{display: inline-block; width:40px; height: 40px; margin-right: 18px; background:url("../images/bg_radio.png") no-repeat; background-size: 100%; vertical-align:top; cursor:pointer; content:'';}
-.pop_templet .radio_item .radio:checked + label:before {background:url("../images/bg_radio_on.png") no-repeat; background-size: 100%;}
+
 .pop_templet .memorial_txt_wrap{background-color: #F5F5F5; border-top: 1px solid #ccc;}
 .pop_templet .memorial_txt{width: 94%; margin:0 auto; padding:40px 0;}
 .pop_templet .pop_title{margin-bottom: 47px; font-family: 'AritaBuri'; font-size: 40px;}
@@ -133,7 +127,18 @@
 .pop_templet .cont_layout{padding-left: 5px;}
 .pop_templet .cont_layout .desc{width: 100%;}
 .pop_templet .cont_layout:last-of-type{border-bottom: 1px solid #ccc;}
-
+.pop_templet .radio_item{width: 48%;  margin-bottom: 14px;}
+.pop_address{font-family: "Noto Sans KR", sans-serif;}
+.pop_address .ad_search_form{margin-top: 16px; border-bottom: 1px solid #0C1622;}
+.pop_address .ad_search_form legend{font-size:0;  line-height:0;  text-indent:-9999px;}
+.pop_address .ad_search_form input[type="text"]{width: 100%; padding:20px 3%; border: 0; box-sizing: border-box; font-size: 30px;}
+.pop_address .ad_search_form input[type="text"]::placeholder{color: #8893AA;}
+.pop_address .address_search .row{position: relative; width: 94%; margin:0 auto; padding:30px 0; border-bottom:1px solid #BBC4D7}
+.pop_address .address_search .ad_info{width: 80%;}
+.pop_address .address_search .ad_info span{display: block; font-size: 26px;}
+.pop_address .address_search .ad_info .ad_nm{color: #0C1622;}
+.pop_address .address_search .ad_info .address{color: #8893AA;}
+.pop_address .address_search .row .radio_item{position: absolute; top: 32px; right: 10px;}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     #remember_gnb .gnb_inner{width: 100%;}
@@ -146,6 +151,14 @@
     .content_wrap .content_title{margin-left: -96%;}    
 }
 @media (max-width: 760px) {
+
+    .pop_address .ad_search_form{margin-top: 8px;}
+    .pop_address .ad_search_form input[type="text"]{padding:10px 3%; font-size: 16px;}
+    .pop_address .address_search .row{padding:16px 0;}
+    .pop_address .address_search .ad_info span{font-size: 14px;}
+    .pop_address .address_search .row .radio_item{transform: translateY(-44%)}
+
+
     #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{top: 20px; left: 0; margin-left: 0; width: 120px; height: 45px;}
@@ -171,12 +184,8 @@
     .sample_pop .layer_cont_wrap .layer_cont_inner{padding-bottom: 35px;}    
     .sample_pop .pop_title{padding-top: 50px; font-size: 24px;}
     .sample_pop .sub_title{margin-bottom: 28px; font-size: 14px;}
-    
-
     .pop_templet .select_form{padding: 30px 0;}
-    .pop_templet .select_form legend{font-size: 14px;}
-    .pop_templet .radio_item label{font-size: 14px;}
-    .pop_templet .radio_item label:before{width: 20px; height: 20px; margin-right: 8px;}
+    .pop_templet .select_form legend{font-size: 14px;} 
     .pop_templet .memorial_txt{padding:20px 0;}
     .pop_templet .pop_title{margin-bottom: 24px; font-size: 20px;}
     .pop_templet .memorial_txt .pic_box{margin-bottom: 24px; height: 215px;}

@@ -56,6 +56,17 @@ body.fixed{overflow-y: hidden;}
 .layer_pop .pop_btn_wrap{text-align: center;}
 .layer_pop .pop_btn{width: 174px; height: 80px; font-size: 26px; color: #fff; background-color: #192B57; border-radius: 50px;}
 .layer_pop .pop_btn.close{color: #666; background-color: #fff; border: 2px solid #ABBFC6;;}
+/*radio,check*/
+.layer_pop .radio{display: none;}
+.layer_pop .radio_item{display: inline-block;}
+.layer_pop .radio_item label{color: #0C1622; font-size: 28px; font-family: "Noto Sans KR", sans-serif; letter-spacing: -0.06em;}
+.layer_pop .radio_item label:before{display: inline-block; width:40px; height: 40px; margin-right: 18px; background-image:url("../images/bg_radio.png"); background-repeat: no-repeat; background-size: 100%; vertical-align:top; cursor:pointer; content:'';}
+.layer_pop .radio_item .radio:checked + label:before {background-image:url("../images/bg_radio_on.png"); background-repeat: no-repeat;  background-size: 100%;}
+.layer_pop .radio_item.check label:before{background-image:url("../images/bg_check.png");}
+.layer_pop .radio_item.check .radio:checked + label:before{background-image:url("../images/bg_check_on.png");}
+.layer_pop .check_item .check{display: none;}
+.layer_pop .check_item .check + label::before {display: inline-block; width:46px; height: 46px; vertical-align: -2px; background-image: url('../images/bg_check.png'); background-repeat: no-repeat;  background-size: 100%; cursor: pointer; content:"";}
+.layer_pop .check_item .check:checked + label:before {background-image: url('../images/bg_check_on.png'); background-size: 100%;}
 
 /*모바일 해상도*/
 @media (max-width: 760px) {   
@@ -67,6 +78,10 @@ body.fixed{overflow-y: hidden;}
     .layer_cont_wrap{top:64px; right: 0; bottom: 0; left: 0;}
     .layer_pop .pop_btn{width: 88px; height: 40px; font-size: 14px;}
     .layer_pop .pop_btn.close{border: 1px solid #ABBFC6;;}
+    /*radio, check*/
+    .layer_pop .radio_item label{font-size: 14px;}
+    .layer_pop .radio_item label:before{width: 20px; height: 20px; margin-right: 8px;}
+    .layer_pop .check_item .check + label::before{width: 24px; height: 24px;}
      /*footer*/
      #remember_footer .footer_inner{width: 86%;}
      .remember_footer .term_list li a{font-size: 14px;}
