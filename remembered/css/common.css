@@ -60,6 +60,13 @@ legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .right_banner a.kakao{display: block; color: #192B57; background-color: #FBCC34; letter-spacing: -0.06em; font-weight: bold; font-family: "Noto Sans KR", sans-serif;}
 /*모바일~노트북 해상도*/
 @media (min-width: 760px) and (max-width: 1760px) {
+    #remember_gnb .gnb_inner{width: 100%;}
+    .remember_gnb .logo{margin-left: -50%;}
+    .remember_gnb .gnb{width: 46%; margin-left: 22%;}
+    .remember_gnb .gnb li{margin-left: 7%;}
+    .remember_gnb .right{width: 24%; margin-left: 6%;}
+    .remember_gnb .member{margin-left: 18%;}
+    #remember_footer .footer_inner{width: 90%;}    
 }
 
 /*layer*/

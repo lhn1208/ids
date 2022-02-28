@@ -164,13 +164,40 @@
                       <input type="text" class="reg_input" placeholder="상주명">
                       <input type="text" class="ph_input" placeholder="휴대폰번호(숫자만)">
                   </span>
-                  <span class="buton_wrap">
+                  <span class="button_wrap">
                     <button class="add_btn">추가</button>
                     <button class="minus_btn">삭제</button>
                     <button class="arr_btn">위로정렬</button>
                     <button class="arr_btn down">아래로정렬</button>
                   </span>
               </div>
+          </div>
+          <div class="register">
+            <h3 class="title">조의금 계좌 입력<i class="ico_chk">*</i></h3> 
+            <div class="account_info reg_style">
+                <div class="row">
+                  <input type="text" class="input_nm" placeholder="이름">
+                  <span class="input_wrap">
+                      <select name="bank" class="select bank_select">
+                        <option value="">은행</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <input type="text" class="input_account" placeholder="계좌번호를 입력하세요">
+                  </span>
+                  <span class="button_wrap">
+                    <button class="add_btn">추가</button>
+                    <button class="minus_btn">삭제</button>
+                  </span>
+                </div>
+                <div class="row">
+                    <label for="transfer" class="input_tit">(선택)카카오페이 송금</label>
+                    <input type="text" id="transfer" class="link_input" placeholder="링크를 등록해주세요">
+                    <button class="reg_btn_w47">방법</button>
+                </div>
+            </div>
           </div>
         </div>
       </div>

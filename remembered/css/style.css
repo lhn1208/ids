@@ -64,7 +64,7 @@
 .relation_info2 .input_wrap{display: inline-block; width: 328px;}
 .register .relation_info2 .reg_input{width:40%; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .relation_info2 .ph_input{width:60%;margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;} 
-.register .relation_info2 button{display: inline-block;}
+.register .relation_info2 .button_wrap button, .register .account_info .button_wrap button{display: inline-block;}
 
 
 .register .add_btn,.register .minus_btn{position: relative; width: 46px; height: 46px; display: block; margin-bottom: 10px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57; border-radius: 5px; background: url("../images/bg_plus_btn.png") no-repeat center #fff; }
@@ -72,11 +72,12 @@
 .register .arr_btn.down{ background-image: url("../images/bg_arr_down.png"); }
 
 .register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
-.register .account_info .row{display: flex; align-items: center; margin-bottom: 28px;}
 .register .account_info .input_nm{width: 150px; margin-right: 10px;}
 .register .account_info .link_input{width: 380px; margin-left: 14px;}
-.register .account_info .bank_select{border-top-right-radius: 0; border-bottom-right-radius: 0;}
-.register .account_info .input_account{width: 290px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+.register .account_info .input_wrap{display: inline-block; width: 417px;}
+.register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+
 .register .message{position: relative;}
 .register .view_area{position: absolute; top:0; right: 0;}
 .register .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
@@ -205,6 +206,7 @@
     .register input[type="text"]{height: 36px; padding: 10px; font-size: 14px;}
     .register .ico_chk{position: absolute; top:-2px; right: -12px; color:#c26836}
     .register .reg_btn{width: 22%; height: 36px; margin-top: 0; margin-left: 2%; font-size: 12px; line-height: 2;}
+    .register .reg_btn_w47{height: 36px; margin-left: 4px; font-size: 12px;}
 
     .register .add_btn,.register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 32px; height: 32px; margin-left: 6px; margin-bottom: 6px; background-size: 50%;}
 
@@ -223,7 +225,7 @@
     .reg_info .reg_top .col input[type="text"] {margin-left: 26%; width: 74%; font-size: 14px;} 
     .reg_info .input_tit{margin-right: 8%; font-size: 14px;}
     .reg_info .reg_select, .reg_info .upload_input{width: 49%;}
-    .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0; }
+    .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0; border-left: none;}
     .reg_info .birth{width: 75%;}
     .reg_info .reg_select2{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
     .register .funeral_info .row{position: relative;}
@@ -232,14 +234,20 @@
     .register .funeral_info .room_nm{width: 100%; margin-left: 0; margin-top: 30px;}
     .register .funeral_info .bt_txt{position: absolute; top: 38%; left: 0; margin-left: 0; font-size: 14px;}
     .register.reg_type .reg_input{margin-left: 0; width: 100%;}
-    
     .relation_info2{position: relative; padding-left: 0; padding-top: 48px;}
     .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px;}
-    .relation_info2 .input_wrap{width: auto;}}
-    .relation_info2 .buton_wrap{position: absolute; top:0; right: 0;}
+    .relation_info2 .input_wrap{width: auto;}    
+    .relation_info2 .button_wrap{position: absolute; top:0; right: 0;}
     .register .relation_info2 .reg_input{width: 50%;}
     .register .relation_info2 .ph_input{width: 50%;} 
-    
+    .register .account_info .input_nm{width: 100%; margin-right: 0; margin-bottom: 10px;}
+    .register .account_info .bank_select{width: 40%;}
+    .register .account_info .input_account{width: 60%;}
+    .register .account_info{position: relative;  padding-top: 48px;}
+    .register .account_info .input_wrap{width: auto;}
+    .register .account_info .button_wrap{position: absolute; top:0; right: 0;}
+    .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
+    .register .account_info .link_input{margin-left: 0; width: 84%;}
     
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
