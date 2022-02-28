@@ -1,11 +1,11 @@
 /*gnb*/
-#remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
+/* #remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
 #remember_gnb .gnb_inner{display: flex; width: 1780px; margin: 0 auto; position: relative;}
 .remember_gnb .logo{position: absolute; top: 60px; left: 50%; width: 174px; height: 64px;  margin-left: -934px; font-size:0; line-height:0; text-indent:-9999px; background-image: url("../images/main/logo.png"); background-repeat: no-repeat; background-size: 100%;}
 .remember_gnb .gnb{margin-left: 410px;}
 .remember_gnb .gnb ul::after{display: block; clear: both; content: "";}
-.remember_gnb .gnb ul{width: 760px; line-height: 170px;}
-.remember_gnb .gnb li{float: left; margin-left: 77px;}
+.remember_gnb .gnb ul{width: 760px;}
+.remember_gnb .gnb li{float: left; margin-left: 77px; line-height: 170px;}
 .remember_gnb .gnb li:first-child{margin-left: 0;}
 .remember_gnb .gnb li a{color:#fff; font-family: 'AritaBuri'; font-size: 20px;}
 .remember_gnb .right{margin-left: 160px; padding-top: 63px; display: flex;}
@@ -17,10 +17,10 @@
 .remember_gnb .menu{display: none;}
 #remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
 .remember_gnb.fix_on .logo{top: 28px; background-image: url("../images/main/logo_on.png");}
-.remember_gnb.fix_on .gnb ul{line-height: 106px;}
+.remember_gnb.fix_on .gnb ul li{line-height: 106px;}
 .remember_gnb.fix_on .gnb li a{color: #192B57;}
 .remember_gnb.fix_on .right{padding-top: 37px;}
-.remember_gnb .log_info a{display: inline-block; line-height: 1.6; margin-left: 14px; letter-spacing:-0.06em; font-size: 14px; font-family: "Noto Sans KR", sans-serif;}
+.remember_gnb .log_info a{display: inline-block; line-height: 2; margin-left: 14px; letter-spacing:-0.06em; font-size: 14px; font-family: "Noto Sans KR", sans-serif;} */
 
 .main_content_wrap{width: 100%; background-color: #EEF8FB; overflow: hidden; font-size: 16px;}
 .main_content .swiper-button-prev, .main_content .swiper-button-next{background-repeat: no-repeat; background-color: transparent; background-size: 100%;}
@@ -60,7 +60,7 @@
 .intro_section .swiper-button-next{right: 0; border-left: none;}
 .intro_section .intro_slide .img_area{height: 580px;}
 .intro_section .intro_slide .text{position: absolute; top:428px; left: 40px; width: 380px; word-wrap: break-word; word-break: keep-all; color: #fff; font-size: 32px;}
-.intro_section .intro_slide .info{line-height: 1.6; font-size: 22px;}
+.intro_section .intro_slide .info{line-height: 1.6; color: #0C1622; font-size: 22px;}
 .intro_section .intro_slide .info em{display: block; margin-top: 38px; font-size: 24px;}
 .intro_section .swiper-button-prev, .memorial_section .swiper-button-prev:before{background-image: url("../images/main/arr_prev.png");}
 .intro_section .swiper-button-next,.memorial_section .swiper-button-next::before{background-image: url("../images/main/arr_next.png");}
@@ -87,7 +87,7 @@
 .remember_service .service_content{display: flex; justify-content:space-between; width: 1540px; margin:0 auto; padding:270px 0 140px;}
 .remember_service a{display: block; width: 304px; height: 364px; padding:70px 0; color: rgba(255, 255, 255, 0.8);; text-align: center; background-repeat: no-repeat; box-sizing: border-box;}
 .remember_service a i{display: block; height: 67px; margin-bottom: 32px;}
-.remember_service a strong{display: block; margin-bottom: 20px; font-size: 26px; font-family: 'AritaBuri-Semi';}
+.remember_service a strong{display: block; margin-bottom: 20px; font-size: 26px; font-family: 'AritaBuri';}
 .remember_service a .desc{font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 .remember_service .sv1{background-image: url("../images/main/bg_service1.png");}
 .remember_service .sv2{background-image: url("../images/main/bg_service2.png");}
@@ -106,7 +106,7 @@
     .remember_service .service_content{width: 98%;}
 }
 @media (max-width: 760px) {
-    #remember_gnb{height: 60px;}
+    /* #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{top: 20px; left: 0; margin-left: 0; width: 120px; height: 45px;}
     .remember_gnb .gnb, 
@@ -115,14 +115,14 @@
     .remember_gnb .right{position: absolute; top: 23px; right: 20px; padding-top: 0;}
     .remember_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_white.png");}
     .remember_gnb .log_info{padding-top: 2px;}
-    .remember_gnb .log_info a{color: #fff;}
+    .remember_gnb .log_info a{line-height: 1.8; color: #fff;}
     .remember_gnb .menu{display: block; width: 23px; height: 20px; margin-top: 5px; margin-left: 20px; background-image:url("../images/ico_allmenu.png"); background-repeat: no-repeat; background-size: 100%; font-size:0;  line-height:0;  text-indent:-9999px;}
     #remember_gnb.fix_on{height: 60px;}
     .remember_gnb.fix_on .logo{top: 10px;}
     .remember_gnb.fix_on .right{top: 11px; padding-top: 0;}
     .remember_gnb.fix_on .log_info a{color: #192B57;}
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
-    .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}        
+    .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}         */
     .main_content_wrap{width: 100%; background-color: #EEF8FB;}   
     .main_content_wrap img{width: 100%;}
     .main_top{width: 100%; background: url("../images/main/mb_top_bg.jpg") no-repeat; background-size: cover;}

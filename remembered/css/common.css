@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 @font-face { font-family:'AritaBuri'; src:url('../font/AritaBuriB.woff') format('woff'); font-style:normal; font-weight:normal;}
-/* @font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; } */
+@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
 /* @font-face { font-family:'AritaBuri-Semi'; src:url('../font/AritaBuriSB.woff') format('woff'); font-style:normal; font-weight:normal;} */
 
 *{margin:0; padding:0;}
@@ -15,6 +15,29 @@ i{font-style: normal;}
 button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
 .blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 legend{font-size:0;  line-height:0;  text-indent:-9999px;}
+/*gnb*/
+#remember_gnb{position: fixed; top:0; left: 0; width: 100%; height: 140px; z-index: 200;}
+#remember_gnb .gnb_inner{display: flex; width: 1780px; margin: 0 auto; position: relative;}
+.remember_gnb .logo{position: absolute; top: 60px; left: 50%; width: 174px; height: 64px;  margin-left: -934px; font-size:0; line-height:0; text-indent:-9999px; background-image: url("../images/main/logo.png"); background-repeat: no-repeat; background-size: 100%;}
+.remember_gnb .gnb{margin-left: 410px;}
+.remember_gnb .gnb ul::after{display: block; clear: both; content: "";}
+.remember_gnb .gnb ul{width: 760px;}
+.remember_gnb .gnb li{float: left; margin-left: 77px; line-height: 170px;}
+.remember_gnb .gnb li:first-child{margin-left: 0;}
+.remember_gnb .gnb li a{color:#fff; font-family: 'AritaBuri'; font-size: 20px;}
+.remember_gnb .right{margin-left: 160px; padding-top: 63px; display: flex;}
+.remember_gnb .gnb_search_form{position: relative;}
+.remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+.remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri'; font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
+.remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right: -34px; width: 34px; height: 34px; background-image: url("../images/ico_search_blue.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
+.remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
+.remember_gnb .menu{display: none;}
+#remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
+.remember_gnb.fix_on .logo{top: 28px; background-image: url("../images/main/logo_on.png");}
+.remember_gnb.fix_on .gnb ul li{line-height: 106px;}
+.remember_gnb.fix_on .gnb li a{color: #192B57;}
+.remember_gnb.fix_on .right{padding-top: 37px;}
+.remember_gnb .log_info a{display: inline-block; line-height: 2; margin-left: 14px; letter-spacing:-0.06em; font-size: 14px; font-family: "Noto Sans KR", sans-serif;}
 
 /*footer*/
 #remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
@@ -33,7 +56,7 @@ legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_footer .ico_wrap a{display: inline-block;}
 .remember_footer .ico_wrap a:first-child{margin-right: 10px;}   
 .right_banner{position: fixed; right: 60px; bottom: 40px; z-index: 180;}
-.right_banner a{display: block; width: 80px; height: 80px; line-height: 4.3; margin-bottom: 12px; text-align: center; font-size: 18px; color: #fff; font-family: 'AritaBuri-Semi'; background-color: #192B57; border-radius: 50%;}
+.right_banner a{display: block; width: 80px; height: 80px; line-height: 4.3; margin-bottom: 12px; text-align: center; font-size: 18px; color: #fff; font-family: 'AritaBuri'; background-color: #192B57; border-radius: 50%;}
 .right_banner a.kakao{display: block; color: #192B57; background-color: #FBCC34; letter-spacing: -0.06em; font-weight: bold; font-family: "Noto Sans KR", sans-serif;}
 /*모바일~노트북 해상도*/
 @media (min-width: 760px) and (max-width: 1760px) {
@@ -76,6 +99,26 @@ body.fixed{overflow-y: hidden;}
 
 /*모바일 해상도*/
 @media (max-width: 760px) {    
+    /*gnb*/
+    #remember_gnb{height: 60px;}
+    #remember_gnb .gnb_inner{width: 100%;}
+    .remember_gnb .logo{top: 20px; left: 0; margin-left: 0; width: 120px; height: 45px;}
+    .remember_gnb .gnb, 
+    .remember_gnb .gnb_search_form .search_input,
+    .remember_gnb .member{display: none;}
+    .remember_gnb .right{position: absolute; top: 23px; right: 20px; padding-top: 0;}
+    .remember_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_white.png");}
+    .remember_gnb .log_info{padding-top: 2px;}
+    .remember_gnb .log_info a{line-height: 1.8; color: #fff;}
+    .remember_gnb .menu{display: block; width: 23px; height: 20px; margin-top: 5px; margin-left: 20px; background-image:url("../images/ico_allmenu.png"); background-repeat: no-repeat; background-size: 100%; font-size:0;  line-height:0;  text-indent:-9999px;}
+    #remember_gnb.fix_on{height: 60px;}
+    .remember_gnb.fix_on .logo{top: 10px;}
+    .remember_gnb.fix_on .right{top: 11px; padding-top: 0;}
+    .remember_gnb.fix_on .log_info a{color: #192B57;}
+    .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
+    .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}        
+   
+
 
     /*layer*/
     .layer_pop .pop_inner{width: auto; margin-left: 0; position: fixed; top:0; left: 0; right: 0; bottom: 0;}
