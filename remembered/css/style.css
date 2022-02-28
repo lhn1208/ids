@@ -10,7 +10,6 @@
 .remember_gnb .gnb li a{color: #192B57; font-family: 'AritaBuri'; font-size: 20px;}
 .remember_gnb .right{margin-left: 140px; padding-top: 63px; display: flex;}
 .remember_gnb .gnb_search_form{position: relative;}
-.remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 .remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri'; font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
 .remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right: -34px; width: 34px; height: 34px; background-image: url("../images/ico_search_blue.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
 .remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 80px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
@@ -121,8 +120,7 @@
 .sample_pop .layer_cont::-webkit-scrollbar-track{background-color: #F5F5F5;}
 .pop_templet .layer_cont{border-top: 1px solid #BBC4D7;}
 .pop_templet .select_form{width: 90%; margin:0 auto; padding:60px 0;}
-.pop_templet .select_form legend{margin-bottom: 15px; color: #8893AA; font-size: 26px; font-family: "Noto Sans KR", sans-serif;}
-
+.pop_templet .select_form legend{margin-bottom: 15px; color: #8893AA; font-size: 26px; text-indent: 0; line-height: normal; font-family: "Noto Sans KR", sans-serif;}
 .pop_templet .memorial_txt_wrap{background-color: #F5F5F5; border-top: 1px solid #ccc;}
 .pop_templet .memorial_txt{width: 90%; margin:0 auto; padding:40px 0;}
 .pop_templet .pop_title{margin-bottom: 47px; font-family: 'AritaBuri'; font-size: 40px;}
@@ -135,7 +133,6 @@
 .pop_templet .radio_item{width: 48%;  margin-bottom: 14px;}
 .pop_address{font-family: "Noto Sans KR", sans-serif;}
 .pop_address .ad_search_form{margin-top: 16px; border-bottom: 1px solid #0C1622;}
-.pop_address .ad_search_form legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .pop_address .ad_search_form input[type="text"]{width: 100%; padding:20px 5%; border: 0; box-sizing: border-box; font-size: 30px;}
 .pop_address .ad_search_form input[type="text"]::placeholder{color: #8893AA;}
 .pop_address .address_search .row{position: relative; width: 90%; margin:0 auto; padding:30px 0; border-bottom:1px solid #BBC4D7}
@@ -167,8 +164,26 @@
 .pop_transfer .transfer .qr_box{padding: 24px 38px; font-size: 30px; border:1px solid #0C1622; border-radius: 5px; font-family: "Noto Sans KR", sans-serif;}
 .pop_transfer .transfer .qr_box .qr{margin-top: 20px; }
 .pop_sms .pop_title{margin-bottom: 10px; font-size: 26px; font-weight: normal; font-family: "Noto Sans KR", sans-serif;}
-
 .pop_sms .pop_btn_wrap{margin-top: 60px;}
+/*login*/
+.pop_login .layer_cont_wrap{top: 20px;}
+.remember_login{padding: 70px 90px; color: #0C1622; font-family: "Noto Sans KR", sans-serif;}
+.remember_login .title{margin-bottom: 20px; font-size: 14px; font-weight: normal; font-family: 'AritaBuri'; }
+.remember_login .sub_title{margin-bottom: 24px; line-height: 1.6; font-size: 26px; font-family: 'AritaBuri';}
+.remember_login .login_form{margin-bottom: 50px;}
+.remember_login .login_form .login_input{margin-top: 46px; width: 100%; height: 33px; color: #0C1622; font-size: 18px; font-family: "Noto Sans KR", sans-serif; border:none; border-bottom: 1px solid #95A5CE;}
+.remember_login .login_form .id_txt{margin-top: 17px; font-size: 16px; letter-spacing: -0.06em;}
+.remember_login .login_btn{margin-bottom: 20px; text-align: center;}
+.remember_login .login_btn a{display: block; width: 100%; height: 50px; margin-bottom: 10px; padding:8px 0; color: #192B57; font-size: 16px; border:1px solid #192B57; box-sizing: border-box;}
+.remember_login .login_btn a.login{border: none; background-color: #192B57; color: #fff; font-size: 20px; font-family: 'AritaBuri'; }
+.remember_login .login_btn a i{display: inline-block; width: 37px; height: 37px; background-repeat: no-repeat; background-size: 100%; vertical-align: middle;}
+.remember_login .login_btn a.kakao i{background-image: url("../images/ico_login_kakao.png");}
+.remember_login .login_btn a.naver i{margin-top: -3px; background-image: url("../images/ico_login_naver.png");}
+.remember_login .login_btn .ico{font-size:0;  line-height:0;  text-indent:-9999px;}
+.remember_login .member_link{text-align: center;}
+.remember_login .member_link a{font-size: 14px; letter-spacing: -0.06em;}
+.remember_login .member_link a::before{display: inline-block; width: 1px; height: 8px; margin: 0 8px; background-color: #BBC4D7; content: ""; vertical-align: 1px;}
+.remember_login .member_link a:first-of-type::before{display: none;}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     #remember_gnb .gnb_inner{width: 100%;}
@@ -181,7 +196,7 @@
     .content_wrap .content_title{margin-left: -96%;}    
 }
 @media (max-width: 760px) {    
-
+    /*gnb*/
     #remember_gnb{height: 60px;}
     #remember_gnb .gnb_inner{width: 100%;}
     .remember_gnb .logo{top: 20px; left: 0; margin-left: 0; width: 120px; height: 45px;}
@@ -197,13 +212,12 @@
     .remember_gnb.fix_on .logo{top: 10px;}
     .remember_gnb.fix_on .right{top: 11px; padding-top: 0;}
     .remember_gnb.fix_on .log_info a{color: #192B57;}
-
+    /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
     .layer_pop .cont_layout .img{width: 60%;}
     .layer_pop .cont_layout .img img{width: 100%;}
     .layer_pop .cont_layout .desc{font-size: 16px;}
     .layer_pop .cont_layout .txt_title{margin-bottom: 12px; font-size: 18px;}   
-
     .sample_pop .layer_cont_wrap .layer_cont_inner{padding-bottom: 35px;}    
     .sample_pop .pop_title{padding-top: 50px; font-size: 24px;}
     .sample_pop .sub_title{margin-bottom: 28px; font-size: 14px;}
@@ -236,5 +250,14 @@
     .pop_transfer .transfer .qr_box .qr{margin-top: 10px;}
     .pop_sms .pop_title{font-size: 14px;}   
     .pop_sms .pop_btn_wrap{margin-top: 15px;}
+    .pop_login .layer_cont_wrap{top: 0;}    
+    /*login*/
+    .remember_login{padding:35px 45px}
+    .remember_login .sub_title{margin-bottom: 12px; font-size: 14px;}
+    .remember_login .login_form{margin-bottom: 26px;}
+    .remember_login .login_form .login_input{margin-top: 24px; font-size: 14px;}
+    .remember_login .login_btn a{padding:12px 0; font-size: 14px;}
+    .remember_login .login_btn a.login{padding: 10px 0; font-size: 16px;}
+    .remember_login .login_btn a i{width: 28px; height: 28px;}
 
 }

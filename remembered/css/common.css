@@ -14,8 +14,7 @@ fieldset{border: 0;}
 i{font-style: normal;}
 button{display: inline-block; cursor: pointer; box-sizing: border-box; text-align: center; vertical-align: top;}
 .blind {position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
-
-
+legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 
 /*footer*/
 #remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
