@@ -257,7 +257,7 @@
     .remember_login .login_form{margin-bottom: 26px;}
     .remember_login .login_form .login_input{margin-top: 24px; font-size: 14px;}
     .remember_login .login_btn a{padding:12px 0; font-size: 14px;}
-    .remember_login .login_btn a.login{padding: 10px 0; font-size: 16px;}
+    .remember_login .login_btn a.login{padding: 16px 0; font-size: 16px;}
     .remember_login .login_btn a i{width: 28px; height: 28px;}
 
 }
