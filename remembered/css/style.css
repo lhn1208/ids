@@ -206,7 +206,7 @@
     .register .ico_chk{position: absolute; top:-2px; right: -12px; color:#c26836}
     .register .reg_btn{width: 22%; height: 36px; margin-top: 0; margin-left: 2%; font-size: 12px; line-height: 2;}
 
-    .register .add_btn,.register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 40px; height: 40px;}
+    .register .add_btn,.register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 32px; height: 32px; margin-left: 6px; margin-bottom: 6px; background-size: 50%;}
 
     .register_content .register_inner{padding: 30px 0 55px;}
     .register_content .title{margin-bottom: 10px; font-size: 16px;}
