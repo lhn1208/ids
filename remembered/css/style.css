@@ -225,6 +225,7 @@
     .reg_info .reg_select, .reg_info .upload_input{width: 49%;}
     .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0;}
     .reg_info .birth{width: 75%;}
+    .reg_info .reg_select{border-right: none;}
     .reg_info .reg_select2{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
     .register .funeral_info .row{position: relative;}
     .reg_info .filebox .file{width: 22%; height: 36px; margin-left: 2%; font-size: 12px; line-height:3;}
