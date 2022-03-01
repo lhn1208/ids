@@ -4,10 +4,8 @@
 
 .content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
 .content_wrap .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri'; font-size: 60px;}
-.bg_register1,.bg_register2{position: absolute; background-repeat: no-repeat;}
-.bg_register1{width: 337px; height: 681px; top:220px; left: 0; background-image: url("../images/bg_reg1.png");}
-.bg_register2{width: 326px; height: 381px; bottom: 460px; right: 0; background-image: url("../images/bg_reg2.png");}
-.register_content{position: relative; width: 750px; margin:0 auto;}
+.bg_register1{position: absolute ; width: 337px; height: 681px; top:220px; left: 50%; margin-left: -100%; background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; z-index: -1;}
+.register_content{position: relative; width: 750px; margin:0 auto; z-index: 1;}
 .register_content .register_inner{padding:262px 0 66px;}
 .register_content .title{display: inline-block; position: relative; margin-bottom: 26px; font-family: 'AritaBuri'; font-size: 19px;}
 .register{position: relative; padding-bottom: 36px; margin-bottom: 34px; border-bottom:2px solid #e8edf3}
@@ -27,10 +25,11 @@
 .register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
 
 
-.relation_info{padding-left: 15px;}
-.relation_info .select{width: 152px;}
-.relation_info .represent_nm{width: 568px; margin-left: 10px;}
-.relation_info .represent_ph{display: block; width: 568px; margin-top: 10px; margin-left: 166px}
+.register .relation_info{padding-left: 15px;}
+.register .relation_info .select{width: 152px;}
+.register .relation_info .represent_nm{width: 568px; margin-left: 10px;}
+.register .relation_info .represent_ph{display: block; width: 568px; margin-top: 10px; margin-left: 166px}
+.register .relation_info .check_item{margin-top: 6px;}
 .register .input_tit{position: relative; font-family:  'Noto Sans KR',sans-serif;}
 .register .input_tit .ico_chk{top:-2px; right: -10px;}
 .register .reg_btn_w47{width: 47px; height: 47px; margin-left: 10px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
@@ -68,9 +67,9 @@
 .register.reg_type .title{width: 16%;}
 .register.reg_type .title label{position: relative;}
 .register.reg_type #site_input{width: 83%;}
-.relation_info2{padding-left: 15px;}
-.relation_info2 .select{margin-right: 10px;}
-.relation_info2 .input_wrap{display: inline-block; width: 328px;}
+.register .relation_info2{padding-left: 15px;}
+.register .relation_info2 .select{margin-right: 10px;}
+.register .relation_info2 .input_wrap{display: inline-block; width: 328px;}
 .register .relation_info2 .reg_input{width:40%; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .relation_info2 .ph_input{width:60%;margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;} 
 .register .relation_info2 .button_wrap button, .register .account_info .button_wrap button{display: inline-block;}
@@ -193,24 +192,21 @@
     .remember_gnb.sub_gnb .menu{background-image:url("../images/ico_allmenu_on.png");}
     .remember_gnb.sub_gnb .log_info a{color: #192B57;}
     .register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
-    .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}
-    
+    .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}    
     .register .select{height: 40px; font-size: 14px;}
     .register input[type="text"]{height: 40px; padding: 10px; font-size: 14px;}
     .register .ico_chk{position: absolute; top:-2px; right: -12px; color:#c26836}
     .register .reg_btn{width: 22%; height: 40px; margin-top: 0; margin-left: 2%; font-size: 12px; line-height: 2;}
     .register .reg_btn_w47{height: 40px; margin-left: 4px; font-size: 12px;}
-
     .register .add_btn,.register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 32px; height: 32px; margin-left: 6px; margin-bottom: 6px; background-size: 50%;}
-
     .register_content .register_inner{padding: 30px 0 55px;}
     .register_content .title{margin-bottom: 10px; font-size: 16px;}
     .register_content .register .sub_txt{display: block; margin-left: 0; margin-bottom: 10px; font-size: 12px;}
-    .relation_info{padding-left: 0;}
-    .relation_info .select{width: 30%;}
-    .relation_info .represent_nm{margin-left: 2%; width: 66.8%;}
-    .relation_info .represent_ph{margin-top: 6px; width: 100%; margin-left: 0;}
-   
+    .register .relation_info{padding-left: 0;}
+    .register .relation_info .select{width: 30%;}
+    .register .relation_info .check_item{font-size: 14px;}
+    .register .relation_info .represent_nm{margin-left: 2%; width: 66.8%;}
+    .register .relation_info .represent_ph{margin-top: 6px; width: 100%; margin-left: 0;}   
     .reg_style{padding: 0;}
     .reg_info .row{margin-bottom: 12px;}
     .reg_info .reg_top .col{border-bottom: 1px solid #dae1e9}
@@ -228,10 +224,10 @@
     .register .funeral_info .room_nm{width: 100%; margin-left: 0; margin-top: 30px;}
     .register .funeral_info .bt_txt{position: absolute; top: 38%; left: 0; margin-left: 0; font-size: 14px;}
     .register.reg_type #site_input{margin-left: 0; width: 100%;}
-    .relation_info2{position: relative; padding-left: 0; padding-top: 48px;}
-    .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px; background-position: 96%;}
-    .relation_info2 .input_wrap{width: auto;}    
-    .relation_info2 .button_wrap{position: absolute; top:0; right: 0;}
+    .register .relation_info2{position: relative; padding-left: 0; padding-top: 48px;}
+    .register .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px; background-position: 96%;}
+    .register .relation_info2 .input_wrap{width: auto;}    
+    .register .relation_info2 .button_wrap{position: absolute; top:0; right: 0;}
     .register .relation_info2 .reg_input{width: 50%;}
     .register .relation_info2 .ph_input{width: 50%;} 
     .register .account_info .input_nm{width: 100%; margin-right: 0; margin-bottom: 10px;}
@@ -252,7 +248,7 @@
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
     .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}
-    .bg_register1{top: 126px; width: 170px; height: 278px; background-size: 80%;}
+    .bg_register1{top: 126px; width: 170px; height: 278px; left: -6%; margin-left: 0; background-size: 80%;} 
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
     .layer_pop .cont_layout .img{width: 60%;}

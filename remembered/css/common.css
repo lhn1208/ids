@@ -39,6 +39,10 @@ legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb.fix_on .right{padding-top: 37px;}
 .remember_gnb .log_info a{display: inline-block; line-height: 2; margin-left: 14px; letter-spacing:-0.06em; font-size: 14px; font-family: "Noto Sans KR", sans-serif;}
 
+.check_item .check{display: none;}
+.check_item .check + label::before {display: inline-block; width:24px; height: 24px; margin-right: 8px; vertical-align: -5px; border: 1px solid #BBC4D7; background-repeat: no-repeat; cursor: pointer; content:""; box-sizing: border-box;}
+.check_item .check:checked + label:before {border: none; background: url('../images/bg_check_on.png') #0C1622 no-repeat center; background-size: 53%;}
+
 /*footer*/
 #remember_footer{background-color: #263250; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 #remember_footer .footer_inner{position: relative; width: 1730px; margin: 0 auto; padding: 50px 0; color: #fff;}
@@ -98,11 +102,9 @@ body.fixed{overflow-y: hidden;}
 .layer_pop .radio_item label{color: #0C1622; font-size: 28px; font-family: "Noto Sans KR", sans-serif; letter-spacing: -0.06em;}
 .layer_pop .radio_item label:before{display: inline-block; width:40px; height: 40px; margin-right: 18px; background-image:url("../images/bg_radio.png"); background-repeat: no-repeat; background-size: 100%; vertical-align:top; cursor:pointer; content:'';}
 .layer_pop .radio_item .radio:checked + label:before {background-image:url("../images/bg_radio_on.png"); background-repeat: no-repeat;  background-size: 100%;}
-.layer_pop .radio_item.check label:before{background-image:url("../images/bg_check.png");}
-.layer_pop .radio_item.check .radio:checked + label:before{background-image:url("../images/bg_check_on.png");}
-.layer_pop .check_item .check{display: none;}
-.layer_pop .check_item .check + label::before {display: inline-block; width:46px; height: 46px; vertical-align: -2px; background-image: url('../images/bg_check.png'); background-repeat: no-repeat;  background-size: 100%; cursor: pointer; content:"";}
-.layer_pop .check_item .check:checked + label:before {background-image: url('../images/bg_check_on.png'); background-size: 100%;}
+.layer_pop .radio_item.check label:before{background-image:url("../images/bg_rd_check.png");}
+.layer_pop .radio_item.check .radio:checked + label:before{background-image:url("../images/bg_rd_check_on.png");}
+
 
 /*모바일 해상도*/
 @media (max-width: 760px) {    
@@ -125,6 +127,7 @@ body.fixed{overflow-y: hidden;}
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}        
    
+    .check_item .check + label::before{width: 20px; height: 20px;}
 
 
     /*layer*/
