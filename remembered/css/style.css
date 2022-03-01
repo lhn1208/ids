@@ -80,7 +80,7 @@
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
 .register #info_input{width: 75%;}
-.register #memorial_input{width: 75%;}
+.register .memorial_textarea{width: 75%; resize: none;}
 .register .message{position: relative;}
 .register .message .view_area{position: absolute; top:-44px; right: 64px;}
 .register .message .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
@@ -242,7 +242,7 @@
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
     .register .account_info .link_input{margin-left: 0; width: 83%;}
     .register #info_input{width: 100%;}
-    .register #memorial_input{width: 83%;}
+    .register .memorial_textarea{width: 83%;}
     .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
     .register .message{padding-top: 47px;}
     .register .message .view_area{top: -30px; right: 0;}
