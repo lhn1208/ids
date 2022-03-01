@@ -4,7 +4,7 @@
 
 .content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
 .content_wrap .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri'; font-size: 60px;}
-.bg_register1{position: absolute ; width: 337px; height: 681px; top:220px; left: 50%; margin-left: -100%; background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; z-index: -1;}
+.content_wrap.bg_type{background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; background-position: left 10%;}
 .register_content{position: relative; width: 750px; margin:0 auto; z-index: 1;}
 .register_content .register_inner{padding:262px 0 66px;}
 .register_content .title{display: inline-block; position: relative; margin-bottom: 26px; font-family: 'AritaBuri'; font-size: 19px;}
@@ -185,6 +185,8 @@
 
 @media (min-width: 760px) and (max-width: 1760px) {
     .content_wrap .content_title{margin-left: -96%;}  
+    .bg_register1{margin-left: -100%;}
+    
 }
 @media (max-width: 760px) {    
     /*gnb*/
@@ -192,6 +194,7 @@
     .remember_gnb.sub_gnb .menu{background-image:url("../images/ico_allmenu_on.png");}
     .remember_gnb.sub_gnb .log_info a{color: #192B57;}
     .register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
+    .content_wrap.bg_type{background-size: 36%; background-position-y: 5.6%;}
     .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}    
     .register .select{height: 40px; font-size: 14px;}
     .register input[type="text"]{height: 40px; padding: 10px; font-size: 14px;}
@@ -248,7 +251,6 @@
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
     .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}
-    .bg_register1{top: 126px; width: 170px; height: 278px; left: -6%; margin-left: 0; background-size: 80%;} 
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
     .layer_pop .cont_layout .img{width: 60%;}
