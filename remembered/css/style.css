@@ -228,7 +228,7 @@
     .register .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px; background-position: 96%;}
     .register .relation_info2 .input_wrap{width: 100%;}    
     .register .relation_info2 .button_wrap{position: absolute; top:0; right: 0;}
-    .register .relation_info2 .reg_input{width: 40%;}
+    .register .relation_info2 .reg_input{width: 50%;}
     .register .relation_info2 .ph_input{width: 50%;} 
     .register .account_info .input_nm{width: 100%; margin-right: 0; margin-bottom: 10px;}
     .register .account_info .bank_select{width: 40%;}
