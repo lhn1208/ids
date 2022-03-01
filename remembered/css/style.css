@@ -102,7 +102,7 @@
 .register_content .register_btn button{width: 30%;}
 .register_content .register_btn .preview{background-color: #EEF8FB; color: #192B57; border: 1px solid #192B57;}
 .register_content .register_btn .preview::before{display: inline-block; width: 24px; height: 24px; vertical-align: -6px; margin-right: 4px; background: url("../images/ico_preview.png") no-repeat; content: "";}
-.bg_register1{top: 126px; background-size: 40%;}
+
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -219,7 +219,7 @@
     .reg_info .input_tit{margin-right: 8%; font-size: 14px;}
     .reg_info .reg_select, .reg_info .upload_input{width: 49%;}
     .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0;}
-    .reg_info .birth{width: 75%;}
+    .reg_info .birth{width: 74%;}
     .reg_info .reg_select{border-right: none;}
     .reg_info .reg_select2{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
     .register .funeral_info .row{position: relative;}
@@ -252,6 +252,7 @@
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
     .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}
+    .bg_register1{top: 126px; width: 170px; height: 278px; background-size: 80%;}
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
     .layer_pop .cont_layout .img{width: 60%;}
