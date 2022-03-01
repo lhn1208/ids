@@ -31,11 +31,10 @@
 .relation_info .select{width: 152px;}
 .relation_info .represent_nm{width: 568px; margin-left: 10px;}
 .relation_info .represent_ph{display: block; width: 568px; margin-top: 10px; margin-left: 166px}
-.register .input_tit{position: relative;}
+.register .input_tit{position: relative; font-family:  'Noto Sans KR',sans-serif;}
 .register .input_tit .ico_chk{top:-2px; right: -10px;}
 .register .reg_btn_w47{width: 47px; height: 47px; margin-left: 10px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
 .register_content .register_btn button{height: 50px; margin:0; font-size: 14px;}
-
 .reg_style{padding-left: 15px;}
 .reg_info .reg_top{display: flex; align-items: center; }
 .reg_info .reg_top .col{display: inline-block; width: 50%; border-bottom: 2px solid #dae1e9;}
@@ -53,7 +52,7 @@
 .reg_info .reg_select, .reg_info .upload_input{width: 380px;}
 .reg_info .birth{width: 380px;}
 .reg_info .upload_input{height: 47px; padding: 8px 14px; border-radius: 5px; border:1px solid #ced5e4; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
-.reg_info .reg_select2{margin-left: 10px; width: 172px; background-position-x: 94%;}
+.reg_info .reg_select2{margin-left: 10px; width: 165px; background-position-x: 94%;}
 .reg_info .filebox input[type="file"]{position: absolute;  top:0; left:0; width:0; height:0; line-height:0; overflow: hidden; border: 0;}
 .reg_info .filebox .file{display: inline-block; margin-left: 10px; width: 120px; height: 40px; line-height: 2.6; font-size: 14px; font-family: "Noto Sans KR", sans-serif; border-radius: 5px; color: #fff; background-color: #192c57; text-align: center; cursor: pointer;}
 .reg_info .filebox .file_output{max-width: 100%; max-height: 400px; margin-top: 10px; margin-left: 166px; overflow: hidden;}
@@ -75,8 +74,9 @@
 .register .relation_info2 .reg_input{width:40%; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .relation_info2 .ph_input{width:60%;margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;} 
 .register .relation_info2 .button_wrap button, .register .account_info .button_wrap button{display: inline-block;}
+/* .register .account_info .input_tit{font-size: 14px;} */
 .register .account_info .input_nm{width: 150px; margin-right: 10px;}
-.register .account_info .link_input{width: 509px; margin-left: 14px;}
+.register .account_info .link_input{width: 508px; margin-left: 14px;}
 .register .account_info .input_wrap{display: inline-block; width: 452px;}
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
@@ -102,12 +102,7 @@
 .register_content .register_btn button{width: 30%;}
 .register_content .register_btn .preview{background-color: #EEF8FB; color: #192B57; border: 1px solid #192B57;}
 .register_content .register_btn .preview::before{display: inline-block; width: 24px; height: 24px; vertical-align: -6px; margin-right: 4px; background: url("../images/ico_preview.png") no-repeat; content: "";}
-
-
-.content_top{width:752px; margin:0 auto; padding:264px 0 72px;}
-.content_top .main_profile{display: block; position: relative; border: 1px solid rgba(12, 22, 34, 0.5);}
-.content_top .main_profile img{vertical-align: middle;}
-.content_top .main_profile .profile{position: absolute; left: 50%; bottom: 0; margin-left:-124px; background-origin: padding-box; width: 248px; height: 248px; background-color: #BB7A19; color: #fff; }
+.bg_register1{top: 126px; background-size: 40%;}
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -200,11 +195,11 @@
     .register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
     .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}
     
-    .register .select{height: 36px; font-size: 14px;}
-    .register input[type="text"]{height: 36px; padding: 10px; font-size: 14px;}
+    .register .select{height: 40px; font-size: 14px;}
+    .register input[type="text"]{height: 40px; padding: 10px; font-size: 14px;}
     .register .ico_chk{position: absolute; top:-2px; right: -12px; color:#c26836}
-    .register .reg_btn{width: 22%; height: 36px; margin-top: 0; margin-left: 2%; font-size: 12px; line-height: 2;}
-    .register .reg_btn_w47{height: 36px; margin-left: 4px; font-size: 12px;}
+    .register .reg_btn{width: 22%; height: 40px; margin-top: 0; margin-left: 2%; font-size: 12px; line-height: 2;}
+    .register .reg_btn_w47{height: 40px; margin-left: 4px; font-size: 12px;}
 
     .register .add_btn,.register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 32px; height: 32px; margin-left: 6px; margin-bottom: 6px; background-size: 50%;}
 
