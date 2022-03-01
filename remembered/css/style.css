@@ -241,9 +241,9 @@
     .register .account_info .input_wrap{width: 100%;}
     .register .account_info .button_wrap{position: absolute; top:0; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
-    .register .account_info .link_input{margin-left: 0; width: 84%;}
+    .register .account_info .link_input{margin-left: 0; width: 83%;}
     .register #info_input{width: 100%;}
-    .register #memorial_input{width: 84%;}
+    .register #memorial_input{width: 83%;}
     .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
     .register .message{padding-top: 47px;}
     .register .message .view_area{top: -30px; right: 0;}
