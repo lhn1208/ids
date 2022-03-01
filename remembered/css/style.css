@@ -10,10 +10,10 @@
 .register_content .title{display: inline-block; position: relative; margin-bottom: 26px; font-family: 'AritaBuri'; font-size: 19px;}
 .register{position: relative; padding-bottom: 36px; margin-bottom: 34px; border-bottom:2px solid #e8edf3}
 .register_content .register .sub_txt{margin-left: 50px; color: #8893AA; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
-.register .select{position: relative; width: 152px; height: 47px; padding:8px 14px; letter-spacing: -0.05em; border: 1px solid #ced5e4; border-radius: 5px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url("../images/ico_select.png"); background-repeat: no-repeat; background-position: 92% 50%; background-color:#fff; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
+.register .select{position: relative; width: 152px; height: 47px; padding:8px 14px; letter-spacing: -0.05em; font-size: 16px; border: 1px solid #ced5e4; border-radius: 5px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url("../images/ico_select.png"); background-repeat: no-repeat; background-position: 92% 50%; background-color:#fff; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
 .register .select::-ms-expand {display: none;}
 .register .select:after{ content: '▼';position: absolute; top: 7px; right: 10px; transform: none; border: 0;}
-.register input[type="text"] {height: 47px; padding:10px 16px; font-family: "Noto Sans KR", sans-serif; background-color: #fff; border-radius: 5px; border: 1px solid #BBC4D7; box-sizing: border-box;}
+.register input[type="text"] {height: 47px; padding:10px 16px; font-size: 16px; font-family: "Noto Sans KR", sans-serif; background-color: #fff; border-radius: 5px; border: 1px solid #BBC4D7; box-sizing: border-box;}
 .register input[type="text"]::placeholder{color: #8893AA; font-family: "Noto Sans KR", sans-serif;}
 .register .ico_chk{position: absolute; top:-4px; right: -12px; color:#c26836}
 .register_content .register_btn{text-align: center;}
@@ -73,14 +73,14 @@
 .register .relation_info2 .reg_input{width:40%; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .relation_info2 .ph_input{width:60%;margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;} 
 .register .relation_info2 .button_wrap button, .register .account_info .button_wrap button{display: inline-block;}
-/* .register .account_info .input_tit{font-size: 14px;} */
 .register .account_info .input_nm{width: 150px; margin-right: 10px;}
 .register .account_info .link_input{width: 508px; margin-left: 14px;}
 .register .account_info .input_wrap{display: inline-block; width: 452px;}
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
 .register #info_input{width: 75%;}
-.register .memorial_textarea{width: 75%; resize: none;}
+.register .title.vert{vertical-align: top;}
+.register .memorial_textarea{width: 75%; height: 117px; padding: 10px 16px; font-size: 16px; resize: none; font-family: "Noto Sans KR", sans-serif; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
 .register .message{position: relative;}
 .register .message .view_area{position: absolute; top:-44px; right: 64px;}
 .register .message .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
@@ -110,11 +110,13 @@
 .layer_pop .cont_layout .desc{width: 90%; margin:0 auto;  color: #666; font-family: "Noto Sans KR", sans-serif; font-size: 30px;}
 .layer_pop .cont_layout .txt_title{margin-bottom: 20px; color: #192B57; font-family: 'AritaBuri'; font-size: 36px; }
 .layer_pop .pop_contents{width: 90%; margin:0 auto}
-.sample_pop .pop_title{margin-bottom: 20px; padding-top: 100px; font-size: 48px; font-family: 'AritaBuri'; }
-.sample_pop .sub_title{display: inline-block; margin-bottom: 56px;  color: #7C7C7C; font-size: 26px; font-family: 'NotoSerifKR';}
-.sample_pop .layer_cont{background-color: #F5F5F5; text-align: center;}
-.sample_pop .layer_cont_wrap .layer_cont_inner{padding-bottom: 70px;}
-.sample_pop .layer_cont::-webkit-scrollbar-track{background-color: #F5F5F5;}
+.pop_sample .pop_title{margin-bottom: 20px; padding-top: 100px; font-size: 48px; font-family: 'AritaBuri'; }
+.pop_sample .sub_title{display: inline-block; margin-bottom: 56px;  color: #7C7C7C; font-size: 26px; font-family: 'NotoSerifKR';}
+.pop_sample .layer_cont{background-color: #F5F5F5; text-align: center;}
+.pop_sample .layer_cont_wrap .layer_cont_inner{padding-bottom: 70px;}
+.pop_sample .layer_cont::-webkit-scrollbar-track{background-color: #F5F5F5;}
+.pop_memorial{width: 90%; margin:0 auto; padding:40px 0; font-size: 26px; font-family: "Noto Sans KR", sans-serif; text-align: left;}
+
 .pop_templet .layer_cont{border-top: 1px solid #BBC4D7;}
 .pop_templet .select_form{width: 90%; margin:0 auto; padding:60px 0;}
 .pop_templet .select_form legend{margin-bottom: 15px; color: #8893AA; font-size: 26px; text-indent: 0; line-height: normal; font-family: "Noto Sans KR", sans-serif;}
@@ -242,7 +244,7 @@
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
     .register .account_info .link_input{margin-left: 0; width: 83%;}
     .register #info_input{width: 100%;}
-    .register .memorial_textarea{width: 83%;}
+    .register .memorial_textarea{width: 83%; height: 126px;}
     .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
     .register .message{padding-top: 47px;}
     .register .message .view_area{top: -30px; right: 0;}
@@ -257,9 +259,10 @@
     .layer_pop .cont_layout .img img{width: 100%;}
     .layer_pop .cont_layout .desc{font-size: 16px;}
     .layer_pop .cont_layout .txt_title{margin-bottom: 12px; font-size: 18px;}   
-    .sample_pop .layer_cont_wrap .layer_cont_inner{padding-bottom: 35px;}    
-    .sample_pop .pop_title{padding-top: 50px; font-size: 24px;}
-    .sample_pop .sub_title{margin-bottom: 28px; font-size: 14px;}
+    .pop_sample .layer_cont_wrap .layer_cont_inner{padding-bottom: 35px;}    
+    .pop_sample .pop_title{padding-top: 50px; font-size: 24px;}
+    .pop_sample .sub_title{margin-bottom: 28px; font-size: 14px;}
+    .pop_memorial{padding:20px 0; font-size: 14px;}
     .pop_templet .select_form{padding: 30px 0;}
     .pop_templet .select_form legend{font-size: 14px;} 
     .pop_templet .memorial_txt{padding:20px 0;}
