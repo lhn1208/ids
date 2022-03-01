@@ -13,7 +13,7 @@
 .register .select{position: relative; width: 152px; height: 47px; padding:8px 14px; letter-spacing: -0.05em; border: 1px solid #ced5e4; border-radius: 5px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url("../images/ico_select.png"); background-repeat: no-repeat; background-position: 92% 50%; background-color:#fff; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
 .register .select::-ms-expand {display: none;}
 .register .select:after{ content: '▼';position: absolute; top: 7px; right: 10px; transform: none; border: 0;}
-.register input[type="text"] {height: 47px; padding:10px 16px;  border-radius: 5px; border: 1px solid #BBC4D7; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif}
+.register input[type="text"] {height: 47px; padding:10px 16px; font-family: "Noto Sans KR", sans-serif; background-color: #fff; border-radius: 5px; border: 1px solid #BBC4D7; box-sizing: border-box;}
 .register input[type="text"]::placeholder{color: #8893AA; font-family: "Noto Sans KR", sans-serif;}
 .register .ico_chk{position: absolute; top:-4px; right: -12px; color:#c26836}
 .register_content .register_btn{text-align: center;}
@@ -226,7 +226,7 @@
     .register.reg_type #site_input{margin-left: 0; width: 100%;}
     .register .relation_info2{position: relative; padding-left: 0; padding-top: 48px;}
     .register .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px; background-position: 96%;}
-    .register .relation_info2 .input_wrap{width: auto;}    
+    .register .relation_info2 .input_wrap{width: 100%;}    
     .register .relation_info2 .button_wrap{position: absolute; top:0; right: 0;}
     .register .relation_info2 .reg_input{width: 50%;}
     .register .relation_info2 .ph_input{width: 50%;} 
