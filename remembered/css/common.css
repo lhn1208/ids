@@ -125,7 +125,7 @@ body.fixed{overflow-y: hidden;}
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}        
     /*menu*/
-    .mobile_menu{position: fixed; top:0; left: -100%; width: 100%; height: 100%; z-index: 200; background: url("../images/bg_menu.png") #192B57 no-repeat right center;   transition: left .3s ease-in-out;}
+    .mobile_menu{position: fixed; top:0; left: -100%; bottom: 0; width: 100%; height: 100%; z-index: 200; background: url("../images/bg_menu.png") #192B57 no-repeat right center;   transition: left .3s ease-in-out;}
     .mobile_menu.on{left: 0;}
 
     .mobile_menu_inner{position: relative; padding:40px 0; width: 90%; margin:0 auto; color: #fff; font-size: 18px;  font-family: 'AritaBuri'}
