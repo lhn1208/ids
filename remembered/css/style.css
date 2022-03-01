@@ -18,22 +18,29 @@
 .register input[type="text"] {height: 47px; padding:10px 16px;  border-radius: 5px; border: 1px solid #BBC4D7; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif}
 .register input[type="text"]::placeholder{color: #8893AA; font-family: "Noto Sans KR", sans-serif;}
 .register .ico_chk{position: absolute; top:-4px; right: -12px; color:#c26836}
-
+.register_content .register_btn{text-align: center;}
+.register_content .register_btn button{width: 174px; height: 54px; margin:0 5px; color: #fff; font-size: 16px; font-family: "Noto Sans KR", sans-serif; background-color: #192B57; border-radius: 50px;}
+.register_content .register_btn .cancel{background-color: #fff; color: #666; border: 1px solid #ABBFC6;}
+.register .add_btn,.register .minus_btn{position: relative; width: 46px; height: 46px; display: block; margin-bottom: 10px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57; border-radius: 5px; background: url("../images/bg_plus_btn.png") no-repeat center #fff; }
+.register .arr_btn{width: 47px; height: 47px; margin-left: 10px; border:1px solid #192B57; border-radius: 5px; background-image: url("../images/bg_arr_up.png"); background-repeat: no-repeat; background-position:center; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff;}
+.register .arr_btn.down{ background-image: url("../images/bg_arr_down.png"); }
+.register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
 
 
 .relation_info{padding-left: 15px;}
 .relation_info .select{width: 152px;}
-.relation_info .represent_nm{width: 550px; margin-left: 10px;}
-.relation_info .represent_ph{display: block; width: 550px; margin-top: 10px; margin-left: 167px}
+.relation_info .represent_nm{width: 568px; margin-left: 10px;}
+.relation_info .represent_ph{display: block; width: 568px; margin-top: 10px; margin-left: 166px}
 .register .input_tit{position: relative;}
 .register .input_tit .ico_chk{top:-2px; right: -10px;}
-.register .reg_btn_w47{width: 47px; height: 47px; line-height: 38px; margin-left: 10px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
-.reg_style{padding-left: 15px; padding-right: 35px;}
+.register .reg_btn_w47{width: 47px; height: 47px; margin-left: 10px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
+.register_content .register_btn button{height: 50px; margin:0; font-size: 14px;}
+
+.reg_style{padding-left: 15px;}
 .reg_info .reg_top{display: flex; align-items: center; }
 .reg_info .reg_top .col{display: inline-block; width: 50%; border-bottom: 2px solid #dae1e9;}
 .reg_info .reg_top .col:first-child{margin-right: 30px;}
 .reg_info .reg_top .col .input_tit{width: auto;}
-
 .reg_info .reg_top input[type="text"] {background-color: #f6fbfe; border: none; box-sizing: border-box;}
 .reg_info .reg_top .col{position: relative; width: 48%; padding-bottom: 4px; font-size: 16px;}
 .reg_info .reg_top .col:first-child{margin-right: 4%;}
@@ -46,59 +53,57 @@
 .reg_info .reg_select, .reg_info .upload_input{width: 380px;}
 .reg_info .birth{width: 380px;}
 .reg_info .upload_input{height: 47px; padding: 8px 14px; border-radius: 5px; border:1px solid #ced5e4; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
-.reg_info .reg_select2{margin-left: 10px; width: 120px; background-position-x: 94%;}
+.reg_info .reg_select2{margin-left: 10px; width: 172px; background-position-x: 94%;}
 .reg_info .filebox input[type="file"]{position: absolute;  top:0; left:0; width:0; height:0; line-height:0; overflow: hidden; border: 0;}
 .reg_info .filebox .file{display: inline-block; margin-left: 10px; width: 120px; height: 40px; line-height: 2.6; font-size: 14px; font-family: "Noto Sans KR", sans-serif; border-radius: 5px; color: #fff; background-color: #192c57; text-align: center; cursor: pointer;}
-.reg_info .filebox .file_output{font-size: 14px; margin-top: 10px; margin-left: 166px;}
-.reg_info .filebox .file_output span{position: relative; margin-left: 4px;}
-.reg_info .filebox .file_output span .file_del{display: inline-block; width: 12px; height: 12px; margin-left: 4px; font-size:0;  line-height:0;  text-indent:-9999px; background: url("../images/file_del.png") no-repeat; vertical-align: middle;}
-.register .funeral_info .funeral_input{width: 414px;}
+.reg_info .filebox .file_output{max-width: 100%; max-height: 400px; margin-top: 10px; margin-left: 166px; overflow: hidden;}
+.reg_info .filebox .file_output img{width: 100%;}
+.reg_info .filebox .file_output .img_area{display: inline-block; position: relative;}
+.reg_info .filebox .file_output .file_del{position: absolute; top: 8px; right: 8px; width: 15px; height: 15px; font-size:0;  line-height:0;  text-indent:-9999px; background: url("../images/file_del.png") no-repeat; vertical-align: middle;}
+
+.register .funeral_info .funeral_input{width: 467px;}
 .register .funeral_info .room_nm{width: 120px; margin-left: 10px;}
 .register .funeral_info .row{margin-bottom: 18px;}
 .register .funeral_info .bt_txt{margin-left: 16px; font-size: 16px;}
 .register.reg_type .row{margin-bottom: 18px;}
-.register.reg_type .reg_input{width: 655px; margin-left: 50px;}
-.register.reg_type .reg_input_w598{width: 598px; margin-left: 50px;}
+.register.reg_type .title{width: 16%;}
+.register.reg_type .title label{position: relative;}
+.register.reg_type #site_input{width: 83%;}
 .relation_info2{padding-left: 15px;}
 .relation_info2 .select{margin-right: 10px;}
 .relation_info2 .input_wrap{display: inline-block; width: 328px;}
 .register .relation_info2 .reg_input{width:40%; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .relation_info2 .ph_input{width:60%;margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;} 
 .register .relation_info2 .button_wrap button, .register .account_info .button_wrap button{display: inline-block;}
-
-
-.register .add_btn,.register .minus_btn{position: relative; width: 46px; height: 46px; display: block; margin-bottom: 10px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57; border-radius: 5px; background: url("../images/bg_plus_btn.png") no-repeat center #fff; }
-.register .arr_btn{width: 47px; height: 47px; margin-left: 10px; border:1px solid #192B57; border-radius: 5px; background-image: url("../images/bg_arr_up.png"); background-repeat: no-repeat; background-position:center; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff;}
-.register .arr_btn.down{ background-image: url("../images/bg_arr_down.png"); }
-
-.register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
 .register .account_info .input_nm{width: 150px; margin-right: 10px;}
-.register .account_info .link_input{width: 380px; margin-left: 14px;}
-.register .account_info .input_wrap{display: inline-block; width: 417px;}
+.register .account_info .link_input{width: 509px; margin-left: 14px;}
+.register .account_info .input_wrap{display: inline-block; width: 452px;}
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
-
+.register #info_input{width: 75%;}
+.register #memorial_input{width: 75%;}
 .register .message{position: relative;}
-.register .view_area{position: absolute; top:0; right: 0;}
-.register .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
-.register .view_area .sample::before,.register .view_area .preview::before{display: inline-block; margin-right: 8px; width: 24px; height: 24px; vertical-align: -6px; background-repeat: no-repeat; content: "";}
-.register .view_area .sample::before{background-image: url("../images/ico_sample.png");}
-.register .view_area .preview::before{background-image: url("../images/ico_preview.png");}
+.register .message .view_area{position: absolute; top:-44px; right: 64px;}
+.register .message .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
+.register .message .view_area .sample::before{display: inline-block; margin-right: 8px; width: 24px; height: 24px; vertical-align: -6px; background-repeat: no-repeat; content: "";}
+.register .message .view_area .sample::before{background-image: url("../images/ico_sample.png");}
 .register .message .editor_box{position: relative; width: 672px; min-height: 234px; margin-left: 15px; padding: 10px; background-color: #fff; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
-.register .btn_wrap{position: absolute; top:62px; right: 0;}
+.register .message .arr_button_wrap{display: inline-flex;}
+.register .message .button_wrap{position: absolute; top:10px; right: 0;}
 .register .message .editor_box .subject{position: relative; display: flex; margin-bottom: 12px;}
-.register .message .editor_box .subject .select{width: 240px; color: #8893AA; border-top-right-radius: 0; border-bottom-right-radius: 0;}
-.register .message .editor_box .subject .max_opt{width: 300px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-left: none;}
-
+.register .message .editor_box .subject .select{width: 40%;  border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.register .message .editor_box .subject .max_opt{width: 60%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-left: none;}
 .register .message .editor_box .reg_btn{margin-left: 0; margin-bottom: 10px;}
 .register .message .open_opt{position: absolute; top:70px; right: 15px; font-size: 14px;}
 .register .message .switch{display: inline-block; position: relative; width: 38px; height: 18px; margin-left: 8px; vertical-align: middle; background: linear-gradient(180deg, rgba(201,201,205,1) 0%, rgba(224,225,229,1) 100%); transition: all 0.2s ease; border-radius: 10px;}
 .register .message .switch::after{content: ""; display: block; position: absolute; left: -3px; top:-3px; width: 22px; height: 22px; background: #fff; border-radius: 50%; border: 1px solid #ccc; transition: all 0.2s ease;}
 .register .message .switch.active{background: #192B57;}
 .register .message .switch.active::after{left: 16px;}
-.register_content .register_btn{text-align: center;}
-.register_content .register_btn button{width: 174px; height: 54px; margin:0 5px; color: #fff; font-size: 16px; font-family: "Noto Sans KR", sans-serif; background-color: #192B57; border-radius: 50px;}
-.register_content .register_btn .cancel{background-color: #fff; color: #666; border: 1px solid #ABBFC6;}
+.register_content .register_btn button{width: 30%;}
+.register_content .register_btn .preview{background-color: #EEF8FB; color: #192B57; border: 1px solid #192B57;}
+.register_content .register_btn .preview::before{display: inline-block; width: 24px; height: 24px; vertical-align: -6px; margin-right: 4px; background: url("../images/ico_preview.png") no-repeat; content: "";}
+
+
 .content_top{width:752px; margin:0 auto; padding:264px 0 72px;}
 .content_top .main_profile{display: block; position: relative; border: 1px solid rgba(12, 22, 34, 0.5);}
 .content_top .main_profile img{vertical-align: middle;}
@@ -185,14 +190,7 @@
 
 
 @media (min-width: 760px) and (max-width: 1760px) {
-    /* #remember_gnb .gnb_inner{width: 100%;}
-    .remember_gnb .logo{margin-left: -50%;}
-    .remember_gnb .gnb{width: 46%; margin-left: 22%;}
-    .remember_gnb .gnb li{margin-left: 7%;}
-    .remember_gnb .right{width: 24%; margin-left: 6%;}
-    .remember_gnb .member{margin-left: 16%;}
-    #remember_footer .footer_inner{width: 90%;}
-    .content_wrap .content_title{margin-left: -96%;}     */
+    .content_wrap .content_title{margin-left: -96%;}  
 }
 @media (max-width: 760px) {    
     /*gnb*/
@@ -225,7 +223,7 @@
     .reg_info .reg_top .col input[type="text"] {margin-left: 26%; width: 74%; font-size: 14px;} 
     .reg_info .input_tit{margin-right: 8%; font-size: 14px;}
     .reg_info .reg_select, .reg_info .upload_input{width: 49%;}
-    .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0; border-left: none;}
+    .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0;}
     .reg_info .birth{width: 75%;}
     .reg_info .reg_select2{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
     .register .funeral_info .row{position: relative;}
@@ -233,9 +231,9 @@
     .register .funeral_info .funeral_input{width: 74%;}
     .register .funeral_info .room_nm{width: 100%; margin-left: 0; margin-top: 30px;}
     .register .funeral_info .bt_txt{position: absolute; top: 38%; left: 0; margin-left: 0; font-size: 14px;}
-    .register.reg_type .reg_input{margin-left: 0; width: 100%;}
+    .register.reg_type #site_input{margin-left: 0; width: 100%;}
     .relation_info2{position: relative; padding-left: 0; padding-top: 48px;}
-    .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px;}
+    .relation_info2 .select{width: 100%; margin-right: 0; margin-bottom: 10px; background-position: 96%;}
     .relation_info2 .input_wrap{width: auto;}    
     .relation_info2 .button_wrap{position: absolute; top:0; right: 0;}
     .register .relation_info2 .reg_input{width: 50%;}
@@ -244,11 +242,20 @@
     .register .account_info .bank_select{width: 40%;}
     .register .account_info .input_account{width: 60%;}
     .register .account_info{position: relative;  padding-top: 48px;}
-    .register .account_info .input_wrap{width: auto;}
+    .register .account_info .input_wrap{width: 100%;}
     .register .account_info .button_wrap{position: absolute; top:0; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
     .register .account_info .link_input{margin-left: 0; width: 84%;}
-    
+    .register #info_input{width: 100%;}
+    .register #memorial_input{width: 84%;}
+    .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
+    .register .message{padding-top: 47px;}
+    .register .message .view_area{top: -30px; right: 0;}
+    .register .message .arr_button_wrap{position: absolute; top: -51px; right: -11px;}
+    .register .message .button_wrap{top: -3px; right: 78px;}
+    .register .message .button_wrap button{top: 10px; display: inline-block;}
+    .register .message .open_opt{top:60px; font-size: 12px;}
+    .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
     .layer_pop .cont_layout .img{width: 60%;}
