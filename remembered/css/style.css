@@ -115,12 +115,8 @@
 .inquiry_content .top_area .reg_btn{position: absolute; top: 0; right: 0; width: 153px; height: 50px; font-size: 20px; font-family: 'AritaBuri'; background-color: #20283B; color: #fff; border-radius: 50px;}
 .inquiry_content .inquiry_list{margin-top: 24px; margin-bottom: 40px;}
 .inquiry_content .inquiry_list::after{display: block; content: ""; clear: both;}
-
-.inquiry_content .inquiry_list{display: grid; grid-template-columns: 330px  330px  330px;  grid-gap: 30px 70px;}
-/* .inquiry_content .inquiry_list li{display: grid; grid-template-columns: 330px 330px auto auto;; margin-bottom: 30px; } */
-
+.inquiry_content .inquiry_list li{float: left; width: 330px; margin-bottom: 30px; margin-left: 70px;}
 .inquiry_content .inquiry_list li:nth-child(3n+1){margin-left: 0;}
-
 .inquiry_content .inquiry_list li .img_area{display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden;}
 .inquiry_content .inquiry_list li .img_area img{width: 100%; height: 100%; vertical-align: middle;}
 .inquiry_content .inquiry_list li .info{position: relative; padding-top: 30px;}
@@ -129,8 +125,8 @@
 .inquiry_content .inquiry_list li .info .date{font-size: 20px;}
 .inquiry_content .inquiry_list li .info .funeral_info{margin-top: 14px; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 .inquiry_content .inquiry_list li .info .funeral_info dt, .inquiry_content .inquiry_list li .info .funeral_info dd{display: inline-block;}
-.inquiry_content .inquiry_list li .info .funeral_info dt{width: 60px; color: #0C1622; vertical-align: top; }
-.inquiry_content .inquiry_list li .info .funeral_info dd{color: #535353; width: 265px; height: 24px;  word-break: break-all;}
+.inquiry_content .inquiry_list li .info .funeral_info dt{width: 60px; color: #0C1622; vertical-align: 2px; }
+.inquiry_content .inquiry_list li .info .funeral_info dd{color: #535353; width: 265px; height: 24px; overflow: hidden; word-break: break-all;}
 .inquiry_content .inquiry_list li .info .mark{position: absolute; top:0; right: 0; width: 48px; height: 72px; padding:13px; border: 2px solid #20283B; border-radius: 50px; font-size: 18px; box-sizing: border-box;}
 .inquiry_content .paging{text-align: center;}
 .inquiry_content .paging .prev,.inquiry_content .paging .next{display: inline-block; width: 10px; height: 17px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px;}
@@ -138,6 +134,7 @@
 .inquiry_content .paging .next{background-image: url("../images/arr_paging_next.png");}
 .inquiry_content .paging_num a{margin:0 14px; font-size: 18px; color: #a8b3c3;}
 .inquiry_content .paging_num a.on{color: #0C1622;}
+.premium_service{}
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -303,21 +300,18 @@
     .inquiry_content .search_form{position: relative; width: auto; margin-bottom: 16px;}
     .inquiry_content .search_form .ico_sch{width: 24px; height: 24px;}
     .inquiry_content .top_area .reg_btn{position: relative; width: 120px; height: 46px; font-size: 14px;}
-    
-    .inquiry_content .inquiry_list{display: grid; grid-template-columns: 46% 46%;  grid-gap: 16px 6%;}
-
-    /* .inquiry_content .inquiry_list{margin-top: 34px; margin-bottom: 20px;} */
-    /* .inquiry_content .inquiry_list li{width: 44%; margin-left: 6%; margin-bottom: 16px;}
+    .inquiry_content .inquiry_list{margin-top: 34px; margin-bottom: 20px;}
+    .inquiry_content .inquiry_list li{width: 44%; margin-left: 6%; margin-bottom: 16px;}
     .inquiry_content .inquiry_list li:nth-child(3n+1){margin-left: 6%;}
-    .inquiry_content .inquiry_list li:nth-child(2n+1){margin-left: 0;} */
-    .inquiry_content .inquiry_list li .img_area{width: 100%; height: 186px; margin-bottom: 8px; }
+    .inquiry_content .inquiry_list li:nth-child(2n+1){margin-left: 0;}
+    .inquiry_content .inquiry_list li .img_area{width: 154px; height: 186px; margin-bottom: 8px; }
     .inquiry_content .inquiry_list li .info{padding-top: 22px;}
     .inquiry_content .inquiry_list li .info .nm{font-size: 14px;}
     .inquiry_content .inquiry_list li .info .date{font-size: 12px;}
     .inquiry_content .inquiry_list li .info .funeral_info{margin-top: 10px; font-size: 10px;}
     /* .inquiry_content .inquiry_list li .info .funeral_info dl{height: 16px;} */
-    .inquiry_content .inquiry_list li .info .funeral_info dt{width: 15%; height: 16px; /*vertical-align: middle;*/}
-    .inquiry_content .inquiry_list li .info .funeral_info dd{color: #535353; width: 82%; /*height: 16px; overflow: hidden;  vertical-align: middle;*/}
+    .inquiry_content .inquiry_list li .info .funeral_info dt{width: 15%; height: 16px; vertical-align: middle;}
+    .inquiry_content .inquiry_list li .info .funeral_info dd{color: #535353; width: 82%; height: 16px; overflow: hidden;  vertical-align: middle;}
     .inquiry_content .inquiry_list li .info .mark{width: 24px; height: 36px; padding: 5px 6px; font-size: 10px; border: 1px solid #20283B;}
     .inquiry_content .paging_num a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
     .inquiry_content .paging .prev,.inquiry_content .paging .next{width: 6px; height: 15px; vertical-align: -6px;}
