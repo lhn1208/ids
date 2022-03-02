@@ -130,11 +130,11 @@
 .inquiry_list li .info .funeral_info dd{color: #535353;}
 .inquiry_list li .info .mark{position: absolute; top:0; right: 0; width: 48px; height: 72px; padding:13px; border: 2px solid #20283B; border-radius: 50px; font-size: 18px; box-sizing: border-box;}
 .inquiry_content .paging{text-align: center;}
-.inquiry_content .paging a{margin:0 14px; font-size: 18px; color: #a8b3c3;}
-.inquiry_content .paging a.on{color: #0C1622;}
 .inquiry_content .paging .prev,.inquiry_content .paging .next{display: inline-block; width: 10px; height: 17px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px;}
 .inquiry_content .paging .prev{background-image: url("../images/arr_paging_prev.png");}
 .inquiry_content .paging .next{background-image: url("../images/arr_paging_next.png");}
+.inquiry_content .paging_num a{margin:0 14px; font-size: 18px; color: #a8b3c3;}
+.inquiry_content .paging_num a.on{color: #0C1622;}
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -311,7 +311,7 @@
     .inquiry_list li .info .funeral_info{margin-top: 10px; font-size: 10px;}
     .inquiry_list li .info .funeral_info dt{width: 30px;}
     .inquiry_list li .info .mark{width: 24px; height: 36px; padding: 5px 6px; font-size: 10px; border: 1px solid #20283B;}
-    .inquiry_content .paging a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
+    .inquiry_content .paging_num a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
     .inquiry_content .paging .prev,.inquiry_content .paging .next{width: 6px; height: 15px; vertical-align: -6px;}
 
     /*layer*/
