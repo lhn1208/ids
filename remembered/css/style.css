@@ -125,9 +125,10 @@
 .inquiry_list li .info .nm{font-size: 26px; margin-bottom: 4px;}
 .inquiry_list li .info .date{font-size: 20px;}
 .inquiry_list li .info .funeral_info{margin-top: 14px; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+
 .inquiry_list li .info .funeral_info dt, .inquiry_list li .info .funeral_info dd{display: inline-block;}
-.inquiry_list li .info .funeral_info dt{width: 60px; color: #0C1622;}
-.inquiry_list li .info .funeral_info dd{color: #535353;}
+.inquiry_list li .info .funeral_info dt{width: 60px; color: #0C1622; vertical-align: 2px; }
+.inquiry_list li .info .funeral_info dd{color: #535353; width: 265px; height: 24px; overflow: hidden; word-break: break-all;}
 .inquiry_list li .info .mark{position: absolute; top:0; right: 0; width: 48px; height: 72px; padding:13px; border: 2px solid #20283B; border-radius: 50px; font-size: 18px; box-sizing: border-box;}
 .inquiry_content .paging{text-align: center;}
 .inquiry_content .paging .prev,.inquiry_content .paging .next{display: inline-block; width: 10px; height: 17px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px;}
@@ -309,7 +310,8 @@
     .inquiry_list li .info .nm{font-size: 14px;}
     .inquiry_list li .info .date{font-size: 12px;}
     .inquiry_list li .info .funeral_info{margin-top: 10px; font-size: 10px;}
-    .inquiry_list li .info .funeral_info dt{width: 30px;}
+    .inquiry_list li .info .funeral_info dt{width: 15%; vertical-align: 4px;}
+    .inquiry_list li .info .funeral_info dd{color: #535353; width: 82%; height: 16px; overflow: hidden; }
     .inquiry_list li .info .mark{width: 24px; height: 36px; padding: 5px 6px; font-size: 10px; border: 1px solid #20283B;}
     .inquiry_content .paging_num a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
     .inquiry_content .paging .prev,.inquiry_content .paging .next{width: 6px; height: 15px; vertical-align: -6px;}
