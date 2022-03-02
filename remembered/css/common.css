@@ -38,9 +38,9 @@ legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb.fix_on .gnb li a{color: #192B57;}
 .remember_gnb.fix_on .right{padding-top: 37px;}
 .remember_gnb .log_info a{display: inline-block; line-height: 2; margin-left: 14px; letter-spacing:-0.06em; color: #0C1622; font-size: 14px; font-family: 'AritaBuri'; }
-.mobile_menu{opacity: 0; visibility: hidden;}
+.mobile_menu{display: none;}
 .check_item .check{display: none;}
-.check_item .check + label::before {display: inline-block; width:24px; height: 24px; margin-right: 8px; vertical-align: -5px; border: 1px solid #BBC4D7; background-repeat: no-repeat; cursor: pointer; content:""; box-sizing: border-box;}
+.check_item .check + label::before {display: inline-block; width:24px; height: 24px; margin-right: 8px; vertical-align: -5px; border: 1px solid #BBC4D7; background-color: #fff; background-repeat: no-repeat; cursor: pointer; content:""; box-sizing: border-box;}
 .check_item .check:checked + label:before {border: none; background: url('../images/bg_check_on.png') #0C1622 no-repeat center; background-size: 53%;}
 
 /*footer*/
@@ -125,10 +125,8 @@ body.fixed{position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow
     .remember_gnb.fix_on .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.fix_on .menu{background-image:url("../images/ico_allmenu_on.png")}        
     /*menu*/
-    .mobile_menu{opacity: 1; visibility: visible; position: fixed; top:0; left: -100%; bottom: 0; width: 100%; height: 100%; z-index: 200; background: url("../images/bg_menu.png") #192B57 no-repeat right center;   transition: left .3s ease-in-out;}
+    .mobile_menu{display: block; position: fixed; top:0; left: -100%; bottom: 0; width: 100%; height: 100%; z-index: 200; background: url("../images/bg_menu.png") #192B57 no-repeat right center;   transition: left .3s ease-in-out;}
     .mobile_menu.on{left: 0;}
-    /* .mobile_menu::before{position: absolute; top: 0; left: 0; display: block; height: 100%; content: ""; z-index: 210;} */
-
     .mobile_menu_inner{position: relative; padding:40px 0; width: 90%; margin:0 auto; color: #fff; font-size: 18px;  font-family: 'AritaBuri'}
     .mobile_menu .close{position: absolute; top: 40px; right: 0; width: 22px; height: 22px; background: url("../images/menu_close.png") no-repeat; background-size: 100%; font-size: 0; line-height: 0; text-indent: -9999px;}
     .mobile_menu .member_info a{color: #fff;}
@@ -136,7 +134,6 @@ body.fixed{position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow
     .mobile_menu .intro{display: inline-block; margin-top: 100px; margin-bottom: 30px; padding-bottom: 22px; line-height: 1.8; border-bottom: 1px solid #6A727E; color: rgba(255, 255, 255, 0.5);}
     .mobile_menu .menu_list li{margin-bottom: 30px;}
     .mobile_menu .menu_list a{color: #fff;}
-
     .check_item .check + label::before{width: 20px; height: 20px;}
     /*layer*/
     .layer_pop .pop_inner{width: auto; margin-left: 0; position: fixed; top:0; left: 0; right: 0; bottom: 0;}

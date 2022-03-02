@@ -1,7 +1,6 @@
 /*gnb*/
 .remember_gnb.sub_gnb .logo{background-image: url("../images/main/logo_on.png");}
 .remember_gnb.sub_gnb .gnb li a{color: #192B57;}
-
 .content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
 .content_wrap .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri'; font-size: 60px;}
 .content_wrap.bg_type{background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; background-position: left 10%;}
@@ -23,8 +22,6 @@
 .register .arr_btn{width: 47px; height: 47px; margin-left: 10px; border:1px solid #192B57; border-radius: 5px; background-image: url("../images/bg_arr_up.png"); background-repeat: no-repeat; background-position:center; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff;}
 .register .arr_btn.down{ background-image: url("../images/bg_arr_down.png"); }
 .register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
-
-
 .register .relation_info{padding-left: 15px;}
 .register .relation_info .select{width: 152px;}
 .register .relation_info .represent_nm{width: 568px; margin-left: 10px;}
@@ -58,7 +55,6 @@
 .reg_info .filebox .file_output img{width: 100%;}
 .reg_info .filebox .file_output .img_area{display: inline-block; position: relative;}
 .reg_info .filebox .file_output .file_del{position: absolute; top: 8px; right: 8px; width: 15px; height: 15px; font-size:0;  line-height:0;  text-indent:-9999px; background: url("../images/file_del.png") no-repeat; vertical-align: middle;}
-
 .register .funeral_info .funeral_input{width: 467px;}
 .register .funeral_info .room_nm{width: 120px; margin-left: 10px;}
 .register .funeral_info .row{margin-bottom: 18px;}
@@ -78,9 +74,10 @@
 .register .account_info .input_wrap{display: inline-block; width: 452px;}
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
-.register #info_input{width: 75%;}
+.register_content .content_title.memoral_tit .block{display: block;} 
+.register .memorial .reg_input{width: 75%;}
 .register .title.vert{vertical-align: top;}
-.register .memorial_textarea{width: 75%; height: 117px; padding: 10px 16px; font-size: 16px; resize: none; font-family: "Noto Sans KR", sans-serif; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
+.register .memorial .memorial_textarea{width: 75%; height: 117px; padding: 10px 16px; font-size: 16px; resize: none; font-family: "Noto Sans KR", sans-serif; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
 .register .message{position: relative;}
 .register .message .view_area{position: absolute; top:-44px; right: 64px;}
 .register .message .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
@@ -101,7 +98,15 @@
 .register_content .register_btn button{width: 30%;}
 .register_content .register_btn .preview{background-color: #EEF8FB; color: #192B57; border: 1px solid #192B57;}
 .register_content .register_btn .preview::before{display: inline-block; width: 24px; height: 24px; vertical-align: -6px; margin-right: 4px; background: url("../images/ico_preview.png") no-repeat; content: "";}
+.memorial_content{background-color: #E5E5E5;}
+.memorial_content .register{border-bottom: 1px solid #BBC4D7;}
+.memorial_content .reg_info .reg_top .col{border-bottom:1px solid #8893AA}
+.memorial_content .reg_info .reg_top input[type="text"]{background-color: #E5E5E5;}
 
+.inquiry_wrap{position: relative; width: 1132px; margin:0 auto}
+.inquiry_wrap .title_area{position: absolute; top: 302px; left: 50%; margin-left: -72%;}
+.inquiry_wrap .title_area .content_title{position: relative; top: auto; left: auto; margin-left: 0;}
+.inquiry_wrap .title_area .num{position: absolute; top:-30px; right: 0; color: #BB7A19; font-size: 24px;}
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -116,7 +121,6 @@
 .pop_sample .layer_cont_wrap .layer_cont_inner{padding-bottom: 70px;}
 .pop_sample .layer_cont::-webkit-scrollbar-track{background-color: #F5F5F5;}
 .pop_memorial{width: 90%; margin:0 auto; padding:40px 0; font-size: 26px; font-family: "Noto Sans KR", sans-serif; text-align: left;}
-
 .pop_templet .layer_cont{border-top: 1px solid #BBC4D7;}
 .pop_templet .select_form{width: 90%; margin:0 auto; padding:60px 0;}
 .pop_templet .select_form legend{margin-bottom: 15px; color: #8893AA; font-size: 26px; text-indent: 0; line-height: normal; font-family: "Noto Sans KR", sans-serif;}
@@ -184,20 +188,73 @@
 .remember_login .member_link a::before{display: inline-block; width: 1px; height: 8px; margin: 0 8px; background-color: #BBC4D7; content: ""; vertical-align: 1px;}
 .remember_login .member_link a:first-of-type::before{display: none;}
 
+.inquiry_wrap .inquiry_content{padding: 215px 0 160px;}
+.inquiry_content .search_form{position: relative; width: 470px;}
+.inquiry_content .search_form .search_input{width: 100%; display: inline-block; padding:8px 40px 8px 0; color: #0C1622; font-size: 14px;  font-family: "Noto Sans KR", sans-serif; border: 0; border-bottom: 1px solid #0C1622; background-color: transparent; box-sizing: border-box;}
+.inquiry_content .search_form .search_input::placeholder{color: #0C1622;}
+.inquiry_content .search_form .ico_sch{position: absolute; top: 10%; right: 0; width:30px; height:30px; background: url("../images/ico_inquiry_search.png") no-repeat; background-size: 100%; content: ""; font-size: 0; line-height: 0; text-indent: -9999px;}
+.inquiry_content .top_area{position: relative; }
+.inquiry_content .top_area .reg_btn{position: absolute; top: 0; right: 0; width: 153px; height: 50px; font-size: 20px; font-family: 'AritaBuri'; background-color: #20283B; color: #fff; border-radius: 50px;}
+.inquiry_list{margin-top: 24px; margin-bottom: 40px;}
+.inquiry_list::after{display: block; content: ""; clear: both;}
+.inquiry_list li{float: left; width: 330px; margin-bottom: 30px; margin-left: 70px;}
+.inquiry_list li:nth-child(3n+1){margin-left: 0;}
+.inquiry_list li .img_area{display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden;}
+.inquiry_list li .img_area img{width: 100%; height: 100%; vertical-align: middle;}
+.inquiry_list li .info{position: relative; padding-top: 30px;}
+.inquiry_list li .info > span{display: block; color: #0C1622; font-family: 'AritaBuri';}
+.inquiry_list li .info .nm{font-size: 26px; margin-bottom: 4px;}
+.inquiry_list li .info .date{font-size: 20px;}
+.inquiry_list li .info .funeral_info{margin-top: 14px; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+.inquiry_list li .info .funeral_info dt, .inquiry_list li .info .funeral_info dd{display: inline-block;}
+.inquiry_list li .info .funeral_info dt{width: 60px; color: #0C1622;}
+.inquiry_list li .info .funeral_info dd{color: #535353;}
+.inquiry_list li .info .mark{position: absolute; top:0; right: 0; width: 48px; height: 72px; padding:13px; border: 2px solid #20283B; border-radius: 50px; font-size: 18px; box-sizing: border-box;}
+.inquiry_content .paging{text-align: center;}
+.inquiry_content .paging a{margin:0 14px; font-size: 18px; color: #a8b3c3;}
+.inquiry_content .paging a.on{color: #0C1622;}
+.inquiry_content .paging .prev,.inquiry_content .paging .next{display: inline-block; width: 10px; height: 17px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px;}
+.inquiry_content .paging .prev{background-image: url("../images/arr_paging_prev.png");}
+.inquiry_content .paging .next{background-image: url("../images/arr_paging_next.png");}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     .content_wrap .content_title{margin-left: -96%;}  
-    .bg_register1{margin-left: -100%;}
-    
+    .bg_register1{margin-left: -100%;}    
+
 }
 @media (max-width: 760px) {    
+
+    .inquiry_wrap{width: 100%;}
+    .inquiry_wrap .inquiry_content{padding: 0;}
+    .inquiry_wrap .title_area{position: relative; top: auto; left: auto; margin-left: 0; margin-bottom: 45px;}
+    .inquiry_wrap .title_area .content_title{display: inline-block;}
+    .inquiry_wrap .title_area .num{position: relative; top: auto; left: auto; right: auto; margin-left: -4px; vertical-align: 12px; color: #BB7A19; font-size: 14px;}
+    
+    .inquiry_content .search_form{position: relative; width: auto; margin-bottom: 16px;}
+    .inquiry_content .search_form .ico_sch{width: 24px; height: 24px;}
+    .inquiry_content .top_area .reg_btn{position: relative; width: 120px; height: 46px; font-size: 14px;}
+    .inquiry_list{margin-top: 34px; margin-bottom: 20px;}
+    .inquiry_list li{width: 44%; margin-left: 6%; margin-bottom: 16px;}
+    .inquiry_list li:nth-child(3n+1){margin-left: 6%;}
+    .inquiry_list li:nth-child(2n+1){margin-left: 0;}
+    .inquiry_list li .img_area{width: 154px; height: 186px; margin-bottom: 8px; }
+    .inquiry_list li .info{padding-top: 16px;}
+    .inquiry_list li .info .nm{font-size: 14px;}
+    .inquiry_list li .info .date{font-size: 12px;}
+    .inquiry_list li .info .funeral_info{margin-top: 10px; font-size: 10px;}
+    .inquiry_list li .info .funeral_info dt{width: 30px;}
+    .inquiry_list li .info .mark{width: 24px; height: 36px; padding: 5px; font-size: 10px;}
+    .inquiry_content .paging a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
+    .inquiry_content .paging .prev,.inquiry_content .paging .next{ width: 7px; height: 15px; vertical-align: -5px;}
+
     /*gnb*/
     .remember_gnb.sub_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.sub_gnb .menu{background-image:url("../images/ico_allmenu_on.png");}
     .remember_gnb.sub_gnb .log_info a{color: #192B57;}
-    .register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
     .content_wrap.bg_type{background-size: 36%; background-position-y: 5.6%;}
     .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}    
+    .content_wrap .content_inner,.register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
+    .content_wrap .content_title::before{display: inline-block; width: 36px; height: 36px; margin-right: 10px; background: url("../images/logo_content.png") no-repeat; background-size: 100%; vertical-align: -8px; content: "";}
     .register .select{height: 40px; font-size: 14px;}
     .register input[type="text"]{height: 40px; padding: 10px; font-size: 14px;}
     .register .ico_chk{position: absolute; top:-2px; right: -12px; color:#c26836}
@@ -207,6 +264,7 @@
     .register_content .register_inner{padding: 30px 0 55px;}
     .register_content .title{margin-bottom: 10px; font-size: 16px;}
     .register_content .register .sub_txt{display: block; margin-left: 0; margin-bottom: 10px; font-size: 12px;}
+    .register .row{position: relative;}
     .register .relation_info{padding-left: 0;}
     .register .relation_info .select{width: 30%;}
     .register .relation_info .check_item{font-size: 14px;}
@@ -242,9 +300,14 @@
     .register .account_info .input_wrap{width: 100%;}
     .register .account_info .button_wrap{position: absolute; top:0; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
-    .register .account_info .link_input{margin-left: 0; width: 83%;}
-    .register #info_input{width: 100%;}
-    .register .memorial_textarea{width: 83%; height: 126px;}
+    .register .account_info .link_input{margin-left: 0; width: 83%;}    
+    .register_content .content_title.memoral_tit .block{display: initial;}     
+    .register .memorial .reg_input{width: 100%;}
+    .register .memorial .row{margin-bottom: 0;}
+    .register .memorial .title{width: 100%;}
+    .register .memorial .reg_input{margin-bottom: 18px;}
+    .register .memorial .btn_sample{position: absolute; top:-10px; right: 0;}
+    .register .memorial .memorial_textarea{margin-top: 10px; width: 100%; height: 126px;}
     .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
     .register .message{padding-top: 47px;}
     .register .message .view_area{top: -30px; right: 0;}
@@ -252,7 +315,10 @@
     .register .message .button_wrap{top: -3px; right: 78px;}
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
-    .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}
+    .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}    
+    
+ 
+
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
     .layer_pop .cont_layout .img{width: 60%;}
