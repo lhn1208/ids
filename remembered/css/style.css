@@ -238,14 +238,14 @@
     .inquiry_list li:nth-child(3n+1){margin-left: 6%;}
     .inquiry_list li:nth-child(2n+1){margin-left: 0;}
     .inquiry_list li .img_area{width: 154px; height: 186px; margin-bottom: 8px; }
-    .inquiry_list li .info{padding-top: 16px;}
+    .inquiry_list li .info{padding-top: 22px;}
     .inquiry_list li .info .nm{font-size: 14px;}
     .inquiry_list li .info .date{font-size: 12px;}
     .inquiry_list li .info .funeral_info{margin-top: 10px; font-size: 10px;}
     .inquiry_list li .info .funeral_info dt{width: 30px;}
     .inquiry_list li .info .mark{width: 24px; height: 36px; padding: 5px; font-size: 10px;}
     .inquiry_content .paging a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
-    .inquiry_content .paging .prev,.inquiry_content .paging .next{ width: 7px; height: 15px; vertical-align: -5px;}
+    .inquiry_content .paging .prev,.inquiry_content .paging .next{width: 6px; height: 15px; vertical-align: -6px;}
 
     /*gnb*/
     .remember_gnb.sub_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_blue.png");}
