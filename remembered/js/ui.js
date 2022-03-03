@@ -5,9 +5,9 @@ $(document).ready(function () {
         //gnb
         var scTop = $(window).scrollTop();
         if(scTop>0){							
-          //  gnb.addClass('fix_on');						
+            gnb.addClass('fix_on');						
         }else{
-          //  gnb.removeClass('fix_on');
+            gnb.removeClass('fix_on');
         }           
     });
     //mobile menu
@@ -30,7 +30,6 @@ $(document).ready(function () {
     var item=$('.tab_area').find('a');
     var section=$('.section_wrap section');						
     var gnb_h=$('#remember_gnb').height();
-    alert(gnb_h);
     item.click(function(){
         $(this).addClass('on').siblings().removeClass('on');
         var idx=$(this).index();
