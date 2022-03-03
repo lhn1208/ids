@@ -112,7 +112,7 @@
 .inquiry_content .search_form .search_input::placeholder{color: #0C1622;}
 .inquiry_content .search_form .ico_sch{position: absolute; top: 10%; right: 0; width:30px; height:30px; background: url("../images/ico_inquiry_search.png") no-repeat; background-size: 100%; content: ""; font-size: 0; line-height: 0; text-indent: -9999px;}
 .inquiry_content .top_area{position: relative; }
-.inquiry_content .top_area .reg_btn{position: absolute; top: 0; right: 0; width: 153px; height: 50px; font-size: 20px; font-family: 'AritaBuri'; background-color: #20283B; color: #fff; border-radius: 50px;}
+.inquiry_content .top_area .reg_btn{position: absolute; top: 0; right: 0; width: 153px; font-size: 20px; font-family: 'AritaBuri';}
 .inquiry_content .inquiry_list{margin-top: 24px; margin-bottom: 40px;}
 .inquiry_content .inquiry_list::after{display: block; content: ""; clear: both;}
 .inquiry_content .inquiry_list li{float: left; width: 330px; margin-bottom: 30px; margin-left: 70px;}
@@ -225,19 +225,44 @@
 .premium_service .tab_area a:first-child{margin-left: 0;}
 .premium_service .tab_area a.on{color: #0C1622; } 
 .premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
-.premium_service{margin-top: 30px; margin-bottom: 110px;}
 .premium_service .title{font-size: 46px; font-family: 'AritaBuri';}
 .premium_service .visual_area{position: relative; margin-bottom: 80px;}
 .premium_service .visual{height: 643px; background-repeat: no-repeat;}
 .premium_service .visual.style1{background-image: url("../images/visual_service1.jpg");}
+.premium_service .visual.style2{background-image: url("../images/visual_service2.jpg");}
 .premium_service .visual_mobile{display: none;}
-.premium_service .visual_area .title{position: absolute; bottom: -30px; left: 130px; z-index: 2;}
-.premium_service .service_content{width: 947px; margin:0 auto;}
+.premium_service .visual_area .title{position: absolute; bottom: -30px; left: 90px; z-index: 2;}
+.premium_service .service_content{width: 947px; margin:0 auto 50px;}
 .premium_service .service_content .title{margin-bottom: 30px;}
 .premium_service .service_content .text{margin-bottom: 14px; word-break: keep-all; line-height:2;}
 .premium_service .service_content .img_area{display: block; width: 650px; margin:60px auto 0;}
 .premium_service .service_content .guide_title{width: 290px; margin-top: 50px; margin-bottom: 16px; padding:4px 15px; color: #FFFDF4; font-size: 30px; font-family: 'AritaBuri'; background-color:#715844; box-sizing: border-box; letter-spacing: -0.06em;}
 .premium_service .service_content .guide_list{line-height: 2;}
+.premium_service .service_content .guide_list p{padding-left: 16px;}
+.premium_service .service_content li{text-indent: -16px; padding-left: 16px; word-break: keep-all;}
+.premium_service table{width: 100%; border-top: 2px solid #715844;border-collapse: collapse; border-spacing:0;}
+.premium_service table th, .premium_service table td{color: #715844; font-weight: normal; font-family: "Noto Sans KR", sans-serif; border-bottom: 1px solid #715844; letter-spacing: -0.06em;}
+.premium_service .info_table{margin: 70px 0 146px; text-align: left;}
+.premium_service .info_table caption{margin-bottom: 10px; color: #715844; font-size: 30px; font-family: 'AritaBuri'; text-align: left;}
+.premium_service .info_table th,.premium_service .info_table td{padding:7px 17px; font-size: 24px;}
+.premium_service .info_table th{border-right: 1px solid #715844;}
+.premium_service  .input_wrap::after{display: block; clear: both; content: "";}
+.premium_service  .input_wrap li{position: relative; float: left; width: 48%; height: 82px;}
+.premium_service  .input_wrap li i{color: #BB5319; margin-right:  3%; font-size: 20px; vertical-align: middle;}
+.premium_service  .input_wrap li input[type="text"]{width:420px; height: 47px; padding:7px 15px; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
+.premium_service  .input_wrap li .chk{margin-left: 24px; color: #BB5319; font-size: 14px;}
+.premium_service .service_register{padding-bottom: 40px; margin-bottom: 35px; border-bottom: 1px solid #BBC4D7;}
+.premium_service .service_register:last-child{margin-bottom: 0; border-bottom: none;}
+.service_register .service_title{margin-bottom: 22px; font-size: 20px; font-weight: normal; font-family: 'AritaBuri';}
+.service_register .service_title span{font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+.service_register .sv_textarea{width: 100%; height: 352px; padding:25px 30px; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box; resize: none; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+
+.premium_service .term_table caption{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+.premium_service .term_table th, .premium_service .term_table td{padding:10px 0; font-size: 14px; text-align: center; border-left: 1px solid #715844}
+.premium_service .term_table th:first-child, .premium_service .term_table td:first-child{border-left: 0;}
+.premium_service .term_table .block{display: block;}
+.premium_service .check_item{margin-top: 32px;}
+.premium_service .base_button{width: 153px; font-family: 'AritaBuri'; }
 
 @media (min-width: 760px) and (max-width: 1760px) {
     .content_wrap .content_title{margin-left: -96%;}  
@@ -245,23 +270,41 @@
 
 }
 @media (max-width: 760px) {    
-    .premium_service{padding: 35px 0 100px;}
+    .premium_service{padding: 35px 0 50px;}
     .premium_service .section_wrap{margin-top: 16px;}
     .premium_service .tab_area{display: flex; justify-content:space-between;}
     .premium_service .tab_area a{margin-left: 0px; font-size: 14px;}
     .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
-    .premium_service{margin-top: 16px; margin-bottom: 54px;}
     .premium_service .title{font-size: 24px;}
     .premium_service .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
     .premium_service .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
-    .premium_service .visual_area .title{bottom: -15px; left: 25px;}
-    .premium_service .service_content{width: 100%; color: #0C1622; font-size: 12px; font-family: "Noto Sans KR", sans-serif;}
+    .premium_service .visual_area .title{bottom: -15px; left: 0px;}
+    .premium_service .service_content{width: 100%; margin:0 auto 20px; color: #0C1622; font-size: 12px; font-family: "Noto Sans KR", sans-serif;}
     .premium_service .service_content .title{margin-bottom: 16px;}
     .premium_service .service_content .text{margin-bottom: 10px; font-size: 12px; line-height: 1.6;}
     .premium_service .service_content .img_area{width: 80%; margin:30px auto 0;}
     .premium_service .service_content img{width: 100%;}
     .premium_service .service_content .guide_title{width: 160px; margin-top: 24px;margin-bottom: 8px; padding:4px 8px; font-size: 14px;}
     .premium_service .service_content .guide_list{line-height: 1.6;}
+    .premium_service .service_content .guide_list p{padding-left: 12px;}
+    .premium_service .service_content li{text-indent: -7px; padding-left: 7px;}
+    .premium_service .info_table{margin:35px 0 72px;}
+    .premium_service .info_table caption{font-size: 16px;}
+    .premium_service .info_table th,.premium_service .info_table td{padding:4px 8px; font-size: 12px;}
+    .premium_service  .input_wrap li{float: none; width: 100%; height: auto; padding:6px 0;}
+    .premium_service  .input_wrap li i{font-size: 14px;}
+    .premium_service  .input_wrap li input[type="text"]{width:95%; height: 34px; padding:4px 8px; font-size: 12px;}
+    .premium_service  .input_wrap li .chk{margin-left: 18px; font-size: 12px;}
+    .premium_service .service_register{padding-bottom: 20px; margin-bottom: 18px;}
+    .service_register .service_title{margin-bottom: 10px; font-size: 14px;}
+    .service_register .service_title span{display: block; font-size: 12px;}
+    .service_register .sv_textarea{height: 238px; padding: 14px; font-size: 12px;}
+    .premium_service .term_table th, .premium_service .term_table td{font-size: 12px; word-break: keep-all;}
+    .premium_service .term_table .block{display: initial;}
+    .premium_service .check_item{margin-top: 16px;}
+    .premium_service .check_item label{font-size: 12px;}
+    .premium_service .base_button{width: 130px;}
+
  
 
     /*gnb*/
