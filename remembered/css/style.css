@@ -444,11 +444,12 @@
     .pop_transfer .transfer .trans_box a.kakao i{top: 4px; left: 12px; width: 40px; height: 32px;} 
     .pop_transfer .transfer .trans_box a.sms i{top: 0; left: 12px; width: 45px; height: 45px;}
     .pop_transfer .transfer .qr_box{padding:12px 18px; font-size: 16px;}
-    .pop_transfer .transfer .qr_box .qr{margin-top: 10px;}
+    .pop_transfer .transfer .qr_box .qr_code{margin-top: 10px;}
+    .pop_transfer .transfer .qr_box .qr{margin: 5px;}
     .pop_sms .pop_title{font-size: 14px;}   
     .pop_sms .pop_btn_wrap{margin-top: 15px;}
     .pop_login .layer_cont_wrap{top: 0;}    
-    .pop_transfer .transfer .qr_box .qr_code i{height: 28px; background-size: 80%;}
+    .pop_transfer .transfer .qr_box .qr_code i{width: 50% !important; height: 30px; background-size: 100%;}
     /*login*/
     .remember_login{padding:35px 45px}
     .remember_login .sub_title{margin-bottom: 12px; font-size: 14px;}
