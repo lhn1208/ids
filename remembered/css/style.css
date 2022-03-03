@@ -220,20 +220,24 @@
 .remember_login .member_link a:first-of-type::before{display: none;}
 
 .premium_service{padding: 290px 0 162px ;}
-
+.premium_service .section_wrap{margin-top: 30px;}
 .premium_service .tab_area a{position: relative;margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri';}
 .premium_service .tab_area a:first-child{margin-left: 0;}
 .premium_service .tab_area a.on{color: #0C1622; } 
 .premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
-.premium_service section{margin-top: 30px; margin-bottom: 110px;}
-.premium_service section .visual_area{position: relative; margin-bottom: 80px;}
-.premium_service section .visual{height: 643px; background-repeat: no-repeat;}
-.premium_service section .visual.style1{background-image: url("../images/visual_service1.jpg");}
-.premium_service section .visual_mobile{display: none;}
-.premium_service section .visual_area .title{position: absolute; bottom: -30px; left: 130px; z-index: 2; font-size: 46px; font-family: 'AritaBuri';}
-.premium_service section .service_content{width: 947px; margin:0 auto; line-height:2;}
-.premium_service section .service_content .text{margin-bottom: 80px; word-break: keep-all;}
-.premium_service section .service_content .img_area{display: block; width: 650px; margin:0 auto;}
+.premium_service{margin-top: 30px; margin-bottom: 110px;}
+.premium_service .title{font-size: 46px; font-family: 'AritaBuri';}
+.premium_service .visual_area{position: relative; margin-bottom: 80px;}
+.premium_service .visual{height: 643px; background-repeat: no-repeat;}
+.premium_service .visual.style1{background-image: url("../images/visual_service1.jpg");}
+.premium_service .visual_mobile{display: none;}
+.premium_service .visual_area .title{position: absolute; bottom: -30px; left: 130px; z-index: 2;}
+.premium_service .service_content{width: 947px; margin:0 auto;}
+.premium_service .service_content .title{margin-bottom: 30px;}
+.premium_service .service_content .text{margin-bottom: 14px; word-break: keep-all; line-height:2;}
+.premium_service .service_content .img_area{display: block; width: 650px; margin:60px auto 0;}
+.premium_service .service_content .guide_title{width: 290px; margin-top: 50px; margin-bottom: 16px; padding:4px 15px; color: #FFFDF4; font-size: 30px; font-family: 'AritaBuri'; background-color:#715844; box-sizing: border-box; letter-spacing: -0.06em;}
+.premium_service .service_content .guide_list{line-height: 2;}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     .content_wrap .content_title{margin-left: -96%;}  
@@ -241,19 +245,23 @@
 
 }
 @media (max-width: 760px) {    
-    .premium_service{padding: 35px 0  100px;}
+    .premium_service{padding: 35px 0 100px;}
+    .premium_service .section_wrap{margin-top: 16px;}
     .premium_service .tab_area{display: flex; justify-content:space-between;}
     .premium_service .tab_area a{margin-left: 0px; font-size: 14px;}
     .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
-    .premium_service section{margin-top: 16px; margin-bottom: 54px;}
-
-    .premium_service section .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
-    .premium_service section .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
-    .premium_service section .visual_area .title{bottom: -15px; left: 25px; font-size: 24px;}
-    .premium_service section .service_content{width: 100%; line-height: 1.6; font-size: 14px; color: #0C1622; font-family: "Noto Sans KR", sans-serif;}
-    .premium_service section .service_content .text{margin-bottom: 40px; font-size: 14px; }
-    .premium_service section .service_content .img_area{width: 80%;}
-    .premium_service section .service_content img{width: 100%;}
+    .premium_service{margin-top: 16px; margin-bottom: 54px;}
+    .premium_service .title{font-size: 24px;}
+    .premium_service .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
+    .premium_service .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
+    .premium_service .visual_area .title{bottom: -15px; left: 25px;}
+    .premium_service .service_content{width: 100%; color: #0C1622; font-size: 12px; font-family: "Noto Sans KR", sans-serif;}
+    .premium_service .service_content .title{margin-bottom: 16px;}
+    .premium_service .service_content .text{margin-bottom: 10px; font-size: 12px; line-height: 1.6;}
+    .premium_service .service_content .img_area{width: 80%; margin:30px auto 0;}
+    .premium_service .service_content img{width: 100%;}
+    .premium_service .service_content .guide_title{width: 160px; margin-top: 24px;margin-bottom: 8px; padding:4px 8px; font-size: 14px;}
+    .premium_service .service_content .guide_list{line-height: 1.6;}
  
 
     /*gnb*/
