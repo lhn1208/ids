@@ -99,9 +99,9 @@
 .register_content .register_btn .preview{background-color: #EEF8FB; color: #192B57; border: 1px solid #192B57;}
 .register_content .register_btn .preview::before{display: inline-block; width: 24px; height: 24px; vertical-align: -6px; margin-right: 4px; background: url("../images/ico_preview.png") no-repeat; content: "";}
 .bg_grey{background-color: #E5E5E5;}
-.memorial_content .register{border-bottom: 1px solid #BBC4D7;}
-.memorial_content .reg_info .reg_top .col{border-bottom:1px solid #8893AA}
-.memorial_content .reg_info .reg_top input[type="text"]{background-color: #E5E5E5;}
+.memorial_area .register{border-bottom: 1px solid #BBC4D7;}
+.memorial_area .reg_info .reg_top .col{border-bottom:1px solid #8893AA}
+.memorial_area .reg_info .reg_top input[type="text"]{background-color: #E5E5E5;}
 .content_wrap .content_inner{position: relative; width: 1132px; margin:0 auto}
 .inquiry_wrap .title_area{position: absolute; top: 302px; left: 50%; margin-left: -830px;}
 .inquiry_wrap .title_area .content_title{position: relative; top: auto; left: auto; margin-left: 0;}
@@ -117,7 +117,7 @@
 .inquiry_content .inquiry_list::after{display: block; content: ""; clear: both;}
 .inquiry_content .inquiry_list li{float: left; width: 330px; margin-bottom: 30px; margin-left: 70px;}
 .inquiry_content .inquiry_list li:nth-child(3n+1){margin-left: 0;}
-.inquiry_content .inquiry_list li .img_area{display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden;}
+.inquiry_content .inquiry_list li .img_area{position: relative; display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden;}
 .inquiry_content .inquiry_list li .img_area img{width: 100%; height: 100%; vertical-align: middle;}
 .inquiry_content .inquiry_list li .info{position: relative; padding-top: 30px;}
 .inquiry_content .inquiry_list li .info > span{display: block; color: #0C1622; font-family: 'AritaBuri';}
@@ -132,9 +132,12 @@
 .inquiry_content .paging .prev,.inquiry_content .paging .next{display: inline-block; width: 10px; height: 17px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px;}
 .inquiry_content .paging .prev{background-image: url("../images/arr_paging_prev.png");}
 .inquiry_content .paging .next{background-image: url("../images/arr_paging_next.png");}
+.inquiry_content .paging_num{margin:0 8px;}
 .inquiry_content .paging_num a{margin:0 14px; font-size: 18px; color: #a8b3c3;}
 .inquiry_content .paging_num a.on{color: #0C1622;}
-.premium_service{}
+.memorial_area .inquiry_content .inquiry_list li .info{padding-top: 0;}
+.memorial_area .inquiry_content .inquiry_list li .info .link{position: absolute; top: 0; right: 0; width: 32px; height: 32px; padding:4px 0; border:1px solid #20283B; border-radius: 50px; text-align: center; font-size: 20px; box-sizing: border-box;}
+.memorial_area .inquiry_content .inquiry_list li .img_area .text{position: absolute; top: 280px; left: 37px; width: 250px; height: 60px; overflow: hidden; line-height: 1.4; word-break: keep-all; color: #fff;  font-size: 22px; font-family: 'AritaBuri'; }
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -216,6 +219,15 @@
 .remember_login .member_link a::before{display: inline-block; width: 1px; height: 8px; margin: 0 8px; background-color: #BBC4D7; content: ""; vertical-align: 1px;}
 .remember_login .member_link a:first-of-type::before{display: none;}
 
+.premium_service{padding: 290px 0 162px ;}
+.premium_service .tab_area a{position: relative; margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri';}
+.premium_service .tab_area a:first-child{margin-left: 0;}
+.premium_service .tab_area a.on{color: #0C1622; } 
+.premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
+.premium_service section{margin-top: 30px; margin-bottom: 110px;}
+.premium_service section .visual{height: 643px; background-repeat: no-repeat;}
+.premium_service section .visual.style1{background-image: url("../images/visual_service1.jpg");}
+.premium_service section .visual_mobile{display: none;}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     .content_wrap .content_title{margin-left: -96%;}  
@@ -223,6 +235,15 @@
 
 }
 @media (max-width: 760px) {    
+    .premium_service{padding: 35px 0  100px;}
+    .premium_service .tab_area a{margin-left: 18px; font-size: 14px;}
+    .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
+    .premium_service section{margin-top: 16px; margin-bottom: 54px;}
+
+    .premium_service section .visual_area{position: relative; width: 100%; min-height: 280px;}
+    .premium_service section .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
+ 
+
     /*gnb*/
     .remember_gnb.sub_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.sub_gnb .menu{background-image:url("../images/ico_allmenu_on.png");}
@@ -309,12 +330,15 @@
     .inquiry_content .inquiry_list li .info .nm{font-size: 14px;}
     .inquiry_content .inquiry_list li .info .date{font-size: 12px;}
     .inquiry_content .inquiry_list li .info .funeral_info{margin-top: 10px; font-size: 10px;}
-    /* .inquiry_content .inquiry_list li .info .funeral_info dl{height: 16px;} */
     .inquiry_content .inquiry_list li .info .funeral_info dt{width: 15%; height: 16px; vertical-align: middle;}
     .inquiry_content .inquiry_list li .info .funeral_info dd{color: #535353; width: 82%; height: 16px; overflow: hidden;  vertical-align: middle;}
     .inquiry_content .inquiry_list li .info .mark{width: 24px; height: 36px; padding: 5px 6px; font-size: 10px; border: 1px solid #20283B;}
+    .inquiry_content .paging_num{margin:0 4px;}
     .inquiry_content .paging_num a{margin:0 4px; font-size: 10px; color: #a8b3c3;}
     .inquiry_content .paging .prev,.inquiry_content .paging .next{width: 6px; height: 15px; vertical-align: -6px;}
+    .memorial_area .title_area .num{margin-left: 2px;}
+    .memorial_area .inquiry_content .inquiry_list li .info .link{width: 18px; height: 18px; padding: 0; font-size: 12px;}
+    .memorial_area .inquiry_content .inquiry_list li .img_area .text{top: 68%; left:5%; width: 90%; height: 40px; font-size: 14px;}
 
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}

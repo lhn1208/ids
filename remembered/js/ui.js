@@ -26,4 +26,14 @@ $(document).ready(function () {
             // $(this).toggleClass('active');
         }
     });
+    //프리미엄 서비스 탭
+    var item=$('.tab_area').find('a');
+    var section=$('.section_wrap section');						
+    item.click(function(){
+        var idx=$(this).index();
+        $('html, body').stop().animate({
+            'scrollTop': section.eq(idx).offset().top
+        }, 1000);													
+        return false;
+    });		
 });
