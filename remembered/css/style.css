@@ -250,9 +250,9 @@
     .premium_service section .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
     .premium_service section .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
     .premium_service section .visual_area .title{bottom: -15px; left: 25px; font-size: 24px;}
-    .premium_service section .service_content{line-height: 1.6; font-size: 14px; color: #0C1622; font-family: "Noto Sans KR", sans-serif;}
-    .premium_service section .service_content .text{margin-bottom: 40px}
-    .premium_service section .service_content .img_area{width: 32%; margin: 0 3%;}
+    .premium_service section .service_content{width: 100%; line-height: 1.6; font-size: 14px; color: #0C1622; font-family: "Noto Sans KR", sans-serif;}
+    .premium_service section .service_content .text{margin-bottom: 40px; font-size: 14px; }
+    .premium_service section .service_content .img_area{width: 80%;}
     .premium_service section .service_content img{width: 100%;}
  
 
