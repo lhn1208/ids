@@ -220,7 +220,8 @@
 .remember_login .member_link a:first-of-type::before{display: none;}
 
 .premium_service{padding: 290px 0 162px ;}
-.premium_service .tab_area a{position: relative; margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri';}
+
+.premium_service .tab_area a{position: relative;margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri';}
 .premium_service .tab_area a:first-child{margin-left: 0;}
 .premium_service .tab_area a.on{color: #0C1622; } 
 .premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
@@ -238,7 +239,8 @@
 }
 @media (max-width: 760px) {    
     .premium_service{padding: 35px 0  100px;}
-    .premium_service .tab_area a{margin-left: 16px; font-size: 14px;}
+    .premium_service .tab_area{display: flex; justify-content:space-between;}
+    .premium_service .tab_area a{margin-left: 0px; font-size: 14px;}
     .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
     .premium_service section{margin-top: 16px; margin-bottom: 54px;}
 
