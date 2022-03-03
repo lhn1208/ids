@@ -226,11 +226,14 @@
 .premium_service .tab_area a.on{color: #0C1622; } 
 .premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
 .premium_service section{margin-top: 30px; margin-bottom: 110px;}
-.premium_service section .visual_area{position: relative;}
+.premium_service section .visual_area{position: relative; margin-bottom: 80px;}
 .premium_service section .visual{height: 643px; background-repeat: no-repeat;}
 .premium_service section .visual.style1{background-image: url("../images/visual_service1.jpg");}
 .premium_service section .visual_mobile{display: none;}
 .premium_service section .visual_area .title{position: absolute; bottom: -30px; left: 130px; z-index: 2; font-size: 46px; font-family: 'AritaBuri';}
+.premium_service section .service_content{width: 947px; margin:0 auto; line-height:2;}
+.premium_service section .service_content .text{margin-bottom: 80px; word-break: keep-all;}
+.premium_service section .service_content .img_area{display: block; width: 650px; margin:0 auto;}
 
 @media (min-width: 760px) and (max-width: 1760px) {
     .content_wrap .content_title{margin-left: -96%;}  
@@ -244,9 +247,13 @@
     .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
     .premium_service section{margin-top: 16px; margin-bottom: 54px;}
 
-    .premium_service section .visual_area{width: 100%; min-height: 280px;}
+    .premium_service section .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
     .premium_service section .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
     .premium_service section .visual_area .title{bottom: -15px; left: 25px; font-size: 24px;}
+    .premium_service section .service_content{line-height: 1.6; font-size: 14px; color: #0C1622; font-family: "Noto Sans KR", sans-serif;}
+    .premium_service section .service_content .text{margin-bottom: 40px}
+    .premium_service section .service_content .img_area{width: 32%; margin: 0 3%;}
+    .premium_service section .service_content img{width: 100%;}
  
 
     /*gnb*/
