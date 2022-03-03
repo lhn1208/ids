@@ -29,10 +29,13 @@ $(document).ready(function () {
     //프리미엄 서비스 탭
     var item=$('.tab_area').find('a');
     var section=$('.section_wrap section');						
+    var gnb_h=$('#remember_gnb').height();
+    // alert(gnb_h);
     item.click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
         var idx=$(this).index();
         $('html, body').stop().animate({
-            'scrollTop': section.eq(idx).offset().top
+            'scrollTop': section.eq(idx).offset().top-gnb_h
         }, 1000);													
         return false;
     });		
