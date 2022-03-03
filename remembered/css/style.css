@@ -138,6 +138,49 @@
 .memorial_area .inquiry_content .inquiry_list li .info{padding-top: 0;}
 .memorial_area .inquiry_content .inquiry_list li .info .link{position: absolute; top: 0; right: 0; width: 32px; height: 32px; padding:4px 0; border:1px solid #20283B; border-radius: 50px; text-align: center; font-size: 20px; box-sizing: border-box;}
 .memorial_area .inquiry_content .inquiry_list li .img_area .text{position: absolute; top: 280px; left: 37px; width: 250px; height: 60px; overflow: hidden; line-height: 1.4; word-break: keep-all; color: #fff;  font-size: 22px; font-family: 'AritaBuri'; }
+.premium_service{padding: 290px 0 162px ;}
+.premium_service .section_wrap{margin-top: 30px;}
+.premium_service .tab_area a{position: relative;margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri';}
+.premium_service .tab_area a:first-child{margin-left: 0;}
+.premium_service .tab_area a.on{color: #0C1622; } 
+.premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
+.premium_service .title{font-size: 46px; font-family: 'AritaBuri';}
+.premium_service .visual_area{position: relative; margin-bottom: 80px;}
+.premium_service .visual{height: 643px; background-repeat: no-repeat;}
+.premium_service .visual.style1{background-image: url("../images/visual_service1.jpg");}
+.premium_service .visual.style2{background-image: url("../images/visual_service2.jpg");}
+.premium_service .visual_mobile{display: none;}
+.premium_service .visual_area .title{position: absolute; bottom: -30px; left: 90px; z-index: 2;}
+.premium_service .service_content{width: 947px; margin:0 auto 50px;}
+.premium_service .service_content .title{margin-bottom: 30px;}
+.premium_service .service_content .text{margin-bottom: 14px; word-break: keep-all; line-height:2;}
+.premium_service .service_content .img_area{display: block; width: 650px; margin:60px auto 0;}
+.premium_service .service_content .guide_title{width: 290px; margin-top: 50px; margin-bottom: 16px; padding:4px 15px; color: #FFFDF4; font-size: 30px; font-family: 'AritaBuri'; background-color:#715844; box-sizing: border-box; letter-spacing: -0.06em;}
+.premium_service .service_content .guide_list{line-height: 2;}
+.premium_service .service_content .guide_list p{padding-left: 16px;}
+.premium_service .service_content li{text-indent: -16px; padding-left: 16px; word-break: keep-all;}
+.premium_service table{width: 100%; border-top: 2px solid #715844;border-collapse: collapse; border-spacing:0;}
+.premium_service table th, .premium_service table td{color: #715844; font-weight: normal; font-family: "Noto Sans KR", sans-serif; border-bottom: 1px solid #715844; letter-spacing: -0.06em;}
+.premium_service .info_table{margin: 70px 0 146px; text-align: left;}
+.premium_service .info_table caption{margin-bottom: 10px; color: #715844; font-size: 30px; font-family: 'AritaBuri'; text-align: left;}
+.premium_service .info_table th,.premium_service .info_table td{padding:7px 17px; font-size: 24px;}
+.premium_service .info_table th{border-right: 1px solid #715844;}
+.premium_service  .input_wrap::after{display: block; clear: both; content: "";}
+.premium_service  .input_wrap li{position: relative; float: left; width: 48%; height: 82px;}
+.premium_service  .input_wrap li i{color: #BB5319; margin-right:  3%; font-size: 20px; vertical-align: middle;}
+.premium_service  .input_wrap li input[type="text"]{width:420px; height: 47px; padding:7px 15px; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
+.premium_service  .input_wrap li .chk{margin-left: 24px; color: #BB5319; font-size: 14px;}
+.premium_service .service_register{padding-bottom: 40px; margin-bottom: 35px; border-bottom: 1px solid #BBC4D7;}
+.premium_service .service_register:last-child{margin-bottom: 0; border-bottom: none;}
+.service_register .service_title{margin-bottom: 22px; font-size: 20px; font-weight: normal; font-family: 'AritaBuri';}
+.service_register .service_title span{font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+.service_register .sv_textarea{width: 100%; height: 352px; padding:25px 30px; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box; resize: none; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
+.premium_service .term_table caption{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
+.premium_service .term_table th, .premium_service .term_table td{padding:10px 0; font-size: 14px; text-align: center; border-left: 1px solid #715844}
+.premium_service .term_table th:first-child, .premium_service .term_table td:first-child{border-left: 0;}
+.premium_service .term_table .block{display: block;}
+.premium_service .check_item{margin-top: 32px;}
+.premium_service .base_button{width: 153px; font-family: 'AritaBuri'; }
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -190,13 +233,20 @@
 .pop_transfer .transfer .inform .bank_info{font-size: 36px;}
 .pop_transfer .transfer .inform .copy{position: absolute; top: 0; right: 0; width: 72px; height: 40px; padding:4px 0; font-size: 20px; border: 1px solid #192B57; border-radius: 50px; box-sizing: border-box; text-align: center;}
 .pop_transfer .transfer .trans_box{width: 100%;}
-.pop_transfer .transfer .trans_box a{display: block; width: 100%; height: 88px; margin-bottom: 10px; padding:22px 43px; color: #0C1622; font-size: 30px; border:1px solid #0C1622; border-radius: 5px; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
-.pop_transfer .transfer .trans_box a i{display: inline-block; width: 110px; height: 48px; background-repeat: no-repeat; font-size:0; line-height:0; text-indent:-9999px; vertical-align: 28px;}
-.pop_transfer .transfer .trans_box a.kakao i{background-image: url("../images/ico_kakao.png"); vertical-align: top;}
+.pop_transfer .transfer .trans_box a{position: relative; display: block; width: 100%; height: 88px; margin-bottom: 10px; padding:22px 43px 22px 150px; color: #0C1622; font-size: 30px; border:1px solid #0C1622; border-radius: 5px; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
+.pop_transfer .transfer .trans_box a i{position: absolute; top:30px; left: 43px; width: 96px; height: 40px; background-repeat: no-repeat;  font-size:0; line-height:0; text-indent:-9999px;}
+.pop_transfer .transfer .trans_box a.kakao i{top: 10px; left: 40px; width: 76px; height: 64px;} 
+.pop_transfer .transfer .trans_box a.sms i{top: 0; left: 40px; width: 90px; height: 90px;}
+.pop_transfer .transfer .trans_box a.kakao i{background-image: url("../images/ico_kakao.png");}
+.pop_transfer .transfer .trans_box a.sms i{background-image: url("../images/ico_sms.png");}
 .pop_transfer .transfer .trans_box a.toss i{background-image: url("../images/ico_toss.png");}
 .pop_transfer .transfer .trans_box a.kakaopay i{background-image: url("../images/ico_kakaopay.png");}
 .pop_transfer .transfer .qr_box{padding: 24px 38px; font-size: 30px; border:1px solid #0C1622; border-radius: 5px; font-family: "Noto Sans KR", sans-serif;}
-.pop_transfer .transfer .qr_box .qr{margin-top: 20px; }
+.pop_transfer .transfer .qr_box .qr_code{margin-top: 20px; display: flex; justify-content: center;}
+.pop_transfer .transfer .qr_box .qr{margin: 20px;}
+.pop_transfer .transfer .qr_box .qr_code i{display: block; width: 96px; height: 40px; margin:0 auto; background-image: url("../images/ico_toss.png"); background-repeat: no-repeat; font-size: 0; line-height: 0; text-indent: -9999px;}
+.pop_transfer .transfer .qr_box .qr_code i.kakaopay{width: 86px; background-image: url("../images/ico_kakaopay.png");}
+
 .pop_sms .pop_title{margin-bottom: 10px; font-size: 26px; font-weight: normal; font-family: "Noto Sans KR", sans-serif;}
 .pop_sms .pop_btn_wrap{margin-top: 60px;}
 /*login*/
@@ -219,94 +269,14 @@
 .remember_login .member_link a::before{display: inline-block; width: 1px; height: 8px; margin: 0 8px; background-color: #BBC4D7; content: ""; vertical-align: 1px;}
 .remember_login .member_link a:first-of-type::before{display: none;}
 
-.premium_service{padding: 290px 0 162px ;}
-.premium_service .section_wrap{margin-top: 30px;}
-.premium_service .tab_area a{position: relative;margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri';}
-.premium_service .tab_area a:first-child{margin-left: 0;}
-.premium_service .tab_area a.on{color: #0C1622; } 
-.premium_service .tab_area a.on::before{position: absolute; top:-24px; right: -7px; width: 21px; height: 18px; background: url("../images/bg_feather.png") no-repeat; background-size: cover; content: "";}
-.premium_service .title{font-size: 46px; font-family: 'AritaBuri';}
-.premium_service .visual_area{position: relative; margin-bottom: 80px;}
-.premium_service .visual{height: 643px; background-repeat: no-repeat;}
-.premium_service .visual.style1{background-image: url("../images/visual_service1.jpg");}
-.premium_service .visual.style2{background-image: url("../images/visual_service2.jpg");}
-.premium_service .visual_mobile{display: none;}
-.premium_service .visual_area .title{position: absolute; bottom: -30px; left: 90px; z-index: 2;}
-.premium_service .service_content{width: 947px; margin:0 auto 50px;}
-.premium_service .service_content .title{margin-bottom: 30px;}
-.premium_service .service_content .text{margin-bottom: 14px; word-break: keep-all; line-height:2;}
-.premium_service .service_content .img_area{display: block; width: 650px; margin:60px auto 0;}
-.premium_service .service_content .guide_title{width: 290px; margin-top: 50px; margin-bottom: 16px; padding:4px 15px; color: #FFFDF4; font-size: 30px; font-family: 'AritaBuri'; background-color:#715844; box-sizing: border-box; letter-spacing: -0.06em;}
-.premium_service .service_content .guide_list{line-height: 2;}
-.premium_service .service_content .guide_list p{padding-left: 16px;}
-.premium_service .service_content li{text-indent: -16px; padding-left: 16px; word-break: keep-all;}
-.premium_service table{width: 100%; border-top: 2px solid #715844;border-collapse: collapse; border-spacing:0;}
-.premium_service table th, .premium_service table td{color: #715844; font-weight: normal; font-family: "Noto Sans KR", sans-serif; border-bottom: 1px solid #715844; letter-spacing: -0.06em;}
-.premium_service .info_table{margin: 70px 0 146px; text-align: left;}
-.premium_service .info_table caption{margin-bottom: 10px; color: #715844; font-size: 30px; font-family: 'AritaBuri'; text-align: left;}
-.premium_service .info_table th,.premium_service .info_table td{padding:7px 17px; font-size: 24px;}
-.premium_service .info_table th{border-right: 1px solid #715844;}
-.premium_service  .input_wrap::after{display: block; clear: both; content: "";}
-.premium_service  .input_wrap li{position: relative; float: left; width: 48%; height: 82px;}
-.premium_service  .input_wrap li i{color: #BB5319; margin-right:  3%; font-size: 20px; vertical-align: middle;}
-.premium_service  .input_wrap li input[type="text"]{width:420px; height: 47px; padding:7px 15px; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
-.premium_service  .input_wrap li .chk{margin-left: 24px; color: #BB5319; font-size: 14px;}
-.premium_service .service_register{padding-bottom: 40px; margin-bottom: 35px; border-bottom: 1px solid #BBC4D7;}
-.premium_service .service_register:last-child{margin-bottom: 0; border-bottom: none;}
-.service_register .service_title{margin-bottom: 22px; font-size: 20px; font-weight: normal; font-family: 'AritaBuri';}
-.service_register .service_title span{font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
-.service_register .sv_textarea{width: 100%; height: 352px; padding:25px 30px; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box; resize: none; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
 
-.premium_service .term_table caption{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
-.premium_service .term_table th, .premium_service .term_table td{padding:10px 0; font-size: 14px; text-align: center; border-left: 1px solid #715844}
-.premium_service .term_table th:first-child, .premium_service .term_table td:first-child{border-left: 0;}
-.premium_service .term_table .block{display: block;}
-.premium_service .check_item{margin-top: 32px;}
-.premium_service .base_button{width: 153px; font-family: 'AritaBuri'; }
 
 @media (min-width: 760px) and (max-width: 1760px) {
-    .content_wrap .content_title{margin-left: -96%;}  
+    /* .content_wrap .content_title{margin-left: -96%;}   */
     .bg_register1{margin-left: -100%;}    
 
 }
 @media (max-width: 760px) {    
-    .premium_service{padding: 35px 0 50px;}
-    .premium_service .section_wrap{margin-top: 16px;}
-    .premium_service .tab_area{display: flex; justify-content:space-between;}
-    .premium_service .tab_area a{margin-left: 0px; font-size: 14px;}
-    .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
-    .premium_service .title{font-size: 24px;}
-    .premium_service .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
-    .premium_service .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
-    .premium_service .visual_area .title{bottom: -15px; left: 0px;}
-    .premium_service .service_content{width: 100%; margin:0 auto 20px; color: #0C1622; font-size: 12px; font-family: "Noto Sans KR", sans-serif;}
-    .premium_service .service_content .title{margin-bottom: 16px;}
-    .premium_service .service_content .text{margin-bottom: 10px; font-size: 12px; line-height: 1.6;}
-    .premium_service .service_content .img_area{width: 80%; margin:30px auto 0;}
-    .premium_service .service_content img{width: 100%;}
-    .premium_service .service_content .guide_title{width: 160px; margin-top: 24px;margin-bottom: 8px; padding:4px 8px; font-size: 14px;}
-    .premium_service .service_content .guide_list{line-height: 1.6;}
-    .premium_service .service_content .guide_list p{padding-left: 12px;}
-    .premium_service .service_content li{text-indent: -7px; padding-left: 7px;}
-    .premium_service .info_table{margin:35px 0 72px;}
-    .premium_service .info_table caption{font-size: 16px;}
-    .premium_service .info_table th,.premium_service .info_table td{padding:4px 8px; font-size: 12px;}
-    .premium_service  .input_wrap li{float: none; width: 100%; height: auto; padding:6px 0;}
-    .premium_service  .input_wrap li i{font-size: 14px;}
-    .premium_service  .input_wrap li input[type="text"]{width:95%; height: 34px; padding:4px 8px; font-size: 12px;}
-    .premium_service  .input_wrap li .chk{margin-left: 18px; font-size: 12px;}
-    .premium_service .service_register{padding-bottom: 20px; margin-bottom: 18px;}
-    .service_register .service_title{margin-bottom: 10px; font-size: 14px;}
-    .service_register .service_title span{display: block; font-size: 12px;}
-    .service_register .sv_textarea{height: 238px; padding: 14px; font-size: 12px;}
-    .premium_service .term_table th, .premium_service .term_table td{font-size: 12px; word-break: keep-all;}
-    .premium_service .term_table .block{display: initial;}
-    .premium_service .check_item{margin-top: 16px;}
-    .premium_service .check_item label{font-size: 12px;}
-    .premium_service .base_button{width: 130px;}
-
- 
-
     /*gnb*/
     .remember_gnb.sub_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.sub_gnb .menu{background-image:url("../images/ico_allmenu_on.png");}
@@ -402,6 +372,41 @@
     .memorial_area .title_area .num{margin-left: 2px;}
     .memorial_area .inquiry_content .inquiry_list li .info .link{width: 18px; height: 18px; padding: 0; font-size: 12px;}
     .memorial_area .inquiry_content .inquiry_list li .img_area .text{top: 68%; left:5%; width: 90%; height: 40px; font-size: 14px;}
+    .premium_service{padding: 35px 0 50px;}
+    .premium_service .section_wrap{margin-top: 16px;}
+    .premium_service .tab_area{display: flex; justify-content:space-between;}
+    .premium_service .tab_area a{margin-left: 0px; font-size: 14px;}
+    .premium_service .tab_area a.on::before{top: -14px; width: 14px; height: 14px;}
+    .premium_service .title{font-size: 24px;}
+    .premium_service .visual_area{width: 100%; min-height: 280px; margin-bottom: 40px;}
+    .premium_service .visual_area .visual{position: absolute; top: 0; left: -10%; width: 115%; height: 280px; background-position: 45% 0; background-size: auto 280px;}
+    .premium_service .visual_area .title{bottom: -15px; left: 0px;}
+    .premium_service .service_content{width: 100%; margin:0 auto 20px; color: #0C1622; font-size: 12px; font-family: "Noto Sans KR", sans-serif;}
+    .premium_service .service_content .title{margin-bottom: 16px;}
+    .premium_service .service_content .text{margin-bottom: 10px; font-size: 12px; line-height: 1.6;}
+    .premium_service .service_content .img_area{width: 80%; margin:30px auto 0;}
+    .premium_service .service_content img{width: 100%;}
+    .premium_service .service_content .guide_title{width: 160px; margin-top: 24px;margin-bottom: 8px; padding:4px 8px; font-size: 14px;}
+    .premium_service .service_content .guide_list{line-height: 1.6;}
+    .premium_service .service_content .guide_list p{padding-left: 12px;}
+    .premium_service .service_content li{text-indent: -7px; padding-left: 7px;}
+    .premium_service .info_table{margin:35px 0 72px;}
+    .premium_service .info_table caption{font-size: 16px;}
+    .premium_service .info_table th,.premium_service .info_table td{padding:4px 8px; font-size: 12px;}
+    .premium_service  .input_wrap li{float: none; width: 100%; height: auto; padding:6px 0;}
+    .premium_service  .input_wrap li i{font-size: 14px;}
+    .premium_service  .input_wrap li input[type="text"]{width:95%; height: 34px; padding:4px 8px; font-size: 12px;}
+    .premium_service  .input_wrap li .chk{margin-left: 18px; font-size: 12px;}
+    .premium_service .service_register{padding-bottom: 20px; margin-bottom: 18px;}
+    .service_register .service_title{margin-bottom: 10px; font-size: 14px;}
+    .service_register .service_title span{display: block; font-size: 12px;}
+    .service_register .sv_textarea{height: 238px; padding: 14px; font-size: 12px;}
+    .premium_service .term_table th, .premium_service .term_table td{font-size: 12px; word-break: keep-all;}
+    .premium_service .term_table .block{display: initial;}
+    .premium_service .check_item{margin-top: 16px;}
+    .premium_service .check_item label{font-size: 12px;}
+    .premium_service .base_button{width: 130px;}
+
 
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
@@ -434,15 +439,16 @@
     .pop_transfer .transfer .inform .account_nm{font-size: 14px;}
     .pop_transfer .transfer .inform .bank_info{font-size: 18px;}
     .pop_transfer .transfer .inform .copy{width: 36px; height: 20px; padding: 2px 0; font-size: 12px;}
-    .pop_transfer .transfer .trans_box a{height: 44px; margin-bottom: 6px; padding:10px 18px; font-size: 16px; background-position: 20px center; background-size: 10%;}
-    .pop_transfer .transfer .trans_box a i{width: 55px; height: 24px; background-size: 86%; vertical-align: middle;}
-    .pop_transfer .transfer .trans_box a.kakao i{background-size: 40%;}
-    .pop_transfer .transfer .trans_box a.toss i{vertical-align: 13px;}
+    .pop_transfer .transfer .trans_box a{height: 44px; margin-bottom: 6px; padding:10px 18px 10px 74px; font-size: 16px; background-position: 20px center;}
+    .pop_transfer .transfer .trans_box a i{top:11px; left: 14px; width: 55px; height: 24px; background-size: 100%; vertical-align: middle;}
+    .pop_transfer .transfer .trans_box a.kakao i{top: 4px; left: 12px; width: 40px; height: 32px;} 
+    .pop_transfer .transfer .trans_box a.sms i{top: 0; left: 12px; width: 45px; height: 45px;}
     .pop_transfer .transfer .qr_box{padding:12px 18px; font-size: 16px;}
     .pop_transfer .transfer .qr_box .qr{margin-top: 10px;}
     .pop_sms .pop_title{font-size: 14px;}   
     .pop_sms .pop_btn_wrap{margin-top: 15px;}
     .pop_login .layer_cont_wrap{top: 0;}    
+    .pop_transfer .transfer .qr_box .qr_code i{height: 28px; background-size: 80%;}
     /*login*/
     .remember_login{padding:35px 45px}
     .remember_login .sub_title{margin-bottom: 12px; font-size: 14px;}
