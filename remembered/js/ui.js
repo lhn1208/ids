@@ -5,9 +5,9 @@ $(document).ready(function () {
         //gnb
         var scTop = $(window).scrollTop();
         if(scTop>0){							
-            gnb.addClass('fix_on');						
+          //  gnb.addClass('fix_on');						
         }else{
-            gnb.removeClass('fix_on');
+          //  gnb.removeClass('fix_on');
         }           
     });
     //mobile menu
