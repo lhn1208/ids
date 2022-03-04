@@ -38,4 +38,57 @@ $(document).ready(function () {
         }, 1000);													
         return false;
     });		
+
+    //부고 슬라이드     
+    var swiper = new Swiper(".memorial_slide", {
+        slidesPerView: 3.5,
+        spaceBetween:50,
+        centeredSlides:true,
+        loop:true,
+        // autoHeight:true,
+        simulateTouch:true,
+        navigation:false,
+        pagination: {
+        el: ".memorial_slide .swiper-pagination",
+        type: "progressbar"
+        },
+        breakpoints: {
+        760: {
+            slidesPerView: 2,
+            loop:true,
+            simulateTouch:true,
+        }
+        }
+    });
+    // 탭메뉴            
+    // 컨텐츠 내용을 숨겨주세요!
+    var tabBtn = $("#tab_btn > ul > li"); //각각의 버튼을 변수에 저장
+    var tabCont = $("#tab_cont > div");  //각각의 컨텐츠를 변수에 저장
+
+    tabCont.hide().eq(0).show();
+
+    tabBtn.click(function(){
+    var target = $(this);        //버튼의 타켓(순서)을 변수에 저장
+    var index = target.index();  //버튼의 순서를 변수에 저장
+    // alert(index);
+        tabBtn.removeClass("active");   //버튼의 클래스를 삭제
+        target.addClass("active");   //타켓의 클래스를 추가
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+    });
+
+    var tabBtn1 = $(".tab_menu_list > ul > li"); //각각의 버튼을 변수에 저장
+    var tabCont1 = $(".subtab_content_area > div");  //각각의 컨텐츠를 변수에 저장
+
+    tabCont1.hide().eq(0).show();
+
+    tabBtn1.click(function(){
+    var target = $(this);        //버튼의 타켓(순서)을 변수에 저장
+    var index = target.index();  //버튼의 순서를 변수에 저장
+    // alert(index);
+        tabBtn1.removeClass("active");   //버튼의 클래스를 삭제
+        target.addClass("active");   //타켓의 클래스를 추가
+        tabCont1.css("display","none");
+        tabCont1.eq(index).css("display","block");
+    });
 });
