@@ -182,6 +182,21 @@
 .premium_service .term_table .block{display: block;}
 .premium_service .check_item{margin-top: 32px;}
 .premium_service .base_button{width: 153px; font-family: 'AritaBuri'; }
+.content_wrap .mypage_content{padding:238px 0 187px;}
+.mypage_content .tab_area{margin-bottom: 38px; padding-bottom: 30px; border-bottom: 2px solid #0C1622;}
+.mypage_content .tab_area a{margin-left: 42px; color: #0C1622; font-size: 20px; font-family: 'AritaBuri';}
+.mypage_content .tab_area a:first-child{margin-left: 0;}
+.mypage_content .tab_area a.on{color: #BB7A19;}
+.mypage_content .member_form{display: flex; padding-bottom: 40px; margin-bottom: 40px; justify-content: space-between; border-bottom: 1px solid #BBC4D7;}
+.mypage_content .member_form legend{margin-bottom: 28px; font-size: 20px; font-family: 'AritaBuri'; text-indent: 0; line-height: normal;}
+.mypage_content .member_info{width: 48%; font-family: "Noto Sans KR", sans-serif;}
+.mypage_content .member_info ul{margin-left: 20px;}
+.mypage_content .member_info li{margin-bottom: 10px;}
+.mypage_content .member_info .input_tit{display: inline-block; width: 20%; font-size: 16px;}
+.mypage_content .member_info .input{width: 78%; height: 47px; padding:5px 14px; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
+.mypage_content .member_info .input.type{background-color: #EDF1F8;}
+.mypage_content .member_info .base_button{width: 100px; height: 38px; font-size: 14px; border-radius: 5px;}
+.mypage_content .base_button.save{width: 174px; height: 54px; font-size: 16px;}
 
 /*layer*/
 .layer_pop .cont_layout{padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #ccc; font-family: "Noto Sans KR", sans-serif;}
@@ -273,41 +288,13 @@
 .remember_login .member_link a::before{display: inline-block; width: 1px; height: 8px; margin: 0 8px; background-color: #BBC4D7; content: ""; vertical-align: 1px;}
 .remember_login .member_link a:first-of-type::before{display: none;}
 
-.content_wrap .mypage_content{padding:238px 0 187px;}
-.mypage_content .tab_area{margin-bottom: 38px; padding-bottom: 30px; border-bottom: 2px solid #0C1622;}
-.mypage_content .tab_area a{margin-left: 42px; color: #0C1622; font-size: 20px; font-family: 'AritaBuri';}
-.mypage_content .tab_area a:first-child{margin-left: 0;}
-.mypage_content .tab_area a.on{color: #BB7A19;}
-.mypage_content .member_form{display: flex; padding-bottom: 40px; margin-bottom: 40px; justify-content: space-between; border-bottom: 1px solid #BBC4D7;}
 
-.mypage_content .member_form legend{margin-bottom: 28px; font-size: 20px; font-family: 'AritaBuri'; text-indent: 0; line-height: normal;}
-.mypage_content .member_info{width: 48%; font-family: "Noto Sans KR", sans-serif;}
-.mypage_content .member_info ul{margin-left: 20px;}
-.mypage_content .member_info li{margin-bottom: 10px;}
-.mypage_content .member_info .input_tit{display: inline-block; width: 20%; font-size: 16px;}
-.mypage_content .member_info .input{width: 78%; height: 47px; padding:5px 14px; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
-.mypage_content .member_info .input.type{background-color: #EDF1F8;}
-.mypage_content .member_info .base_button{width: 100px; height: 38px; font-size: 14px; border-radius: 5px;}
-.mypage_content .base_button.save{width: 174px; height: 54px; font-size: 16px;}
 @media (min-width: 760px) and (max-width: 1760px) {
     /* .content_wrap .content_title{margin-left: -96%;}   */
     .bg_register1{margin-left: -100%;}    
 
 }
 @media (max-width: 760px) {    
-
-    .content_wrap .mypage_content{padding:30px 0 55px;}
-    .mypage_content .tab_area{margin-bottom: 20px; padding-bottom: 20px;}
-    .mypage_content .tab_area a{margin-left: 16px; font-size: 16px;}
-    .mypage_content .member_form{flex-direction: column; margin-bottom: 20px; padding-bottom: 0; border-bottom: none;}
-    .mypage_content .member_form legend{margin-bottom: 16px; font-size: 14px;}
-    .mypage_content .member_info{width: 100%; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #BBC4D7;}
-
-    .mypage_content .member_info ul{margin-left: 0;}
-    .mypage_content .member_info .input_tit{width: 24%; font-size: 14px;}
-    .mypage_content .member_info .input{width: 74%; height: 32px;}
-    .mypage_content .member_info .base_button{font-size: 12px;}
-    .mypage_content .base_button.save{width: 130px; font-size: 12px;}
 
     /*gnb*/
     .remember_gnb.sub_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_blue.png");}
@@ -438,7 +425,17 @@
     .premium_service .check_item{margin-top: 16px;}
     .premium_service .check_item label{font-size: 12px;}
     .premium_service .base_button{width: 130px;}
-
+    .content_wrap .mypage_content{padding:30px 0 55px;}
+    .mypage_content .tab_area{margin-bottom: 20px; padding-bottom: 20px;}
+    .mypage_content .tab_area a{margin-left: 16px; font-size: 16px;}
+    .mypage_content .member_form{flex-direction: column; margin-bottom: 20px; padding-bottom: 0; border-bottom: none;}
+    .mypage_content .member_form legend{margin-bottom: 16px; font-size: 14px;}
+    .mypage_content .member_info{width: 100%; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #BBC4D7;}
+    .mypage_content .member_info ul{margin-left: 0;}
+    .mypage_content .member_info .input_tit{width: 24%; font-size: 14px;}
+    .mypage_content .member_info .input{width: 74%; height: 32px;}
+    .mypage_content .member_info .base_button{font-size: 14px;}
+    .mypage_content .base_button.save{width: 130px; font-size: 14px;}
 
     /*layer*/
     .layer_pop .cont_layout{padding-bottom: 16px; margin-bottom: 26px;}
