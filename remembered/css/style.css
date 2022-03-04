@@ -139,11 +139,11 @@
 
 .reg_info .reg_top_wrap{margin-bottom: 20px;}
 .reg_info .row.reg_top{margin-bottom: 0;}
-.reg_info .reg_top_wrap .chk_txt{margin-left: 0; margin-bottom: 10px;}
+.register .reg_info .reg_top_wrap .chk_txt{margin-left: 0; margin-bottom: 10px;}
 .register .flex_style{display: flex;}
 .register .chk_txt{margin-top: 12px; margin-left: 6px; font-size: 14px;}
 .register .relation_info .chk_txt{margin-left: 0;}
-.register .relation_info .chk_txt{margin-left: 23%;}
+.register .reg_info .chk_txt{margin-left: 23%;}
 .register .site .title{margin-bottom: 0;}
 .register .site .chk_txt,.register .memorial .chk_txt{margin-left: 17%;}
 .register .message .chk_txt{margin-left: 16px;}
