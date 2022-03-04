@@ -53,7 +53,7 @@
         <div class="register_inner">
           <div class="register">
             <h3 class="title">대표상주정보<i class="ico_chk">*</i></h3> <sapn class="sub_txt">※디지털화환 비용을 받으실 대표상주정보를 입력해주세요</sapn>
-            <div class="relation_info">
+            <div class="relation_info row">
                 <select class="select">
                     <option value="">고인관계</option>
                     <option value="옵션2">옵션1</option>
@@ -63,246 +63,44 @@
                 </select>     
                 <input type="text" class="represent_nm" placeholder="상주명을 입력하세요">
                 <input type="text" class="represent_ph" placeholder="휴대폰 번호를 (하이픈 없이 숫자만)입력해주세요">
+                <div class="chk_txt">* 상주명을 입력하세요</div>
                 <div class="check_item">
                     <input type="checkbox" name="" class="check" id="txt_check">
                     <label for="txt_check">디지털화환을 신청하지 않습니다.</label>
                 </div>
-
              </div>
           </div>
           <div class="register">
               <h3 class="title">고인 정보입력</h2>
               <div class="reg_info reg_style">
-                <div class="row reg_top">                            
-                    <span class="col">
-                        <label for="name" class="input_tit">이름<i class="ico_chk">*</i></label>
-                        <input type="text" id="name">
-                    </span>
-                    <span class="col">
-                        <label for="position" class="input_tit">직위</label>
-                        <input type="text" id="position">
-                    </span>
+                <div class="reg_top_wrap">
+                  <div class="row reg_top">                            
+                      <span class="col">
+                          <label for="name" class="input_tit">이름<i class="ico_chk">*</i></label>
+                          <input type="text" id="name">                        
+                      </span>
+                      <span class="col">
+                          <label for="position" class="input_tit">직위</label>
+                          <input type="text" id="position">
+                      </span>
+                  </div>
+                  <div class="chk_txt">* 이름을 입력하세요</div>
                 </div>
                 <div class="row">
                     <label for="birth" class="input_tit">생년월일<i class="ico_chk">*</i></label>
-                    <input type="text" id="birth" class="birth date" disabled>
-                      <!--달력-->
-                      <!-- <div class="calender">
-                        <div class="header">
-                          <a href=# class="prev">이전</a>2022년 3월<a href=# class="next">다음</a>
-                          <a href="#" class="close">닫기</a>
-                        </div>
-                        <table class="datepicker">
-                          <caption>임종일자 달력</caption>
-                          <thead>
-                            <tr>
-                              <th scope="col" class="sun">일</th>
-                              <th scope="col">월</th>
-                              <th scope="col">화</th>
-                              <th scope="col">수</th>
-                              <th scope="col">목</th>
-                              <th scope="col">금</th>
-                              <th scope="col">토</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><a href="#">1</a></td>
-                              <td><a href="#">2</a></td>
-                              <td><a href="#">3</a></td>
-                              <td><a href="#" class="today">4</a></td>
-                              <td><a href="#">5</a></td>
-                              <td><a href="#">6</a></td>
-                              <td><a href="#">7</a></td>
-                            </tr>
-                            <tr>
-                              <td><a href="#">8</a></td>
-                              <td><a href="#">9</a></td>
-                              <td><a href="#">10</a></td>
-                              <td><a href="#">11</a></td>
-                              <td><a href="#">12</a></td>
-                              <td><a href="#">13</a></td>
-                              <td><a href="#">14</a></td>
-                            </tr>
-                            <tr>
-                              <td><a href="#">15</a></td>
-                              <td><a href="#">16</a></td>
-                              <td><a href="#">17</a></td>
-                              <td><a href="#">18</a></td>
-                              <td><a href="#">19</a></td>
-                              <td><a href="#">20</a></td>
-                              <td><a href="#">21</a></td>
-                            </tr>
-                            <tr>
-                              <td><a href="#">22</a></td>
-                              <td><a href="#">23</a></td>
-                              <td><a href="#">24</a></td>
-                              <td><a href="#">25</a></td>
-                              <td><a href="#">26</a></td>
-                              <td><a href="#">27</a></td>
-                              <td><a href="#">28</a></td>
-                            </tr>
-                            <tr>
-                              <td><a href="#">29</a></td>
-                              <td><a href="#">30</a></td>
-                              <td><a href="#">31</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div> -->
-                      <!--//달력-->
+                    <input type="date" id="birth" class="birth date">
+                    <div class="chk_txt">* 생년월일을 입력하세요</div>
                 </div>
                 <div class="row">
                     <label for="day1" class="input_tit">임종일자<i class="ico_chk">*</i></label>
-                    <input type="text" id="day1" class="date" disabled>
-                    <select name="relation" class="select reg_select2">
-                        <option value="">00:00</option>
-                        <option value="옵션2">옵션1</option>
-                        <option value="옵션2">옵션2</option>
-                        <option value="옵션3">옵션3</option>
-                        <option value="옵션4">옵션4</option>
-                    </select>     
-                     <!--달력-->
-                     <div class="calender">
-                      <div class="header">
-                        <a href=# class="prev">이전</a>2022년 3월<a href=# class="next">다음</a>
-                        <a href="#" class="close">닫기</a>
-                      </div>
-                      <table class="datepicker">
-                        <caption>임종일자 달력</caption>
-                        <thead>
-                          <tr>
-                            <th scope="col" class="sun">일</th>
-                            <th scope="col">월</th>
-                            <th scope="col">화</th>
-                            <th scope="col">수</th>
-                            <th scope="col">목</th>
-                            <th scope="col">금</th>
-                            <th scope="col">토</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><a href="#">1</a></td>
-                            <td><a href="#">2</a></td>
-                            <td><a href="#">3</a></td>
-                            <td><a href="#" class="today">4</a></td>
-                            <td><a href="#">5</a></td>
-                            <td><a href="#">6</a></td>
-                            <td><a href="#">7</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">8</a></td>
-                            <td><a href="#">9</a></td>
-                            <td><a href="#">10</a></td>
-                            <td><a href="#">11</a></td>
-                            <td><a href="#">12</a></td>
-                            <td><a href="#">13</a></td>
-                            <td><a href="#">14</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">15</a></td>
-                            <td><a href="#">16</a></td>
-                            <td><a href="#">17</a></td>
-                            <td><a href="#">18</a></td>
-                            <td><a href="#">19</a></td>
-                            <td><a href="#">20</a></td>
-                            <td><a href="#">21</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">22</a></td>
-                            <td><a href="#">23</a></td>
-                            <td><a href="#">24</a></td>
-                            <td><a href="#">25</a></td>
-                            <td><a href="#">26</a></td>
-                            <td><a href="#">27</a></td>
-                            <td><a href="#">28</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">29</a></td>
-                            <td><a href="#">30</a></td>
-                            <td><a href="#">31</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!--//달력-->
+                    <input type="date" id="day1" class="date">
+                    <input type="time" id="day1" class="reg_time">
+                    <div class="chk_txt">* 임종일자를 입력하세요</div>
                 </div>
                 <div class="row">
                     <label for="day2" class="input_tit">발인일자<i class="ico_chk">*</i></label>
-                    <input type="text" id="day2" class="date" disabled>
-                    <select name="relation" class="select reg_select2">
-                        <option value="">00:00</option>
-                        <option value="옵션2">옵션1</option>
-                        <option value="옵션2">옵션2</option>
-                        <option value="옵션3">옵션3</option>
-                        <option value="옵션4">옵션4</option>
-                    </select>     
-                     <!--달력-->
-                     <!-- <div class="calender">
-                      <div class="header">
-                        <a href=# class="prev">이전</a>2022년 3월<a href=# class="next">다음</a>
-                        <a href="#" class="close">닫기</a>
-                      </div>
-                      <table class="datepicker">
-                        <caption>임종일자 달력</caption>
-                        <thead>
-                          <tr>
-                            <th scope="col" class="sun">일</th>
-                            <th scope="col">월</th>
-                            <th scope="col">화</th>
-                            <th scope="col">수</th>
-                            <th scope="col">목</th>
-                            <th scope="col">금</th>
-                            <th scope="col">토</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><a href="#">1</a></td>
-                            <td><a href="#">2</a></td>
-                            <td><a href="#">3</a></td>
-                            <td><a href="#" class="today">4</a></td>
-                            <td><a href="#">5</a></td>
-                            <td><a href="#">6</a></td>
-                            <td><a href="#">7</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">8</a></td>
-                            <td><a href="#">9</a></td>
-                            <td><a href="#">10</a></td>
-                            <td><a href="#">11</a></td>
-                            <td><a href="#">12</a></td>
-                            <td><a href="#">13</a></td>
-                            <td><a href="#">14</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">15</a></td>
-                            <td><a href="#">16</a></td>
-                            <td><a href="#">17</a></td>
-                            <td><a href="#">18</a></td>
-                            <td><a href="#">19</a></td>
-                            <td><a href="#">20</a></td>
-                            <td><a href="#">21</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">22</a></td>
-                            <td><a href="#">23</a></td>
-                            <td><a href="#">24</a></td>
-                            <td><a href="#">25</a></td>
-                            <td><a href="#">26</a></td>
-                            <td><a href="#">27</a></td>
-                            <td><a href="#">28</a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#">29</a></td>
-                            <td><a href="#">30</a></td>
-                            <td><a href="#">31</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div> -->
-                    <!--//달력-->
+                    <input type="date" id="day2" class="date">
+                    <input type="time" id="day1" class="reg_time">
                 </div>
                 <div class="row">
                     <div class="filebox">
@@ -331,23 +129,32 @@
               </div>
           </div>
           <div class="register reg_type">
+            <div class="site">
               <h3 class="title"><label for="site_input">장지<i class="ico_chk">*</i></label></h3> 
               <input type="text" id="site_input" placeholder="장지주소를 입력해주세요">
+              <div class="chk_txt">* 장지를 입력하세요</div>
+            </div>
           </div>
           <div class="register">
               <h3 class="title">상주정보<i class="ico_chk">*</i></h3> 
-              <div class="relation_info2">
-                  <select name="relation" class="select">
-                      <option value="">고인관계</option>
-                      <option value="옵션2">옵션1</option>
-                      <option value="옵션2">옵션2</option>
-                      <option value="옵션3">옵션3</option>
-                      <option value="옵션4">옵션4</option>
-                  </select>     
-                  <span class="input_wrap">
-                      <input type="text" class="reg_input" placeholder="상주명">
-                      <input type="text" class="ph_input" placeholder="휴대폰번호(숫자만)">
-                  </span>
+              <div class="relation_info2 flex_style">
+                  <div class="col">
+                    <select name="relation" class="select">
+                        <option value="">고인관계</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <div class="chk_txt">* 고인관계를 입력하세요</div>
+                  </div>
+                  <div>
+                    <span class="input_wrap">
+                        <input type="text" class="reg_input" placeholder="상주명">
+                        <input type="text" class="ph_input" placeholder="휴대폰번호(숫자만)">
+                      </span>
+                      <div class="chk_txt">* 상주정보를 입력하세요</div>
+                  </div>
                   <span class="button_wrap">
                     <button class="add_btn">추가</button>
                     <button class="minus_btn">삭제</button>
@@ -355,12 +162,40 @@
                     <button class="arr_btn down">아래로정렬</button>
                   </span>
               </div>
+              <div class="relation_info2 flex_style">
+                <div class="col">
+                  <select name="relation" class="select">
+                      <option value="">고인관계</option>
+                      <option value="옵션2">옵션1</option>
+                      <option value="옵션2">옵션2</option>
+                      <option value="옵션3">옵션3</option>
+                      <option value="옵션4">옵션4</option>
+                  </select>     
+                  <div class="chk_txt">* 고인관계를 입력하세요</div>
+                </div>
+                <div>
+                  <span class="input_wrap">
+                      <input type="text" class="reg_input" placeholder="상주명">
+                      <input type="text" class="ph_input" placeholder="휴대폰번호(숫자만)">
+                    </span>
+                    <div class="chk_txt">* 상주정보를 입력하세요</div>
+                </div>
+                <span class="button_wrap">
+                  <button class="add_btn">추가</button>
+                  <button class="minus_btn">삭제</button>
+                  <button class="arr_btn">위로정렬</button>
+                  <button class="arr_btn down">아래로정렬</button>
+                </span>
+            </div>
           </div>
           <div class="register">
             <h3 class="title">조의금 계좌 입력<i class="ico_chk">*</i></h3> 
             <div class="account_info reg_style">
-                <div class="row">
-                  <input type="text" class="input_nm" placeholder="이름">
+                <div class="row flex_style">
+                  <div class="col">
+                    <input type="text" class="input_nm" placeholder="이름">
+                    <div class="chk_txt">* 이름을 입력하세요</div>
+                  </div>
                   <span class="input_wrap">
                       <select name="bank" class="select bank_select">
                         <option value="">은행</option>
@@ -370,13 +205,39 @@
                         <option value="옵션4">옵션4</option>
                     </select>     
                     <input type="text" class="input_account" placeholder="계좌번호를 입력하세요">
+                    <div class="chk_txt">* 계좌번호를 입력하세요</div>
                   </span>
                   <span class="button_wrap">
                     <button class="add_btn">추가</button>
                     <button class="minus_btn">삭제</button>
-                  </span>
+                    <button class="arr_btn">위로정렬</button>
+                    <button class="arr_btn down">아래로정렬</button>
+                  </span>                  
                 </div>
-                <div class="row">
+                <div class="row flex_style">
+                  <div class="col">
+                    <input type="text" class="input_nm" placeholder="이름">
+                    <div class="chk_txt">* 이름을 입력하세요</div>
+                  </div>
+                  <span class="input_wrap">
+                      <select name="bank" class="select bank_select">
+                        <option value="">은행</option>
+                        <option value="옵션2">옵션1</option>
+                        <option value="옵션2">옵션2</option>
+                        <option value="옵션3">옵션3</option>
+                        <option value="옵션4">옵션4</option>
+                    </select>     
+                    <input type="text" class="input_account" placeholder="계좌번호를 입력하세요">
+                    <div class="chk_txt">* 계좌번호를 입력하세요</div>
+                  </span>
+                  <span class="button_wrap">
+                    <button class="add_btn">추가</button>
+                    <button class="minus_btn">삭제</button>
+                    <button class="arr_btn">위로정렬</button>
+                    <button class="arr_btn down">아래로정렬</button>
+                  </span>                  
+                </div>
+                <div class="row bank_row">
                     <label for="pay_input" class="input_tit">(선택)카카오페이 송금</label>
                     <input type="text" id="pay_input" class="link_input" placeholder="링크를 등록해주세요">
                     <button class="reg_btn_w47">방법</button>
@@ -388,6 +249,7 @@
               <div class="row">
                   <h3 class="title"><label for="info_input">안내글<i class="ico_chk">*</i></label></h3> 
                   <input type="text" id="info_input" class="reg_input" placeholder="예 : 저희 상가는 조의금을 정중히 사양합니다."> 
+                  <div class="chk_txt">* 안내글을 입력하세요</div>
               </div>
               <div class="row">
                   <h3 class="title vert"><label for="memorial_textarea">추도사</label></h3> 
@@ -425,10 +287,41 @@
                   <div class="button_wrap items3">
                       <button class="add_btn">추가</button>
                       <button class="minus_btn">삭제</button>
-                  </div>
-                  
+                  </div>                  
+                  <div class="chk_txt">* 조문보를 등록 하세요</div>
               </div>
+              <div class="message">
+                <div class="view_area">
+                    <a href="#" class="sample">샘플보기</a>
+                </div>
+                <div class="editor_box">
+                    <div class="subject">
+                        <select class="select">
+                            <option value="">주제 선택</option>
+                            <option value="옵션2">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                            <option value="옵션3">옵션3</option>
+                            <option value="옵션4">옵션4</option>
+                        </select>  
+                        <input type="text" class="max_opt" placeholder="최대 8글자로 입력해주세요">    
+                        <span class="arr_button_wrap">
+                          <button class="arr_btn">위로정렬</button>
+                          <button class="arr_btn down">아래로정렬</button>
+                        </span>
+                    </div>
+                    <button class="reg_btn">템플릿 선택</button>
+                    <div class="open_opt">
+                        공개여부 <span class="switch"></span>
+                    </div>
+                </div>
+                <div class="button_wrap items3">
+                    <button class="add_btn">추가</button>
+                    <button class="minus_btn">삭제</button>
+                </div>
+                
+            </div>
           </div>
+        
           <!--button-->
           <div class="register_btn">
               <button class="preview">미리보기</button>
