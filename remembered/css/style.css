@@ -631,12 +631,12 @@
     .register .reg_info .date{border-top-right-radius: 0; border-bottom-right-radius: 0;}
     .reg_info .birth.date{width: 74%;}
     .reg_info .reg_select{border-right: none;}
-    .reg_info .reg_time{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
+    .register .reg_info .reg_time{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
     .register .funeral_info .row{position: relative;}
     .reg_info .filebox .file{width: 22%; height: 36px; margin-left: 2%; font-size: 12px; line-height:3;}
     .register .funeral_info .funeral_input{width: 74%;}
     .register .funeral_info .room_nm{width: 100%; margin-left: 0; margin-top: 30px;}
-    .register .funeral_info .bt_txt{position: absolute; top: 38%; left: 0; margin-left: 0; font-size: 12px;}
+    .register .funeral_info .bt_txt{position: absolute; top: 76px; left: 0; margin-left: 0; font-size: 12px;}
     .register.reg_type #site_input{margin-left: 0; width: 100%;}
     .register .relation_info2{position: relative; padding-left: 0; padding-top: 48px; margin-bottom: 12px;}
     .register .relation_info2 .select{width: 100%; margin-right: 0; background-position: 96%;}
