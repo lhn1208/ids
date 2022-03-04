@@ -85,23 +85,77 @@
                 </div>
                 <div class="row">
                     <label for="birth" class="input_tit">생년월일<i class="ico_chk">*</i></label>
-                    <select id="birth" class="select birth">
-                        <option value="">생년월일</option>
-                        <option value="옵션2">옵션1</option>
-                        <option value="옵션2">옵션2</option>
-                        <option value="옵션3">옵션3</option>
-                        <option value="옵션4">옵션4</option>
-                    </select>     
+                    <input type="text" id="birth" class="birth date" disabled>
+                      <!--달력-->
+                      <div class="calender">
+                        <div class="header">
+                          <a href=# class="prev">이전</a>2022년 3월<a href=# class="next">다음</a>
+                          <a href="#" class="close">닫기</a>
+                        </div>
+                        <table class="datepicker">
+                          <caption>임종일자 달력</caption>
+                          <thead>
+                            <tr>
+                              <th scope="col" class="sun">일</th>
+                              <th scope="col">월</th>
+                              <th scope="col">화</th>
+                              <th scope="col">수</th>
+                              <th scope="col">목</th>
+                              <th scope="col">금</th>
+                              <th scope="col">토</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><a href="#">1</a></td>
+                              <td><a href="#">2</a></td>
+                              <td><a href="#">3</a></td>
+                              <td><a href="#" class="today">4</a></td>
+                              <td><a href="#">5</a></td>
+                              <td><a href="#">6</a></td>
+                              <td><a href="#">7</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">8</a></td>
+                              <td><a href="#">9</a></td>
+                              <td><a href="#">10</a></td>
+                              <td><a href="#">11</a></td>
+                              <td><a href="#">12</a></td>
+                              <td><a href="#">13</a></td>
+                              <td><a href="#">14</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">15</a></td>
+                              <td><a href="#">16</a></td>
+                              <td><a href="#">17</a></td>
+                              <td><a href="#">18</a></td>
+                              <td><a href="#">19</a></td>
+                              <td><a href="#">20</a></td>
+                              <td><a href="#">21</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">22</a></td>
+                              <td><a href="#">23</a></td>
+                              <td><a href="#">24</a></td>
+                              <td><a href="#">25</a></td>
+                              <td><a href="#">26</a></td>
+                              <td><a href="#">27</a></td>
+                              <td><a href="#">28</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="#">29</a></td>
+                              <td><a href="#">30</a></td>
+                              <td><a href="#">31</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--//달력-->
                 </div>
                 <div class="row">
                     <label for="day1" class="input_tit">임종일자<i class="ico_chk">*</i></label>
-                    <select name="relation" id="day1" class="select reg_select">
-                        <option value="">----</option>
-                        <option value="옵션2">옵션1</option>
-                        <option value="옵션2">옵션2</option>
-                        <option value="옵션3">옵션3</option>
-                        <option value="옵션4">옵션4</option>
-                    </select>     
+
+                    <input type="text" id="" class="date" disabled>
                     <select name="relation" class="select reg_select2">
                         <option value="">00:00</option>
                         <option value="옵션2">옵션1</option>
@@ -112,13 +166,7 @@
                 </div>
                 <div class="row">
                     <label for="day2" class="input_tit">발인일자<i class="ico_chk">*</i></label>
-                    <select name="relation" id="day1" class="select reg_select">
-                        <option value="">----</option>
-                        <option value="옵션2">옵션1</option>
-                        <option value="옵션2">옵션2</option>
-                        <option value="옵션3">옵션3</option>
-                        <option value="옵션4">옵션4</option>
-                    </select>     
+                    <input type="text" id="" class="date" disabled>
                     <select name="relation" class="select reg_select2">
                         <option value="">00:00</option>
                         <option value="옵션2">옵션1</option>
@@ -126,6 +174,7 @@
                         <option value="옵션3">옵션3</option>
                         <option value="옵션4">옵션4</option>
                     </select>     
+                   
                 </div>
                 <div class="row">
                     <div class="filebox">

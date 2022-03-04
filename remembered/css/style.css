@@ -29,7 +29,7 @@
 .register .relation_info .check_item{margin-top: 6px;}
 .register .input_tit{position: relative; font-family:  'Noto Sans KR',sans-serif;}
 .register .input_tit .ico_chk{top:-2px; right: -10px;}
-.register .reg_btn_w47{width: 47px; height: 47px; margin-left: 10px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
+.register .reg_btn_w47{width: 47px; height: 47px; margin-left: 8px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
 .register_content .register_btn button{height: 50px; margin:0; font-size: 14px;}
 .reg_style{padding-left: 15px;}
 .reg_info .reg_top{display: flex; align-items: center; }
@@ -42,11 +42,11 @@
 .reg_info .reg_top .col label{position: absolute; top:8px; left: 0;}
 .reg_info .reg_top .col input[type="text"] {margin-left: 20%; width:80%; font-size: 16px;}  
 .register .reg_btn{width: 120px; height: 40px; line-height: 2.6; margin-top: 3px; margin-left: 10px; border-radius: 5px; color: #fff; font-size: 14px; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
-.reg_info .row{margin-bottom: 28px;}
+.reg_info .row{position: relative; margin-bottom: 28px;}
 .reg_info .select{background-position-x: 97%;}
 .reg_info .input_tit {display: inline-block; margin-right: 106px;}
-.reg_info .reg_select, .reg_info .upload_input{width: 380px;}
-.reg_info .birth{width: 380px;}
+.reg_info .date, .reg_info .upload_input{width: 380px;}
+.reg_info .date.birth{width: 380px;}
 .reg_info .upload_input{height: 47px; padding: 8px 14px; border-radius: 5px; border:1px solid #ced5e4; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
 .reg_info .reg_select2{margin-left: 10px; width: 165px; background-position-x: 94%;}
 .reg_info .filebox input[type="file"]{position: absolute;  top:0; left:0; width:0; height:0; line-height:0; overflow: hidden; border: 0;}
@@ -55,6 +55,22 @@
 .reg_info .filebox .file_output img{width: 100%;}
 .reg_info .filebox .file_output .img_area{display: inline-block; position: relative;}
 .reg_info .filebox .file_output .file_del{position: absolute; top: 8px; right: 8px; width: 15px; height: 15px; font-size:0;  line-height:0;  text-indent:-9999px; background: url("../images/file_del.png") no-repeat; vertical-align: middle;}
+
+.register .calender{position: absolute; top:48px; left: 176px; width: 220px; background-color: #fff; z-index: 40; border:1px solid #192c57; font-family: "Noto Sans KR", sans-serif;}
+.register .calender .header{position: relative; padding:12px 0; text-align: center; font-size: 14px;}
+.register .calender .header .close{position: absolute; top:8px; right: 8px; width: 10px; height: 10px; background: url("../images/pop_close.png") no-repeat; background-size: 100%;}
+
+.register .calender .header a{display: inline-block; width: 8px; height: 16px; font-size: 0; line-height: 0; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; vertical-align: middle;} 
+.register .calender .header .prev{margin-right: 14px; background-image: url("../images/arr_paging_prev.png");}
+.register .calender .header .next{margin-left: 14px; background-image: url("../images/arr_paging_next.png");}
+.register .calender caption{font-size: 0; line-height: 0; text-indent: -9999px;}
+.register .calender thead th{font-weight: normal;}
+.register .calender thead th.sun{color: #b64b4b;}
+.register .datepicker{text-align: center;}
+.register .datepicker th,.register .datepicker td a{padding:8px; font-size:12px;}
+.register .datepicker td a{display: block;}
+.register .datepicker td .today{color: #fff; background-color: #192c57;}
+
 .register .funeral_info .funeral_input{width: 467px;}
 .register .funeral_info .room_nm{width: 120px; margin-left: 10px;}
 .register .funeral_info .row{margin-bottom: 18px;}
@@ -326,9 +342,10 @@
     .reg_info .reg_top .col label{top:8px; left: 0; font-size: 14px;}
     .reg_info .reg_top .col input[type="text"] {margin-left: 26%; width: 74%; font-size: 14px;} 
     .reg_info .input_tit{margin-right: 8%; font-size: 14px;}
-    .reg_info .reg_select, .reg_info .upload_input{width: 49%;}
-    .reg_info .reg_select{border-top-right-radius: 0; border-bottom-right-radius: 0;}
-    .reg_info .birth{width: 74%;}
+    .reg_info .date, .reg_info .upload_input{width: 49%;}
+    .register .reg_info .date{border-top-right-radius: 0; border-bottom-right-radius: 0;}
+
+    .reg_info .birth.date{width: 74%;}
     .reg_info .reg_select{border-right: none;}
     .reg_info .reg_select2{width: 26%; margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;}
     .register .funeral_info .row{position: relative;}
@@ -348,7 +365,7 @@
     .register .account_info .input_account{width: 60%;}
     .register .account_info{position: relative;  padding-top: 48px;}
     .register .account_info .input_wrap{width: 100%;}
-    .register .account_info .button_wrap{position: absolute; top:0; right: 0;}
+    .register .account_info .button_wrap{position: absolute; top:-45px; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
     .register .account_info .link_input{margin-left: 0; width: 83%;}     
     .register .memorial .reg_input{width: 100%;}
@@ -365,6 +382,11 @@
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
     .reg_info .filebox .file_output{max-height: 300px; margin-left: 0;}    
+    .register .calender{top:40px; left: 25%; width: 168px;}
+    .register .calender .header .prev{margin-right: 4px;}
+    .register .calender .header .next{margin-left: 4px;}
+    .register .datepicker th, .register .datepicker td a{padding: 4px;}
+
     .inquiry_wrap{width: 100%;}
     .inquiry_wrap .inquiry_content{padding: 0;}
     .inquiry_wrap .title_area{position: relative; top: auto; left: auto; margin-left: 0; margin-bottom: 45px;}
