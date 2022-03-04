@@ -654,7 +654,6 @@
     .register .account_info .link_input{margin-left: 0; width: 83%;}     
     .register .account_info .row{margin-bottom: 44px;}
     .register .account_info .row.bank_row{margin-bottom: 10px;}
-
     .register .memorial .reg_input{width: 100%;}
     .register .memorial .title{width: 100%; margin-bottom: 10px;}
     .register .memorial .btn_sample{position: absolute; top:-10px; right: 0;}
@@ -671,6 +670,7 @@
     .register .calender .header .prev{margin-right: 4px;}
     .register .calender .header .next{margin-left: 4px;}
     .register .datepicker th, .register .datepicker td a{padding: 4px;}
+    .register .site .title{margin-bottom: 10px;}
     
     .register .chk_txt{ margin-top: 4px; margin-left: 0; font-size: 12px;}
     .register .relation_info .chk_txt{margin-left: 0;}
