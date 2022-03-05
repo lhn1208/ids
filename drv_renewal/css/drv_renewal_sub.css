@@ -101,33 +101,16 @@
 
 
 /* list 공통 [s]*/
-.ad_ico{display: inline-block; padding:0 2px; margin-right: 6px; border-radius: 3px; font-size: 11px; background-color: #7c2cd0; color: #fff; font-family: 'SpoqaHanSans_bold';}
+/* .ad_ico{display: inline-block; padding:0 2px; margin-right: 6px; border-radius: 3px; font-size: 11px; background-color: #7c2cd0; color: #fff; font-family: 'SpoqaHanSans_bold';} */
 .cont_type li{font-family: 'SpoqaHan_regualr'; font-weight: 300;}
 .cont_type li a{display: block;}
-.cont_type li a:hover .txt{text-decoration: underline;}
-.cont_type .video_img{position: relative;}
-.cont_type .video_img img{vertical-align: middle;}
-.cont_type .video_img i.badge{position: absolute; top:0; left: 0; padding:2px 6px; color: #fff; font-size: 13px; background-color: #ff384f;}
 
-.cont_album{margin-bottom: 40px;}
-.cont_album ul::after{display: block; content: ""; clear: both;}
-.cont_album ul{padding-bottom: 45px; border-bottom: 1px solid #e2e5ea;}
-.cont_album li{float:left; width: 227px; padding-left: 14px; margin-bottom: 24px;} 
-.cont_album li:nth-child(3n+1){padding-left: 0;}
-.cont_album li .video_img{display: inline-block; width: 227px; height: 128px; overflow: hidden; margin-bottom: 8px;}
-.cont_album li .category{font-size: 13px;}
-.cont_album li .txt{line-height: 1.4; padding-top: 2px; height: 43px; overflow: hidden; font-size: 14px; letter-spacing: -0.025em; font-family: 'SpoqaHan_light';}
+.cont_type .thum_img{position: relative;}
+.cont_type .thum_img img{vertical-align: middle;}
 
-.cont_list ul{padding-bottom: 53px;}
-.cont_list li{margin-bottom: 16px;}
-.cont_list li a{display: flex; justify-content:space-between;}
-.cont_list li .info_area{width: 497px;}
-.cont_list li .category{display: block; padding:6px 0 4px; font-size: 13px; font-family: 'SpoqaHan_regualr'; }
-.cont_list li .txt{height: 43px; overflow: hidden; font-size: 14px; font-family: 'SpoqaHan_light';}
-.cont_list li a:hover .txt{text-decoration: underline;}
-.cont_list li .info{display: block; margin-top: 10px; color: #909090; font-size: 13px;}
-.cont_list li .info em{color: #26262b; font-family: 'SpoqaHan_regualr'; font-weight: 400;}
-.cont_list .more{display: block; width: 134px; margin:0 auto; padding:6px 15px 6px 26px; background-color: #ebebeb; border-radius: 30px; font-size: 14px; font-family: 'SpoqaHan_light'; box-sizing: border-box;}
+
+
+
 /* 컨텐츠 search */
 .search_list::after{display: block; content: ""; clear: both;}
 .search_list li{float: left;}
@@ -142,12 +125,10 @@
 .content_top{position: relative; margin-bottom: 16px; letter-spacing: -0.025em; font-family: 'dotum', '돋움';}
 .content_top .title{font-size: 16px; color: #4a4a4a;}
 .content_top .title .number{color: #ff5a01;}
-.content_top .list_set{position: absolute; top:0; right:0;}
-.content_top .list_set a{vertical-align: middle;}
+
 .content_top .list_set .sort_wrap{margin-right: 6px;}
 .content_top .list_set .sort_txt{padding:0 4px; color: #7f7f7f; font-size: 12px;  }
 .content_top .list_set .sort_txt.on{color: #606060; font-weight: bold;}
 .content_top .list_set .sort_txt.on::before{display:inline-block; width: 2px; height: 2px; margin-right: 4px; background-color: #606060; content: ""; vertical-align: 4px}
-.content_top .list_set .opt{margin-right: 6px; display: inline-block; width: 13px; height: 13px; background: url("../images/renew_ico_common.png") -130px -136px;}
-.content_top .list_set .opt.album{display: inline-block; width: 13px; height: 13px; background: url("../images/renew_ico_common.png") -156px -136px;}
+
 /* list 공통 [e]*/

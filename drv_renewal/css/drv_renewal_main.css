@@ -63,17 +63,12 @@
 .all_menu_box .btn_close::after{bottom:28px; left: 12px; transform: translateY(7px) rotate(45deg);}
 /*header [e]*/
 
-/* video 공통 [s]*/
-.ad_ico{display: inline-block; padding:0 2px; margin-right: 6px; border-radius: 3px; font-size: 11px; background-color: #7c2cd0; color: #fff; font-family: 'SpoqaHanSans_bold';}
-.main_list ul::after{display: block; content: ""; clear: both;}
-.main_list li{float:left; width: 257px; padding-left: 14px; margin-bottom: 24px; font-family: 'SpoqaHan_regualr';} 
-.main_list li:nth-child(3n+1){padding-left: 0;}
-.main_list li .video_img{display: inline-block; margin-bottom: 16px;}
-.main_list .video_img img{vertical-align: middle;}
-.main_list li a{display: block;}
-.main_list li a:hover .txt{text-decoration: underline;}
-.main_list li .category{font-size: 14px;}
-.main_list li .txt{line-height: 1.4; padding-top: 2px; height: 44px; overflow: hidden; font-size: 15px; letter-spacing: -0.025em;; font-family: 'SpoqaHan_light';}
+/* list*/
+.cont_grid li{width: 257px; padding-left: 14px;}
+.cont_grid.main_list li .thum_img{width: 255px; height: 144px;}
+.cont_grid.main_list li .category{font-size: 14px; font-weight: normal;}
+.cont_grid.main_list li .txt{font-size: 15px;}
+
 .main_container {font-family: 'SpoqaHanSans_bold', 'dotum', '돋움';}
 .main_container .main_container_inner{background-color: #eff1f5;}
 .main_container .section{width: 1080px; margin:0 auto; padding:20px 0 25px;}
@@ -96,7 +91,6 @@
 .main_slide .swiper-slide .ico.red::before{display: inline-block; width: 4px; height: 4px; margin-right: 5px; margin-top: -2px; vertical-align: middle; border-radius: 50%; background-color: #fff; content: "";}
 .main_slide .swiper-slide .badge{position: absolute; top:6px; right: 10px; color: #fff; font-size: 13px; font-family: 'SpoqaHan_regualr'; letter-spacing: -0.025em;}
 .main_slide .swiper-slide .badge em{display: inline-block; margin-left: 2px; font-family: 'SpoqaHanSans_bold';}
-
 .section_contents .left_area{padding-top: 30px;}
 .drv_service{border-bottom: 1px solid #dee1e7;}
 .drv_service .service_title{margin-bottom: 15px; font-size: 18px; font-family: 'SpoqaHanSans_bold';}
@@ -107,37 +101,23 @@
 .drv_service .service li:first-child{border-left: 1px solid #dee1e7;}
 .drv_service .service li a{display: flex; justify-content: center; align-items:center;  width: 100%; height: 100%;}
 .recomm_area{position: relative; font-family: 'SpoqaHan_regualr';}
-.recomm_area .list_set{position: absolute; top:0; right:0;}
 .recomm_area .list_set .set{margin-right: 8px; color: #636367; font-size: 13px; letter-spacing: -0.025em;}
 .recomm_area .list_set .set::before{display: inline-block; width: 12px; height: 12px; vertical-align: -2px; background: url("../images/renew_ico_common.png") -156px -104px; content: "";}
-.recomm_area .list_set .opt{margin-right: 6px; display: inline-block; width: 13px; height: 13px; background: url("../images/renew_ico_common.png") -130px -136px;}
-.recomm_area .list_set .opt.album{display: inline-block; width: 13px; height: 13px; background: url("../images/renew_ico_common.png") -156px -136px;}
-.recomm_area .more{position: absolute; bottom: 0; left: 50;}
-.recomm_list{margin-bottom: 54px;}
-.recomm_list::after{display: block; content: ""; clear: both;}
-.recomm_list li{float: left; width: 50%; margin-bottom: 18px; box-sizing: border-box;}
-.recomm_list li a{display: flex;}
-.recomm_list li .thum_img{ width: 190px; height: 108px; overflow: hidden;}
-.recomm_list li .info_area{width: 180px; margin-left: 16px;}
-.recomm_list li .category{display: block; padding:6px 0 2px; font-size: 13px;}
-.recomm_list li .txt{height: 60px; overflow: hidden; line-height: 1.4; color: #26262b; font-size: 14px; font-family: 'SpoqaHan_regualr';  word-wrap: break-word; word-break:keep-all; }
-.recomm_list li a:hover .txt{text-decoration: underline;} 
-
-
-/*리스트타입*/
-.recomm_list.list_type li{width: 100%; float: none;}
-.recomm_list.list_type li a{display: flex; margin-left: 0;}
-.recomm_list.list_type li .txt{height: 20px; padding:4px 0 2px;}
-.recomm_list.list_type li .info_area{width: 524px; /*margin-left: 214px;*/ margin-left: 20px;}
-.recomm_list.list_type li .sub_txt{color: #26262b; font-size: 14px; font-family: 'SpoqaHan_light'; letter-spacing: -0.025em; word-wrap: break-word; word-break:keep-all;}
-.recomm_list.list_type li a:hover .sub_txt{text-decoration: underline;}
+.recomm_area .cont_list li a{justify-content: flex-start;}
+.recomm_area .cont_list li .thum_img{width: 190px; height: 108px; overflow: hidden;}
+.recomm_area .cont_list li .info_area{width: 524px; margin-left: 20px;}
+.recomm_area .cont_list li .info_area .title{height: 20px; overflow: hidden; line-height: 1.4; color: #26262b; font-size: 14px; font-family: 'SpoqaHan_regualr';  word-wrap: break-word; word-break:keep-all;}
+.recomm_area .cont_list.type ul::after{display: block; content: ""; clear: both;}
+.recomm_area .cont_list.type li{float: left; width: 50%; margin-bottom: 18px; box-sizing: border-box;}
+.recomm_area .cont_list.type li .info_area{width: 180px; margin-left: 16px;}
+.recomm_area .cont_list.type li .info_area .title{height: 60px;}
 .recomm_area .more_area{position: relative; border-bottom: 1px solid #dee1e7;}
 .recomm_area .more_area .more{position: absolute; bottom: -15px; left: 50%; margin-left: -84px;  width: 168px; height: 30px; padding:4px 0; text-align: center; font-size: 13px; background-color: #fff; border: 1px solid #dee1e7; border-radius: 30px; box-sizing: border-box;}
 .recomm_area .more_area .more::before{display: inline-block; width: 16px; height: 21px; margin-right: 6px; vertical-align: middle; background: url("../images/renew_ico_common.png") -25px -126px; content: "";}
 .recomm_area .more_area .more span{color: #868690;}
+
 .section_banner{display: flex; justify-content:space-between; margin:40px 0;}
 .section_banner a{display: inline-block;}
-
 .main_container .right_area{width: 260px;}
 .member_info{position: relative; display: block; height: 96px; margin-bottom: 15px; padding:20px 10px 20px 14px; border:1px solid #dfe2e7; background-color: #fff; font-size: 14px; font-family: 'SpoqaHanSans_bold'; box-sizing: border-box;}
 .member_info .new{position: absolute; top:-3px; right: -5px; width:5px; height: 5px; border-radius: 50%; background-color: #ff471c; content: ""; font-size:0; line-height:0; text-indent:-9999px}
