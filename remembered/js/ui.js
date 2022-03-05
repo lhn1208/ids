@@ -70,7 +70,6 @@ $(document).ready(function () {
     tabBtn.click(function(){
     var target = $(this);        //버튼의 타켓(순서)을 변수에 저장
     var index = target.index();  //버튼의 순서를 변수에 저장
-    // alert(index);
         tabBtn.removeClass("active");   //버튼의 클래스를 삭제
         target.addClass("active");   //타켓의 클래스를 추가
         tabCont.css("display","none");
@@ -79,16 +78,20 @@ $(document).ready(function () {
 
     var tabBtn1 = $(".tab_menu_list > ul > li"); //각각의 버튼을 변수에 저장
     var tabCont1 = $(".subtab_content_area > div");  //각각의 컨텐츠를 변수에 저장
-
     tabCont1.hide().eq(0).show();
 
     tabBtn1.click(function(){
     var target = $(this);        //버튼의 타켓(순서)을 변수에 저장
     var index = target.index();  //버튼의 순서를 변수에 저장
-    // alert(index);
         tabBtn1.removeClass("active");   //버튼의 클래스를 삭제
         target.addClass("active");   //타켓의 클래스를 추가
         tabCont1.css("display","none");
         tabCont1.eq(index).css("display","block");
+    });
+    //faq
+    $(".faq_area .header").click(function() {
+        $(this).next(".content").stop().slideToggle(300);
+        $(this).toggleClass('on').siblings().removeClass('on');
+        $(this).next(".content").siblings(".content").slideUp(300); // 1개씩 펼치기
     });
 });
