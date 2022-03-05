@@ -82,7 +82,7 @@
 .greeting_content .message_area a:before{display: block; width: 85px; height: 72px; margin:0 auto 14px; background-repeat: no-repeat; background-size: 100%; content: "";}
 .greeting_content .message_area a.kakao:before{background-image: url("../images/bg_message1.png");}
 .greeting_content .message_area a.sms:before{ background-image: url("../images/bg_message2.png");}
-.layer_pop.pop_media .layer_cont{height: 80%; background-color: #fff;}
+.layer_pop.pop_media .layer_cont{height: 560px; background-color: #fff;}
 .pop_media_cont{position: relative; width: 80%; margin:0 auto; height: 100%;}
 .pop_media_cont .midea{display: inline-block; width: 100%; overflow: hidden;}
 .pop_media_cont .midea img{width: 100%;}
