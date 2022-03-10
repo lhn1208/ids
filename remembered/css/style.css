@@ -38,6 +38,7 @@
 .pop_address .address_search .ad_info .ad_nm{color: #0C1622;}
 .pop_address .address_search .ad_info .address{color: #8893AA;}
 .pop_address .address_search .row .radio_item{position: absolute; top: 32px; right: 10px;}
+.layer_pop.layer_message .pop_inner{bottom: 160px;}
 .pop_message{text-align: center;}
 .pop_message .layer_cont_wrap{bottom: 50px;}
 .pop_message .pop_title{margin-bottom: 30px; color: #8893AA; font-size: 30px; font-weight: normal;}
@@ -431,7 +432,7 @@
 #tab_btn ul li {flex:1;text-align:center;border:1px solid #BBC4D7; border-left: none; box-sizing: border-box;}
 #tab_btn ul li:first-child{border-left: 1px solid #BBC4D7;}
 #tab_btn ul li.active {background:#374F8C;}
-#tab_btn ul li a {font-size:18px;color:#0C1622;font-family:"Noto Sans KR", sans-serif;letter-spacing:-0.06em;font-weight:500;padding:20px 0;display:inline-block;}
+#tab_btn ul li a {font-size:18px;color:#0C1622;font-family:"Noto Sans KR", sans-serif;letter-spacing:-0.06em;font-weight:500;padding:20px 0;display:inline-block; width: 100%; height: 100%; box-sizing: border-box;}
 #tab_btn ul li.active a {color:#fff;}
 #tab_cont {padding:20px 0;}
 #tab_cont .content_infor_01 .map_area {background:rgba(94, 94, 94, 0.2);width:100%;height:460px;text-align:center;position:relative;margin-top:20px;}
@@ -597,6 +598,8 @@
     .pop_address .address_search .row{padding:16px 0;}
     .pop_address .address_search .ad_info span{font-size: 14px;}
     .pop_address .address_search .row .radio_item{right:4px; transform: translateY(-44%)}
+    .pop_message{padding-top: 40px;}
+    .layer_pop.layer_message .pop_inner{bottom: 0;}
     .pop_message .pop_title{margin-bottom: 16px; font-size: 16px;}
     .pop_message .pop_contents{margin-bottom: 30px;}
     .pop_message .message{width: 140px; height: 140px; padding-top: 80px; font-size: 20px; background-size: 40%;}
@@ -697,7 +700,8 @@
     .register .account_info .button_wrap{position: absolute; top:-45px; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
     .register .account_info .link_input{margin-left: 0; width: 83%;}     
-    .register .account_info .row.bank_row{margin-bottom: 60px;}
+    .register .account_info .bank_row{margin-bottom: 60px;}
+    .register .account_info .bank_row:last-of-type{margin-bottom: 0;}
     .register .memorial .reg_input{width: 100%;}
     .register .memorial .title{width: 100%; margin-bottom: 10px;}
     .register .memorial .btn_sample{position: absolute; top:-10px; right: 0;}
