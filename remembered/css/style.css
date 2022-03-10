@@ -814,7 +814,6 @@
     .content_wrap .content_title {font-size:23px;}
     .death_content {width:90%;position:relative;margin:0 auto;padding:95px 0 35px;z-index:2;}
     .death_content .death_inner, .mouming_content .mouming_inner {padding:13% 0 5%}
-    .death_cotent_area .visual{width: 90%;}
     .death_cotent_area .visual img {width:100%; border-radius: 15px;}
     .death_cotent_area .visual .circle-area {width:125px;height:125px;bottom:-65px}
     .death_cotent_area .visual .circle-area .name {font-size:17px;margin-top:24%}
