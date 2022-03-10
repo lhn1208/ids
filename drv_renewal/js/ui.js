@@ -1,3 +1,11 @@
+
+window.onload = function () {
+    let els = document.querySelector(".all_menu_btn");
+    els.style.display = "none";
+    alert('els' + els);
+}
+
+
 (function ($) {
     $(document).ready(function () {
         //header

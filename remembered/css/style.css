@@ -131,9 +131,10 @@
 .register input[type="text"]::placeholder{color: #8893AA; font-family: "Noto Sans KR", sans-serif;}
 .register .ico_chk{position: absolute; top:-4px; right: -12px; color:#c26836}
 .register_content .register_btn{text-align: center;}
-.register_content .register_btn button{width: 174px; height: 54px; margin:0 5px; color: #fff; font-size: 16px; font-family: "Noto Sans KR", sans-serif; background-color: #192B57; border-radius: 50px;}
+.register_content .register_btn button{width: 30%; height: 50px; margin:0 5px; color: #fff; font-size: 14px; font-family: "Noto Sans KR", sans-serif; background-color: #192B57; border-radius: 50px;}
 .register_content .register_btn .cancel{background-color: #fff; color: #666; border: 1px solid #ABBFC6;}
-.register .add_btn,.register .minus_btn{position: relative; width: 46px; height: 46px; display: block; margin-bottom: 10px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57; border-radius: 5px; background: url("../images/bg_plus_btn.png") no-repeat center #fff; }
+.register .add_btn{position: absolute; top:-10px; right: 0;}
+.register .message .add_btn,.register .minus_btn{position: relative; width: 46px; height: 46px; display: block; margin-bottom: 10px; margin-left: 10px; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff; border:1px solid #1a2b57; border-radius: 5px; background: url("../images/bg_plus_btn.png") no-repeat center #fff; }
 .register .arr_btn{width: 47px; height: 47px; margin-left: 10px; border:1px solid #192B57; border-radius: 5px; background-image: url("../images/bg_arr_up.png"); background-repeat: no-repeat; background-position:center; font-size:0; line-height:0; text-indent:-9999px; background-color: #fff;}
 .register .arr_btn.down{ background-image: url("../images/bg_arr_down.png"); }
 .register .minus_btn{background: url("../images/bg_minus_btn.png") no-repeat center #fff; }
@@ -145,7 +146,6 @@
 .register .input_tit{position: relative; font-family:  'Noto Sans KR',sans-serif;}
 .register .input_tit .ico_chk{top:-2px; right: -10px;}
 .register .reg_btn_w47{width: 47px; height: 47px; margin-left: 8px; border-radius: 5px; color: #fff; font-family: "Noto Sans KR", sans-serif; background-color: #192c57}
-.register_content .register_btn button{height: 50px; margin:0; font-size: 14px;}
 .reg_style{padding-left: 15px;}
 .reg_info .reg_top{display: flex; align-items: center; }
 .reg_info .reg_top .col{position: relative; width: 48%; margin-bottom: 0; padding-bottom: 4px; font-size: 16px; border-bottom: 2px solid #dae1e9;}
@@ -162,13 +162,13 @@
 .reg_info .date.birth{width: 380px;}
 .reg_info .reg_top_wrap{margin-bottom: 20px;}
 .reg_info .row.reg_top{margin-bottom: 0;}
-.register .reg_info .reg_top_wrap .chk_txt{margin-left: 0; margin-bottom: 10px;}
+.register .reg_info .reg_top_wrap .val_chk{margin-left: 0; margin-bottom: 10px;}
 .register .flex_style{display: flex;}
-.register .chk_txt{margin-top: 12px; margin-left: 6px; font-size: 14px;}
+.register .val_chk{margin-top: 12px; margin-left: 6px; font-size: 14px;}
 .register .relation_info .chk_txt{margin-left: 0;}
-.register .reg_info .chk_txt{margin-left: 23%;}
+.register .reg_info .val_chk{margin-left: 23%;}
 .register .site .title{margin-bottom: 0;}
-.register .site .chk_txt,.register .memorial .chk_txt{margin-left: 17%;}
+.register .site .val_chk,.register .memorial .val_chk{margin-left: 17%;}
 .register .message .chk_txt{margin-left: 16px;}
 .reg_info .upload_input{height: 47px; padding: 8px 14px; border-radius: 5px; border:1px solid #ced5e4; box-sizing: border-box; font-family: "Noto Sans KR", sans-serif;}
 .reg_info .reg_time{margin-left: 10px; width: 165px; background-position-x: 94%;}
@@ -201,16 +201,18 @@
 .register.reg_type #site_input{width: 83%;}
 .register .relation_info2{padding-left: 15px; margin-bottom: 28px;}
 .register .relation_info2 .select{margin-right: 10px;}
-.register .relation_info2 .input_wrap{display: inline-block; width: 328px;}
+.register .relation_info2 .input_wrap{display: inline-block; width: 394px;}
 .register .relation_info2 .reg_input{width:40%; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .relation_info2 .ph_input{width:60%;margin-left: -4px; border-top-left-radius: 0; border-bottom-left-radius: 0;} 
 .register .relation_info2 .button_wrap button, .register .account_info .button_wrap button{display: inline-block;}
 .register .account_info .input_nm{width: 150px; margin-right: 10px;}
 .register .account_info .link_input{width: 508px; margin-left: 14px;}
-.register .account_info .input_wrap{display: inline-block; width: 328px;}
+.register .account_info .input_wrap{display: inline-block; width: 396px;}
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
 .register .account_info .row{margin-bottom: 28px;}
+.register .account_info .bank_row{padding-bottom: 20px; border-bottom:1px solid #e8edf3;}
+.register .account_info .bank_row:last-of-type{padding-bottom: 0; border-bottom: none;}
 .register .memorial .title{margin-bottom: 0;}
 .register .memorial .reg_input{width: 75%;}
 .register .title.vert{vertical-align: top;}
@@ -221,7 +223,7 @@
 .register .message .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
 .register .message .view_area .sample::before{display: inline-block; margin-right: 8px; width: 24px; height: 24px; vertical-align: -6px; background-repeat: no-repeat; content: "";}
 .register .message .view_area .sample::before{background-image: url("../images/ico_sample.png");}
-.register .message .editor_box{position: relative; width: 672px; min-height: 234px; margin-left: 15px; padding: 10px; background-color: #fff; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
+.register .message .editor_box{position: relative; width: 736px; min-height: 234px; margin-left: 15px; padding: 10px; background-color: #fff; border:1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
 .register .message .arr_button_wrap{display: inline-flex;}
 .register .message .button_wrap{position: absolute; top:10px; right: 0;}
 .register .message .editor_box .subject{position: relative; display: flex; margin-bottom: 12px;}
@@ -229,17 +231,17 @@
 .register .message .editor_box .subject .max_opt{width: 60%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-left: none;}
 .register .message .editor_box .reg_btn{margin-left: 0; margin-bottom: 10px;}
 .register .message .open_opt{position: absolute; top:70px; right: 15px; font-size: 14px;}
-.register .message .switch{display: inline-block; position: relative; width: 38px; height: 18px; margin-left: 8px; vertical-align: middle; background: linear-gradient(180deg, rgba(201,201,205,1) 0%, rgba(224,225,229,1) 100%); transition: all 0.2s ease; border-radius: 10px;}
-.register .message .switch::after{content: ""; display: block; position: absolute; left: -3px; top:-3px; width: 22px; height: 22px; background: #fff; border-radius: 50%; border: 1px solid #ccc; transition: all 0.2s ease;}
-.register .message .switch.active{background: #192B57;}
-.register .message .switch.active::after{left: 16px;}
-.register_content .register_btn button{width: 30%;}
+.register .switch{display: inline-block; position: relative; width: 38px; height: 18px; margin-left: 8px; vertical-align: middle; background: linear-gradient(180deg, rgba(201,201,205,1) 0%, rgba(224,225,229,1) 100%); transition: all 0.2s ease; border-radius: 10px;}
+.register .switch::after{content: ""; display: block; position: absolute; left: -3px; top:-3px; width: 22px; height: 22px; background: #fff; border-radius: 50%; border: 1px solid #ccc; transition: all 0.2s ease;}
+.register .switch.active{background: #192B57;}
+.register .switch.active::after{left: 16px;}
+.register .bt_opt{position: absolute; bottom: 60px; left: 50%; margin-left: -110px;}
 .register_content .register_btn .preview{background-color: #EEF8FB; color: #192B57; border: 1px solid #192B57;}
 .register_content .register_btn .preview::before{display: inline-block; width: 24px; height: 24px; vertical-align: -6px; margin-right: 4px; background: url("../images/ico_preview.png") no-repeat; content: "";}
-.bg_grey{background-color: #E5E5E5;}
+.bg_grey{background-color: #fffef9;}
 .memorial_area .register{border-bottom: 1px solid #BBC4D7;}
 .memorial_area .reg_info .reg_top .col{border-bottom:1px solid #8893AA}
-.memorial_area .reg_info .reg_top input[type="text"]{background-color: #E5E5E5;}
+.memorial_area .reg_info .reg_top input[type="text"]{background-color: #fffef9;}
 .content_wrap .content_inner{position: relative; width: 1132px; margin:0 auto}
 .content_wrap .content_title .block{display: block;} 
 .inquiry_wrap .title_area{position: absolute; top: 302px; left: 50%; margin-left: -830px;}
@@ -357,14 +359,14 @@
 .faq_content .faq_area .header span::before{margin-right: 8px; content: "Q."; color: #0C1622; font-size: 20px; font-family:"AritaBuri",sans-serif; }
 .faq_content .faq_area .header i{position: absolute; top: 50%; transform: translateY(-25%); right: 2%; width: 17px; height: 12px; background-repeat: no-repeat; background-size: 100%; background-image: url("../images/bg_arr_down.png"); font-size: 0; line-height: 0; text-indent: -9999px;}
 .faq_content .faq_area .header.on i{background-image: url("../images/bg_arr_up.png")}
-.faq_content .faq_area .content{display: none; padding:15px 0 15px 20px; color: #666; font-size: 16px; border-bottom: 1px solid #BBC4D7; }
+.faq_content .faq_area .content{padding:15px 0 15px 20px; color: #666; font-size: 16px; border-bottom: 1px solid #BBC4D7; }
 /* 부고 */
 .death_content,
 .mouming_content{position:relative;width:752px;margin:0 auto;}
 .death_content .death_inner,
 .mouming_content .mouming_inner {padding:262px 0 70px;}
-.death_cotent_area .visual {position:relative;}
-.death_cotent_area .visual img {border:1px solid rgba(12, 22, 34, 0.5);box-sizing:border-box;filter:drop-shadow(10px 30px 30px rgba(0, 0, 0, 0.2));}
+.death_cotent_area .visual {position:relative; text-align: center;}
+.death_cotent_area .visual img {border:1px solid rgba(12, 22, 34, 0.5);box-sizing:border-box;filter:drop-shadow(10px 30px 30px rgba(0, 0, 0, 0.2)); border-radius: 30px;}
 .death_cotent_area .visual .circle-area {position:absolute;left:50%;bottom:-110px;width:248px;height:248px;background:#BB7A19;border-radius:50%;text-align:center;transform:translateX(-50%);}
 .death_cotent_area .visual .circle-area .name {color:#fff;font-family:"AritaBuri",sans-serif;font-weight:600;font-size:34px;margin-top:66px}
 .death_cotent_area .visual .circle-area .date {color:#fff;font-family:"NotoSerifKR",sans-serif;font-weight:500;font-size:20px;letter-spacing:-0.04em;margin-top:15px}
@@ -394,14 +396,13 @@
 .sub_title_area .more_btn {position:relative;width:71px;height:10px;overflow:hidden;line-height:0;font-size:0;text-indent:-1000px;margin-top:20px;}
 .sub_title_area .more_btn:before{content:"";display:block;width:100%;height:1px;background:#535353;position:absolute;right:0;top:9px;}
 .sub_title_area .more_btn:after{content:"";display:block;width:10px;height:10px;border-right:solid 1px #535353;position:absolute;right:0;top:6px;transform:rotate(-45deg);} 
-.memorial_section {overflow:hidden;position:relative;z-index:2;}
-.memorial_section:before {content:"";display:block;width:100%;height:100%;background:#BFE6EE;position:absolute;top:300px;left:0;z-index:1}
+.memorial_section {overflow:hidden;position:relative;z-index:2; background: linear-gradient(to bottom, #f6fbfe, #BFE6EE);}
 .memorial_section:after {content:"";display:block;background:url(../images/img_bg_type01.png) no-repeat;background-size:cover;width:60%;height:1238px;position:absolute;bottom:0;left:0;z-index:1;}
 .memorial_section .memorial_slide{margin-top:40px;position:relative;z-index:2;}
 .memorial_section .memorial_slide .swiper-slide{transform: scale(0.8);}
 .memorial_section .memorial_slide .swiper-slide-active{margin-top:-55px; transform: scale(1);}
 .memorial_section .memorial_slide .swiper-slide-active .img_area {border:2px solid #BFE6EE;filter:drop-shadow(10px 30px 30px rgba(0, 0, 0, 0.2));}
-/* .memorial_section .memorial_slide .swiper-slide-active .img_area:after {content:"";display:block;width:76px;height:76px;background:url(../images/ico_snow.png) no-repeat;position:absolute;bottom:75px;left:50%;transform:translateX(-50%);} */
+.memorial_section .memorial_slide .swiper-slide-active .img_area:after {content:"";display:block;width:76px;height:76px;background:url(../images/ico_snow.png) no-repeat;position:absolute;bottom:75px;left:50%;transform:translateX(-50%);}
 .memorial_section .memorial_slide .img_area{height: 356px; position:relative;box-sizing:border-box;}
 .memorial_section .memorial_slide .img_area img{width:100%; height: 100%;}
 .memorial_section .memorial_slide .img_area:before{content:"";display:block;background:rgba(12, 22, 34, 0.7);width:100%;height:100%;position:absolute;top:0;left:0;}
@@ -441,7 +442,7 @@
 #tab_cont .content_infor_02 .subtab_content_area {background:url(../images/jomunbo_bg.png) no-repeat;}
 #tab_cont .content_infor_03 .register .select {width:100%;background-position:98% 50%;}
 #tab_cont .content_infor_03 .register .textarea {width:100%;padding:8px 14px;border:1px solid #ced5e4;border-radius:5px;box-sizing:border-box;margin:9px 0; font-size: 16px; font-family: "Noto Sans KR", sans-serif;}
-#tab_cont .content_infor_03 .paging{margin-top: 87px;}
+#tab_cont .paging{margin-top: 87px;}
 .subtab_content_area .subtabe_content .content_visual_area {display:flex;flex-wrap:wrap;padding:80px 105px;}
 .subtab_content_area .subtabe_content .content_visual_area .visual {-webkit-box-flex:0;-ms-flex:0 0 27.4%;flex:0 0 27.4%;max-width:27.4%; max-height: 308px; overflow: hidden;}
 .subtab_content_area .subtabe_content .content_visual_area .visual img{width: 100%;}
@@ -464,19 +465,21 @@
 .content_infor_03 .btn_area .open_opt {left:-130px;top:50%;right:auto;transform:translateY(-50%);}
 .content_infor_03 .file_list_box {background:#F5F5F5;border-radius:6px 0px 0px 6px;padding:24px;margin-top:10px;}
 .content_infor_03 .file_list_box .file_list_area {display:flex;flex-wrap:wrap;}
-.content_infor_03 .file_list_box .file_list_area .file_content{position:relative;width:97px;height:68px;position:relative;margin-left:7px}
+.content_infor_03 .file_list_box .file_list_area .file_content{position:relative;width:97px;height:68px;margin-left:7px}
 .content_infor_03 .file_list_box .file_list_area .file_content:before{content:"";display:block;background:rgba(0, 0, 0, 0.3);position:absolute;top:0;left:0;width:100%;height:100%;}
+.content_infor_03 .file_list_box .file_list_area .file_content.movie:after{content: ""; position: absolute; top:50%; left: 50%; width: 36px; transform: translate(-50%, -50%); height: 36px; background: url("../images/btn_play.png") no-repeat; background-size: 100%;}
 .content_infor_03 .file_list_box .file_list_area .file_content img{width:100%}
 .content_infor_03 .file_list_box .file_list_area .file_content button{position:absolute;width:8px;height:8px;top:6px;right:6px;text-indent:-99999px;}
 .content_infor_03 .file_list_box .file_list_area .file_content button:before{content:"";display:block;width:2px;height:8px;background:#fff;position:absolute;top:0;left:0;transform:rotate(-45deg);}
 .content_infor_03 .file_list_box .file_list_area .file_content button:after{content:"";display:block;width:2px;height:8px;background:#fff;position:absolute;top:0;left:0;transform:rotate(45deg);}
+.content_infor_03 .file_list_box .file_list_area .file_content>div{width: 100%; height: 100%;}
 .reply_area .content_area {display:flex;flex-wrap:wrap;position:relative;border-bottom:1px solid #DFE4EE;padding:15px 0;}
-.reply_area .content_area .del_btn {position:absolute;top:22px;right:0;display:inline-block;width:12px;height:12px;font-size:0;line-height:0;text-indent:-9999px;background: url(../images/file_del.png) no-repeat;vertical-align:middle;}
-.reply_area .content_area .name {-webkit-box-flex:0;-ms-flex:0 0 7%;flex:0 0 7%;max-width:7%;position:relative;color:#666}
-.reply_area .content_area .name:before{content:"";display:block;width:12px;height:15px;background:url(../images/icon_lock.png) no-repeat;position:absolute;top:5px;right:10px;}
+.reply_area .content_area .del_btn {position:absolute;top:22px;right:0;display:inline-block;width:12px;height:12px;font-size:0;line-height:0;text-indent:-9999px;background: url(../images/board_close.png) no-repeat;vertical-align:middle;}
+.reply_area .content_area .name {min-width:7%;position:relative;color:#666}
+.reply_area .content_area .name:after{content:"";display:inline-block;width:12px;height:15px;background:url(../images/icon_lock.png) no-repeat; margin-left: 10px; margin-right: 10px;}
 .reply_area .content_area .text_content:before{content:"";display:block;width:1px;height:12px;background:#192B57;position:absolute;top:5px;left:0;}
-.reply_area .content_area .text_content {-webkit-box-flex:0;-ms-flex:0 0 93%;flex:0 0 93%;max-width:93%;position:relative}
-.reply_area .content_area .text_content .text{font-family:"AritaBuri",sans-serif;padding:0 20px;font-size:18px;color:#192B57;font-weight:500;letter-spacing:-0.04em;line-height:30px;}
+.reply_area .content_area .text_content {max-width: 80%; position:relative}
+.reply_area .content_area .text_content .text{font-family:"AritaBuri",sans-serif; width: 94%; padding:0 20px;font-size:18px;color:#192B57;font-weight:500;letter-spacing:-0.04em;line-height:30px; word-break: keep-all;}
 .reply_area .content_area .text_content span{margin:5px 0 0 5px;display:inline-block;}
 /* 디지털 화환 */
 .mouming_inner .text_top {font-family:"AritaBuri",sans-serif;font-size:26px;line-height:36px;color:#0C1622;font-weight:500;letter-spacing:-0.06em;}
@@ -539,7 +542,7 @@
 /* 추모관 */
 .death_cotent_area .text_area.type01 {margin-top:135px;}
 .death_cotent_area .text_area.type01 .text_content{font-family:"AritaBuri",sans-serif;font-size:30px;line-height:46px;text-align:center;letter-spacing:-0.04em;}
-.memorial_section.type01{overflow:inherit;}
+.memorial_section.type01{overflow:inherit; background: #fffef9;}
 .memorial_section.type01:before {top:0;}
 .eulogy_area.type01 {padding-top:70px;margin:0}
 .video_list_area .list_video {display:flex;flex-wrap:wrap;}
@@ -653,7 +656,7 @@
     .register .ico_chk{position: absolute; top:-2px; right: -12px; color:#c26836}
     .register .reg_btn{width: 22%; height: 40px; margin-top: 0; margin-left: 2%; font-size: 12px; line-height: 2;}
     .register .reg_btn_w47{height: 40px; margin-left: 4px; font-size: 12px;}
-    .register .add_btn,.register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 32px; height: 32px; margin-left: 6px; margin-bottom: 6px; background-size: 50%;}
+    .register .minus_btn,.register .arr_btn,.register .arr_btn.down{width: 32px; height: 32px; margin-left: 6px; margin-bottom: 6px; background-size: 50%;}
     .register_content .register_inner{padding: 30px 0 55px;}
     .register_content .title{margin-bottom: 10px; font-size: 16px;}
     .register_content .register .sub_txt{display: block; margin-left: 0; margin-bottom: 10px; font-size: 12px;}
@@ -694,19 +697,19 @@
     .register .account_info .button_wrap{position: absolute; top:-45px; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
     .register .account_info .link_input{margin-left: 0; width: 83%;}     
-    .register .account_info .row{margin-bottom: 44px;}
-    .register .account_info .row.bank_row{margin-bottom: 10px;}
+    .register .account_info .row.bank_row{margin-bottom: 60px;}
     .register .memorial .reg_input{width: 100%;}
     .register .memorial .title{width: 100%; margin-bottom: 10px;}
     .register .memorial .btn_sample{position: absolute; top:-10px; right: 0;}
     .register .memorial .memorial_textarea{margin-top: 10px; width: 100%; height: 126px;}    
     .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
-    .register .message{padding-top: 47px;}
-    .register .message .view_area{top: -30px; right: 0;}
+    .register .message{padding-top: 47px; margin-bottom: 50px;}
+    .register .message .view_area{top: -30px; right: 58px;}
     .register .message .arr_button_wrap{position: absolute; top: -51px; right: -11px;}
     .register .message .button_wrap{top: -3px; right: 78px;}
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
+    .register .bt_opt{bottom: 40px; left: 25%; margin-left: 0; font-size: 12px;}
     .reg_info .filebox .file_output{margin-left: 0;}    
     .register .calender{top:40px; left: 25%; width: 168px;}
     .register .calender .header .prev{margin-right: 4px;}
@@ -720,6 +723,7 @@
     .register .col{margin-bottom: 10px;}
     .register .site .chk_txt,.register .memorial .chk_txt{margin-left: 0;}
     .register .message .chk_txt{margin-left: 4px;}
+    .register_content .register_btn button{margin: 0 2px;}
     .inquiry_wrap{width: 100%;}
     .inquiry_wrap .inquiry_content{padding: 0;}
     .inquiry_wrap .title_area{position: relative; top: auto; left: auto; margin-left: 0; margin-bottom: 45px;}
@@ -810,7 +814,8 @@
     .content_wrap .content_title {font-size:23px;}
     .death_content {width:90%;position:relative;margin:0 auto;padding:95px 0 35px;z-index:2;}
     .death_content .death_inner, .mouming_content .mouming_inner {padding:13% 0 5%}
-    .death_cotent_area .visual img {width:100%;}
+    .death_cotent_area .visual{width: 90%;}
+    .death_cotent_area .visual img {width:100%; border-radius: 15px;}
     .death_cotent_area .visual .circle-area {width:125px;height:125px;bottom:-65px}
     .death_cotent_area .visual .circle-area .name {font-size:17px;margin-top:24%}
     .death_cotent_area .visual .circle-area .date {font-size:12px;margin-top:5%;}
@@ -858,20 +863,21 @@
     .memorial_section .memorial_slide dd {font-size:9px;}
     .memorial_section .memorial_slide .swiper-slide-active .img_area:after {width: 40px; height: 40px; bottom:30px; background-size: 100%;}
     .subtab_content_area .subtabe_content .content_visual_area .text_content_area .text_area {margin-top:5%;}
-    .eulogy_area {margin-top:15%;padding-bottom:16%;}
+    .eulogy_area.type01 {padding-top:15%;padding-bottom:16%;}
     .memorial_section:after {background:url(../images/img_bg_type01_m.png) no-repeat;width:100%;height:100%;bottom:0;}    
     .tab_content_inner{padding-bottom: 40px;}
     .tab_content_area {margin-top:15px}
     .content_infor_03 .btn_area .open_opt{position:relative;left:auto;top:auto;transform:translateY(0);margin-bottom:20px;}
     .content_infor_03 .btn_area .btn_type01 {font-size:13px;height:41px;line-height:41px;}
-    #tab_cont .content_infor_03 .paging{margin-top: 42px;}
+    #tab_cont .paging{margin-top: 42px;}
     .reply_area .content_area .name {-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;position:relative;color:#666;font-size:11px;}
     .reply_area .content_area .text_content {-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;position:relative}
     .reply_area .content_area .text_content .text {font-size:12px;padding:0;line-height:17px;margin-top:7px;}
     .reply_area .content_area .text_content:before {display:none;}
-    .reply_area .content_area .name:before{right:auto;top:3px;left:35px;background-size:contain;width:8px;}
+    .reply_area .content_area .name:after{margin-left: 4px; margin-right: 4px;}
     .reply_area .content_area .del_btn {top:10px;}
     .reply_area .content_area {padding:10px 0;}
+    
 
     /* 화환 */
     .mouming_content {width:90%;position:relative;margin:0 auto;padding:70px 0;z-index:2;}

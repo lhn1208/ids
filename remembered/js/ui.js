@@ -20,10 +20,10 @@ $(document).ready(function () {
         $('.mobile_menu').removeClass('on');
     })
     //공개여부
-    $('.message .switch').on({
+    $('.register .switch').on({
         click:function(e){
-            $('.message .switch').toggleClass('active');
-            // $(this).toggleClass('active');
+            // $('.register .switch').toggleClass('active');
+             $(this).toggleClass('active');
         }
     });
     //프리미엄 서비스 탭
