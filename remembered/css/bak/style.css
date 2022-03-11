@@ -78,7 +78,6 @@
 .greeting_content .edit_box .header, .greeting_content .edit_box .content{padding:20px 40px; font-family:"Noto Sans KR",sans-serif;}
 .greeting_content .edit_box .header{font-size: 32px; border-bottom: 1px solid #BBC4D7;}
 .greeting_content .edit_box .content{font-size: 26px;}
-.greeting_content .edit_box .content textarea{display: inline-block; width: 580px; height: 346px; resize: none;}
 .greeting_content .message_area{text-align: center;}
 .greeting_content .message_area a{display: inline-block; margin:0 40px; color: #0C1622; font-size: 30px; font-family:"Noto Sans KR",sans-serif;}
 .greeting_content .message_area a:before{display: block; width: 85px; height: 72px; margin:0 auto 14px; background-repeat: no-repeat; background-size: 100%; content: "";}
@@ -117,10 +116,10 @@
 .remember_login .member_link a{font-size: 14px; letter-spacing: -0.06em;}
 .remember_login .member_link a::before{display: inline-block; width: 1px; height: 8px; margin: 0 8px; background-color: #BBC4D7; content: ""; vertical-align: 1px;}
 .remember_login .member_link a:first-of-type::before{display: none;}
-.remember_login .close{display: block; position: absolute; top: 45px; right: 40px; width: 30px; height: 30px; background: url("../images/pop_close.png") no-repeat; font-size:0;  line-height:0;  text-indent:-9999px;}
+
 .content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
 .content_wrap .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri','sans-serif'; font-size: 60px;}
-.content_wrap.bg_type{background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; background-position: left 254px;}
+.content_wrap.bg_type{background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; background-position: left 10%;}
 .register_content{position: relative; width: 750px; margin:0 auto; z-index: 1;}
 .register_content .register_inner{padding:262px 0 66px;}
 .register_content .title{display: inline-block; position: relative; margin-bottom: 26px; font-family: 'AritaBuri','sans-serif'; font-size: 19px;}
@@ -213,13 +212,13 @@
 .register .account_info .bank_select{width: 40%; border-top-right-radius: 0; border-bottom-right-radius: 0;}
 .register .account_info .input_account{width: 60%; margin-left: -4px; border-left: none; border-top-left-radius: 0; border-bottom-left-radius: 0;}
 .register .account_info .row{margin-bottom: 28px;}
-.register .account_info{padding-bottom: 20px; margin-bottom: 40px; border-bottom:1px solid #e8edf3;}
-.register .account_info:last-of-type{padding-bottom: 0; border-bottom: none;}
+.register .account_info .bank_row{padding-bottom: 20px; border-bottom:1px solid #e8edf3;}
+.register .account_info .bank_row:last-of-type{padding-bottom: 0; border-bottom: none;}
 .register .memorial .title{margin-bottom: 0;}
 .register .memorial .reg_input{width: 75%;}
 .register .title.vert{vertical-align: top;}
 .register .memorial .memorial_textarea{width: 75%; height: 117px; padding: 10px 16px; font-size: 16px; resize: none; font-family: "Noto Sans KR", sans-serif; border: 1px solid #BBC4D7; border-radius: 5px; box-sizing: border-box;}
-.register .message{position: relative; padding-bottom: 40px; margin-bottom: 80px; border-bottom: 1px solid #e8edf3;}
+.register .message{position: relative; margin-bottom: 80px;}
 .register .message:last-of-type{margin-bottom: 0;}
 .register .message .view_area{position: absolute; top:-44px; right: 64px;}
 .register .message .view_area a{margin-left: 24px; font-size: 14px; color: #0C1622;}
@@ -254,7 +253,7 @@
 .inquiry_list::after{display: block; content: ""; clear: both;}
 .inquiry_list li{float: left; width: 330px; margin-bottom: 30px; margin-left: 70px;}
 .inquiry_list li:nth-child(3n+1){margin-left: 0;}
-.inquiry_list li .img_area{position: relative; display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden; border-radius: 30px;}
+.inquiry_list li .img_area{position: relative; display: inline-block; width: 330px; height: 400px; margin-bottom: 15px; overflow: hidden;}
 .inquiry_list li .img_area img{width: 100%; height: 100%; vertical-align: middle;}
 .top_area{position: relative; }
 .top_area .search_form{position: relative; width: 470px;}
@@ -278,9 +277,9 @@
 .inquiry_content .inquiry_list li .info .funeral_info dt{width: 60px; color: #0C1622; vertical-align: 2px; }
 .inquiry_content .inquiry_list li .info .funeral_info dd{color: #535353; width: 265px; height: 24px; overflow: hidden; word-break: break-all;}
 .inquiry_content .inquiry_list li .info .mark{position: absolute; top:0; right: 0; width: 48px; height: 72px; padding:13px; border: 2px solid #20283B; border-radius: 50px; font-size: 18px; box-sizing: border-box;}
-.memorial_area .inquiry_list li .info{padding-top: 0;}
-.memorial_area .inquiry_list li .info .link{position: absolute; top: 0; right: 0; width: 32px; height: 32px; padding:4px 0; border:1px solid #20283B; border-radius: 50px; text-align: center; font-size: 20px; box-sizing: border-box;}
-.memorial_area .inquiry_list li .img_area .text{position: absolute; top: 280px; left: 37px; width: 250px; height: 60px; overflow: hidden; line-height: 1.4; word-break: keep-all; color: #fff;  font-size: 22px; font-family: 'AritaBuri','sans-serif'; }
+.memorial_area .inquiry_content .inquiry_list li .info{padding-top: 0;}
+.memorial_area .inquiry_content .inquiry_list li .info .link{position: absolute; top: 0; right: 0; width: 32px; height: 32px; padding:4px 0; border:1px solid #20283B; border-radius: 50px; text-align: center; font-size: 20px; box-sizing: border-box;}
+.memorial_area .inquiry_content .inquiry_list li .img_area .text{position: absolute; top: 280px; left: 37px; width: 250px; height: 60px; overflow: hidden; line-height: 1.4; word-break: keep-all; color: #fff;  font-size: 22px; font-family: 'AritaBuri','sans-serif'; }
 .premium_service{padding: 290px 0 162px ;}
 .premium_service .section_wrap{margin-top: 30px;}
 .premium_service .tab_area a{position: relative;margin-left: 42px; color: #000; font-size: 20px;  font-family: 'AritaBuri','sans-serif';}
@@ -328,7 +327,6 @@
 .mypage_content .tab_area a,.faq_content .tab_area a{margin-left: 42px; color: #0C1622; font-size: 20px; font-family: 'AritaBuri','sans-serif';}
 .mypage_content .tab_area a:first-child,.faq_content .tab_area a:first-child{margin-left: 0;}
 .mypage_content .tab_area a.on,.faq_content .tab_area a.on{color: #BB7A19;}
-.inquiry_wrap .all_search .search_title{margin-top: 44px; font-size: 30px; color: #0C1622; font-family: 'AritaBuri','sans-serif';}
 /* 마이페이지 */
 .content_wrap .mypage_content{padding:238px 0 187px;}
 .mypage_content .member_form{display: flex; padding-bottom: 40px; margin-bottom: 40px; justify-content: space-between; border-bottom: 1px solid #BBC4D7;}
@@ -365,20 +363,20 @@
 .faq_content .faq_area .content{padding:15px 0 15px 20px; color: #666; font-size: 16px; border-bottom: 1px solid #BBC4D7; }
 /* 부고 */
 .death_content,
-.mouming_content{position:relative;width:1129px;margin:0 auto;}
+.mouming_content{position:relative;width:752px;margin:0 auto;}
 .death_content .death_inner,
 .mouming_content .mouming_inner {padding:262px 0 70px;}
-.death_cotent_area .top_contents{display: flex;}
-.death_cotent_area .visual {position:relative; width: 380px; height: 460px;}
-.death_cotent_area .visual img {width: 100%; border-radius: 30px;}
-.death_cotent_area .info_area{position: relative; color: #0C1622;}
-.death_cotent_area .info_area .name {font-family:"AritaBuri",sans-serif;font-size:34px; position: relative; display: inline-block; min-width: 138px;}
-.death_cotent_area .info_area .date {font-family:"NotoSerifKR",sans-serif;font-size:20px;letter-spacing:-0.04em;margin-top:15px}
-.death_cotent_area .info_area .modify_btn {position: absolute; top: 10px; right: -62px; color:#0C1622;font-size:16px; }
-.death_cotent_area .info_area .modify_btn::before{display: inline-block; width: 30px; height: 30px; background: url("../images/ico_edit.png") no-repeat; content: ""; vertical-align: -10px;}
-.death_cotent_area .text_area {margin-top:40px; margin-left: 90px;}
+.death_cotent_area .visual {position:relative; text-align: center;}
+.death_cotent_area .visual img {border:1px solid rgba(12, 22, 34, 0.5);box-sizing:border-box;filter:drop-shadow(10px 30px 30px rgba(0, 0, 0, 0.2)); border-radius: 30px;}
+.death_cotent_area .visual .circle-area {position:absolute;left:50%;bottom:-110px;width:248px;height:248px;background:#BB7A19;border-radius:50%;text-align:center;transform:translateX(-50%);}
+.death_cotent_area .visual .circle-area .name {color:#fff;font-family:"AritaBuri",sans-serif;font-weight:600;font-size:34px;margin-top:66px}
+.death_cotent_area .visual .circle-area .date {color:#fff;font-family:"NotoSerifKR",sans-serif;font-weight:500;font-size:20px;letter-spacing:-0.04em;margin-top:15px}
+.death_cotent_area .visual .circle-area .modify {margin-top:35px}
+.modify .btn{ color:#fff;font-size:16px;font-weight:700;}
+.modify .btn::before{display: inline-block; width: 30px; height: 30px; margin-right: 4px; background: url("../images/ico_edit_white.png") no-repeat; content: ""; vertical-align: -10px;}
+.death_cotent_area .text_area {margin-top:80px;}
 .death_cotent_area .text_area:after {content:"";display:block;clear:both;}
-.death_cotent_area .text_area h3 {font-family:"AritaBuri",sans-serif;font-size:34px;letter-spacing:-0.04em;color:#0C1622;margin-bottom:17px;}
+.death_cotent_area .text_area h3 {font-family:"AritaBuri",sans-serif;font-size:34px;font-weight:600;letter-spacing:-0.04em;color:#0C1622;margin-bottom:17px;}
 .death_cotent_area .text_area .text_content {font-size:18px;clear:both;padding-top:10px;}
 .death_cotent_area .text_area .text_content span {display:inline-block;float:left;font-family:"Noto Sans KR", sans-serif;}
 .death_cotent_area .text_area .text_content .title {font-weight:500;width:51px;color:#0C1622;letter-spacing:-0.04em;}
@@ -404,11 +402,11 @@
 .memorial_section .memorial_slide{margin-top:40px;position:relative;z-index:2;}
 .memorial_section .memorial_slide .swiper-slide{transform: scale(0.8);}
 .memorial_section .memorial_slide .swiper-slide-active{margin-top:-55px; transform: scale(1);}
-.memorial_section .memorial_slide .swiper-slide-active .img_area {border:2px solid #BFE6EE;filter:drop-shadow(10px 30px 30px rgba(0, 0, 0, 0.2)); border-radius: 30px;}
+.memorial_section .memorial_slide .swiper-slide-active .img_area {border:2px solid #BFE6EE;filter:drop-shadow(10px 30px 30px rgba(0, 0, 0, 0.2));}
 .memorial_section .memorial_slide .swiper-slide-active .img_area:after {content:"";display:block;width:76px;height:76px;background:url(../images/ico_snow.png) no-repeat;position:absolute;bottom:75px;left:50%;transform:translateX(-50%);}
 .memorial_section .memorial_slide .img_area{height: 356px; position:relative;box-sizing:border-box;}
-.memorial_section .memorial_slide .img_area img{width:100%; height: 100%; border-radius: 30px;}
-.memorial_section .memorial_slide .img_area:before{content:"";display:block;background:rgba(12, 22, 34, 0.7);width:100%;height:100%;position:absolute;top:0;left:0;border-radius: 30px;}
+.memorial_section .memorial_slide .img_area img{width:100%; height: 100%;}
+.memorial_section .memorial_slide .img_area:before{content:"";display:block;background:rgba(12, 22, 34, 0.7);width:100%;height:100%;position:absolute;top:0;left:0;}
 .memorial_section .memorial_slide .swiper-slide .img_area .title_area{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;width:100%;text-align:center;}
 .memorial_section .memorial_slide .swiper-slide.swiper-slide-active .img_area .title_area{top:30%;}
 .memorial_section .memorial_slide .img_area .title_area .title{font-size:22px;font-family:"AritaBuri",sans-serif;display:block;letter-spacing: -0.06em;}
@@ -472,7 +470,9 @@
 .content_infor_03 .file_list_box .file_list_area .file_content:before{content:"";display:block;background:rgba(0, 0, 0, 0.3);position:absolute;top:0;left:0;width:100%;height:100%;}
 .content_infor_03 .file_list_box .file_list_area .file_content.movie:after{content: ""; position: absolute; top:50%; left: 50%; width: 36px; transform: translate(-50%, -50%); height: 36px; background: url("../images/btn_play.png") no-repeat; background-size: 100%;}
 .content_infor_03 .file_list_box .file_list_area .file_content img{width:100%}
-.content_infor_03 .file_list_box .file_list_area .file_content button{position:absolute;width:10px;height:10px;top:6px;right:6px;text-indent:-99999px; background:url("../images/file_del.png") no-repeat; background-size: 100%;}
+.content_infor_03 .file_list_box .file_list_area .file_content button{position:absolute;width:8px;height:8px;top:6px;right:6px;text-indent:-99999px;}
+.content_infor_03 .file_list_box .file_list_area .file_content button:before{content:"";display:block;width:2px;height:8px;background:#fff;position:absolute;top:0;left:0;transform:rotate(-45deg);}
+.content_infor_03 .file_list_box .file_list_area .file_content button:after{content:"";display:block;width:2px;height:8px;background:#fff;position:absolute;top:0;left:0;transform:rotate(45deg);}
 .content_infor_03 .file_list_box .file_list_area .file_content>div{width: 100%; height: 100%;}
 .reply_area .content_area {display:flex;flex-wrap:wrap;position:relative;border-bottom:1px solid #DFE4EE;padding:15px 0;}
 .reply_area .content_area .del_btn {position:absolute;top:22px;right:0;display:inline-block;width:12px;height:12px;font-size:0;line-height:0;text-indent:-9999px;background: url(../images/board_close.png) no-repeat;vertical-align:middle;}
@@ -481,9 +481,7 @@
 .reply_area .content_area .text_content:before{content:"";display:block;width:1px;height:12px;background:#192B57;position:absolute;top:5px;left:0;}
 .reply_area .content_area .text_content {max-width: 80%; position:relative}
 .reply_area .content_area .text_content .text{font-family:"AritaBuri",sans-serif; width: 94%; padding:0 20px;font-size:18px;color:#192B57;font-weight:500;letter-spacing:-0.04em;line-height:30px; word-break: keep-all;}
-.reply_area .content_area .text_content span{position: relative; margin:5px 0 0 5px;display:inline-block; width: 97px; height: 68px;}
-.reply_area .content_area .text_content span.movie:after{content: ""; position: absolute; top:50%; left: 50%; width: 36px; transform: translate(-50%, -50%); height: 36px; background: url("../images/btn_play.png") no-repeat; background-size: 100%;}
-.reply_area .content_area .text_content span img{width: 100%;}
+.reply_area .content_area .text_content span{margin:5px 0 0 5px;display:inline-block;}
 /* 디지털 화환 */
 .mouming_inner .text_top {font-family:"AritaBuri",sans-serif;font-size:26px;line-height:36px;color:#0C1622;font-weight:500;letter-spacing:-0.06em;}
 .mouming_inner .list_content_area {margin-top:30px;}
@@ -548,12 +546,12 @@
 .memorial_section.type01{overflow:inherit; background: #fffef9;}
 .memorial_section.type01:before {top:0;}
 .eulogy_area.type01 {padding-top:70px;margin:0}
-.content_infor_03 .grid,.video_list_area .list_video {display:flex;flex-wrap:wrap;}
-.content_infor_03 .grid .grid-item,.video_list_area .list_video .list_thumnail {-webkit-box-flex:0;-ms-flex:0 0 32%;flex:0 0 32%;max-width:32%;height:247px;overflow:hidden;margin-left:1%;position:relative;margin-top:1%;}
-.content_infor_03 .grid .grid-item img{width: 100%;}
+.video_list_area .list_video {display:flex;flex-wrap:wrap;}
+.video_list_area .list_video .list_thumnail {-webkit-box-flex:0;-ms-flex:0 0 32%;flex:0 0 32%;max-width:32%;height:247px;overflow:hidden;margin-left:1%;position:relative;margin-top:1%;}
 .video_list_area .list_video .list_thumnail img {width:100%;}
 .video_list_area .list_video .list_thumnail a:before {content:"";display:block;background:url("../images/btn_play.png") no-repeat;width:68px;height:68px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
-
+.grid li.grid-item a{padding:20px 0 0 0;display:inline-block}
+.grid-item img {display:block;width:calc(100% - 20px);}
 /* 서비스 */
 .services_content {background:url("../images/service_bg.jpg") no-repeat;background-size:cover;background-attachment:fixed;height:100%;overflow:hidden;padding-bottom:100px;}
 .services_content .services_inner_area {padding-top:216px;width:98%;margin:0 auto;}
@@ -638,7 +636,7 @@
     /*디지털화환*/
     .digital_select_area .text_top {margin:30px 0 26px; font-size: 18px;}
     /*login*/
-    .remember_login{position: relative; padding:35px 45px}
+    .remember_login{padding:35px 45px}
     .remember_login .sub_title{margin-bottom: 36px; font-size: 14px;}
     .remember_login .login_form li{margin-bottom: 26px;}
     .remember_login .login_form li.mar_type{margin-bottom: 10px;}
@@ -649,6 +647,7 @@
     .remember_login .login_btn a{height: 40px; line-height: 2.6; font-size: 14px;}
     .remember_login .login_btn a.login{line-height: 2.6; font-size: 16px;}
     .remember_login .login_btn a i{width: 28px; height: 28px;}
+
     .content_wrap.bg_type{background-size: 36%; background-position-y: 5.6%;}
     .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}    
     .content_wrap .content_inner,.register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
@@ -700,20 +699,21 @@
     .register .account_info .input_wrap{width: 100%;}
     .register .account_info .button_wrap{position: absolute; top:-45px; right: 0;}
     .register .account_info .input_tit{display: block; margin:10px 0; font-size: 14px;}
-    .register .account_info .link_input{margin-left: 0; width: 83%;}         
-    .register .account_info:last-of-type{margin-bottom: 0;}
+    .register .account_info .link_input{margin-left: 0; width: 83%;}     
+    .register .account_info .bank_row{margin-bottom: 60px;}
+    .register .account_info .bank_row:last-of-type{margin-bottom: 0;}
     .register .memorial .reg_input{width: 100%;}
     .register .memorial .title{width: 100%; margin-bottom: 10px;}
     .register .memorial .btn_sample{position: absolute; top:-10px; right: 0;}
     .register .memorial .memorial_textarea{margin-top: 10px; width: 100%; height: 126px;}    
     .register .message .editor_box{width: 100%; margin-left: 0; min-height: 180px;}
-    .register .message{padding-top: 47px; margin-bottom: 30px;}
+    .register .message{padding-top: 47px; margin-bottom: 50px;}
     .register .message .view_area{top: -30px; right: 58px;}
     .register .message .arr_button_wrap{position: absolute; top: -51px; right: -11px;}
     .register .message .button_wrap{top: -3px; right: 78px;}
     .register .message .button_wrap button{top: 10px; display: inline-block;}
     .register .message .open_opt{top:60px; font-size: 12px;}
-    .register .bt_opt{bottom: 15px; left: 25%; margin-left: 0; font-size: 12px;}
+    .register .bt_opt{bottom: 40px; left: 25%; margin-left: 0; font-size: 12px;}
     .reg_info .filebox .file_output{margin-left: 0;}    
     .register .calender{top:40px; left: 25%; width: 168px;}
     .register .calender .header .prev{margin-right: 4px;}
@@ -790,8 +790,6 @@
     .premium_service .base_button{width: 130px;}
     .mypage_content .tab_area{margin-bottom: 20px; padding-bottom: 20px;}
     .mypage_content .tab_area a,.faq_content .tab_area a{margin-left: 16px; font-size: 16px;}
-    .content_infor_03 .file_list_box{padding:18px}
-    .content_infor_03 .file_list_box a{margin-bottom: 7px;}
     /* 마이페이지 */
     .content_wrap .mypage_content{padding:30px 0 25px;}
     .mypage_content .member_form{flex-direction: column; margin-bottom: 20px; padding-bottom: 0; border-bottom: none;}
@@ -820,8 +818,6 @@
     .content_wrap .content_title {font-size:23px;}
     .death_content {width:90%;position:relative;margin:0 auto;padding:95px 0 35px;z-index:2;}
     .death_content .death_inner, .mouming_content .mouming_inner {padding:13% 0 5%}
-    .death_cotent_area .top_contents{flex-direction: column;}
-    .death_cotent_area .visual{width: 100%; height: auto;}
     .death_cotent_area .visual img {width:100%; border-radius: 15px;}
     .death_cotent_area .visual .circle-area {width:125px;height:125px;bottom:-65px}
     .death_cotent_area .visual .circle-area .name {font-size:17px;margin-top:24%}
@@ -829,7 +825,7 @@
     .death_cotent_area .visual .circle-area .modify {margin-top:5%;}
     .modify .btn {font-size:10px;}
     .modify .btn::before{width: 18px; height: 18px; margin-right: 4px; background-size: 100%; vertical-align: -5px;}
-    .death_cotent_area .text_area {margin-top:18px; margin-left: 0;}
+    .death_cotent_area .text_area {margin-top:17%;}
     .death_cotent_area .text_area h3{font-size:22px;}
     .death_cotent_area .text_area .text_content .title {font-size:12px;width:40px;}
     .death_cotent_area .text_area .text_content .copy {font-size:12px;margin-left:0;width:calc(100% - 40px)}

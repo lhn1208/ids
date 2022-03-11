@@ -30,7 +30,6 @@ legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb .gnb_search_form legend{position:absolute; top:0; left:0; width:0; height:0; line-height:0; visibility:hidden; overflow:hidden; text-indent:-9999px;}
 .remember_gnb .gnb_search_form .search_input{display: inline-block; width: 180px; height: 30px; padding-left: 4px; font-family: 'AritaBuri'; font-size: 16px; border: 0; border-bottom: 1px solid #8893AA; color: #8893AA; background-color: transparent;}
 .remember_gnb .gnb_search_form .ico_sch{display: inline-block; position: absolute; top:0; right:0; width: 34px; height: 34px; background-image: url("../images/ico_search_blue.png"); background-repeat: no-repeat; font-size:0;  line-height:0;  text-indent:-9999px}
-.remember_gnb .log_info{width: 80px;}
 .remember_gnb .member{display: inline-block; width: 36px; height: 36px; margin-top: -4px; margin-left: 44px; background: url("../images/ico_member.png") no-repeat;  font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb .menu{display: none;}
 #remember_gnb.fix_on{height: 104px; background: rgba(255, 255, 255, 0.9);}
@@ -108,6 +107,7 @@ body.fixed{position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow
     .remember_gnb .gnb{width: 46%; margin-left: 22%;}
     .remember_gnb .gnb li{margin-left: 7%;}
     .remember_gnb .right{width: 26%; margin-left: 6%;}
+    .remember_gnb .member{margin-left: 18%;}
     #remember_footer .footer_inner{width: 90%;}    
 }
 /*모바일 해상도*/
