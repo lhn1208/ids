@@ -1,8 +1,8 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&subset=korean");
 @font-face { font-family:'AritaBuri'; src:url('../font/AritaBuriB.woff') format('woff'); font-style:normal; font-weight:normal;}
+@font-face { font-family:'AritaBuri-Semi'; src:url('../font/AritaBuriSB.woff') format('woff'); font-style:normal; font-weight:normal;}
 @font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
-/* @font-face { font-family:'AritaBuri-Semi'; src:url('../font/AritaBuriSB.woff') format('woff'); font-style:normal; font-weight:normal;} */
 
 *{margin:0; padding:0;}
 img{border:0;}
@@ -39,6 +39,16 @@ legend{font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_gnb.fix_on .gnb li a{color: #192B57;}
 .remember_gnb.fix_on .right{padding-top: 37px;}
 .remember_gnb .log_info a{display: inline-block; line-height: 2; margin-left: 14px; letter-spacing:-0.06em; color: #0C1622; font-size: 14px; font-family: 'AritaBuri'; }
+/* 서비스소개 gnb */
+.remember_gnb .right.type .gnb_search_form .search_input{color: #fff;}
+.remember_gnb .right.type .gnb_search_form .search_input::placeholder{color: #fff;}
+.remember_gnb .right.type .gnb_search_form .ico_sch{background-image: url("../images/ico_search_white.png");}
+.remember_gnb .right.type .log_info a{color: #fff;}
+.remember_gnb.fix_on .right.type .gnb_search_form .search_input{color: #192B57;}
+.remember_gnb.fix_on .right.type .gnb_search_form .search_input::placeholder{color: #192B57;}
+.remember_gnb.fix_on .right.type .gnb_search_form .ico_sch{background-image: url("../images/ico_search_blue.png");}
+.remember_gnb.fix_on .right.type .log_info a{color: #192B57;}
+
 .mobile_menu{display: none;}
 .check_item .check{display: none;}
 .check_item .check + label::before {display: inline-block; width:24px; height: 24px; margin-right: 8px; vertical-align: -6px; border: 1px solid #BBC4D7; background-color: #fff; background-repeat: no-repeat; cursor: pointer; content:""; box-sizing: border-box;}
@@ -97,6 +107,7 @@ body.fixed{position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow
 .layer_pop .radio_item.check label:before{background-image:url("../images/bg_rd_check.png");}
 .layer_pop .radio_item.check .radio:checked + label:before{background-image:url("../images/bg_rd_check_on.png");}
 .layer_pop .base_button{width: 260px;}
+
 .val_chk{display: block; color: #BB5319; font-size: 14px; font-family: "Noto Sans KR", sans-serif;}
 
 .base_button_wrap{text-align: center;}

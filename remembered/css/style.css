@@ -9,6 +9,7 @@
 .layer_pop .cont_layout .desc{width: 90%; margin:0 auto;  color: #666; font-family: "Noto Sans KR", sans-serif; font-size: 30px;}
 .layer_pop .cont_layout .txt_title{margin-bottom: 20px; color: #192B57; font-family: 'AritaBuri','sans-serif'; font-size: 36px; }
 .layer_pop .pop_contents{width: 90%; margin:0 auto}
+.pop_sample{background: #f5f5f5;}
 .pop_sample .pop_title{margin-bottom: 20px; padding-top: 100px; font-size: 48px; font-family: 'AritaBuri','sans-serif'; }
 .pop_sample .sub_title{display: inline-block; margin-bottom: 56px;  color: #7C7C7C; font-size: 26px; font-family: 'NotoSerifKR';}
 .pop_sample .layer_cont{background-color: #F5F5F5; text-align: center;}
@@ -107,11 +108,13 @@
 .remember_login .login_form .check_item{margin-top: 17px; font-size: 16px; letter-spacing: -0.06em;}
 .remember_login .login_form .term_chk .link{margin-left: 4px; font-size: 12px; color: #192B57; text-decoration: underline;}
 .remember_login .login_btn{margin-bottom: 20px; text-align: center;}
-.remember_login .login_btn a{display: inline-block; width: 100%; height: 50px; margin-bottom: 10px; line-height: 2.8; color: #192B57; font-size: 16px; border:1px solid #192B57; box-sizing: border-box;}
-.remember_login .login_btn a.login{line-height: 2.4; border: none; background-color: #192B57; color: #fff; font-size: 20px; font-family: 'AritaBuri','sans-serif';}
-.remember_login .login_btn a i{display: inline-block; width: 37px; height: 37px; background-repeat: no-repeat; background-size: 100%; vertical-align: middle;}
-.remember_login .login_btn a.kakao i{background-image: url("../images/ico_login_kakao.png");}
-.remember_login .login_btn a.naver i{margin-top: -3px; background-image: url("../images/ico_login_naver.png");}
+.remember_login .login_btn a{display: inline-block; position: relative; width: 100%; height: 50px; margin-bottom: 10px; line-height: 2.8; color: #192B57; font-size: 16px; font-weight: 300; font-family:"Noto Sans KR", sans-serif; border-radius: 5px; box-sizing: border-box;}
+.remember_login .login_btn a.login{line-height: 2.4; border: none; background-color: #192B57; color: #fff; font-size: 20px;}
+.remember_login .login_btn a i{position: absolute; top:50%; transform: translateY(-50%); left: 20px; background-repeat: no-repeat; background-size: 100%; vertical-align: middle;}
+.remember_login .login_btn a.kakao{color: #3B3715; background-color: #FEE500;}
+.remember_login .login_btn a.kakao i{width: 46px; height: 42px; background-image: url("../images/ico_login_kakao.png");}
+.remember_login .login_btn a.naver{color: #fff; background-color: #03C75A;}
+.remember_login .login_btn a.naver i{left: 24px; width: 30px; height: 30px; background-image: url("../images/ico_login_naver.png");}
 .remember_login .login_btn .ico{font-size:0;  line-height:0;  text-indent:-9999px;}
 .remember_login .member_link{text-align: center;}
 .remember_login .member_link a{font-size: 14px; letter-spacing: -0.06em;}
@@ -119,8 +122,9 @@
 .remember_login .member_link a:first-of-type::before{display: none;}
 .remember_login .close{display: block; position: absolute; top: 45px; right: 40px; width: 30px; height: 30px; background: url("../images/pop_close.png") no-repeat; font-size:0;  line-height:0;  text-indent:-9999px;}
 .content_wrap{position: relative; background-color: #f6fbfe; font-family: "Noto Sans KR", sans-serif; font-size: 16px;}
-.content_wrap .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri','sans-serif'; font-size: 60px;}
-.content_wrap.bg_type{background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; background-position: left 254px;}
+.content_wrap .content_title{position: absolute; top: 336px; left: 50%; margin-left: -800px; font-family: 'AritaBuri-Semi','sans-serif'; font-size: 60px; letter-spacing: -0.06em;}
+.content_wrap.bg_type{background-image: url("../images/bg_reg1.png"); background-repeat: no-repeat; background-position: left 210px;}
+.content_wrap.bg_type2{background-image: url("../images/bg_reg2.png"); background-repeat: no-repeat; background-position: left 210px;}
 .register_content{position: relative; width: 750px; margin:0 auto; z-index: 1;}
 .register_content .register_inner{padding:262px 0 66px;}
 .register_content .title{display: inline-block; position: relative; margin-bottom: 26px; font-family: 'AritaBuri','sans-serif'; font-size: 19px;}
@@ -365,13 +369,13 @@
 .faq_content .faq_area .content{padding:15px 0 15px 20px; color: #666; font-size: 16px; border-bottom: 1px solid #BBC4D7; }
 /* 부고 */
 .death_content,
-.mouming_content{position:relative;width:1129px;margin:0 auto;}
+.mouming_content{position:relative;width:1129px;margin:0 auto; z-index: 6;}
 .death_content .death_inner,
-.mouming_content .mouming_inner {padding:262px 0 70px;}
+.mouming_content .mouming_inner {padding:262px 0 98px;}
 .death_cotent_area .top_contents{display: flex;}
 .death_cotent_area .visual {position:relative; width: 380px; height: 460px;}
 .death_cotent_area .visual img {width: 100%; border-radius: 30px;}
-.death_cotent_area .info_area{position: relative; color: #0C1622;}
+.death_cotent_area .info_area{position: relative; color: #0C1622; margin-bottom: 20px;}
 .death_cotent_area .info_area .name {font-family:"AritaBuri",sans-serif;font-size:34px; position: relative; display: inline-block; min-width: 138px;}
 .death_cotent_area .info_area .date {font-family:"NotoSerifKR",sans-serif;font-size:20px;letter-spacing:-0.04em;margin-top:15px}
 .death_cotent_area .info_area .modify_btn {position: absolute; top: 10px; right: -62px; color:#0C1622;font-size:16px; }
@@ -382,7 +386,7 @@
 .death_cotent_area .text_area .text_content {font-size:18px;clear:both;padding-top:10px;}
 .death_cotent_area .text_area .text_content span {display:inline-block;float:left;font-family:"Noto Sans KR", sans-serif;}
 .death_cotent_area .text_area .text_content .title {font-weight:500;width:51px;color:#0C1622;letter-spacing:-0.04em;}
-.death_cotent_area .text_area .text_content .copy {font-weight:400;margin-left:37px;color:#535353;letter-spacing:-0.04em;}
+.death_cotent_area .text_area .text_content .copy {font-weight:400; width:570px; margin-left:37px;color:#535353;letter-spacing:-0.04em;}
 .death_cotent_area .register_btn{text-align:center;margin-top:81px;}
 .death_cotent_area .register_btn button{width:236px;height:74px;color:#fff;margin:0 0 0 15px;font-size:26px;font-family:"AritaBuri", sans-serif;background-color: #192B57; border-radius: 50px;}
 .death_cotent_area .register_btn button:first-child{margin:0;}
@@ -400,7 +404,7 @@
 .sub_title_area .more_btn:before{content:"";display:block;width:100%;height:1px;background:#535353;position:absolute;right:0;top:9px;}
 .sub_title_area .more_btn:after{content:"";display:block;width:10px;height:10px;border-right:solid 1px #535353;position:absolute;right:0;top:6px;transform:rotate(-45deg);} 
 .memorial_section {overflow:hidden;position:relative;z-index:2; background: linear-gradient(to bottom, #f6fbfe, #BFE6EE);}
-.memorial_section:after {content:"";display:block;background:url(../images/img_bg_type01.png) no-repeat;background-size:cover;width:60%;height:1238px;position:absolute;bottom:0;left:0;z-index:1;}
+.memorial_section:after {content:"";display:block;background:url(../images/img_bg_type01.png) no-repeat;background-size:cover;width:70%;height:1238px;position:absolute;bottom:0;left:25%;z-index:1;}
 .memorial_section .memorial_slide{margin-top:40px;position:relative;z-index:2;}
 .memorial_section .memorial_slide .swiper-slide{transform: scale(0.8);}
 .memorial_section .memorial_slide .swiper-slide-active{margin-top:-55px; transform: scale(1);}
@@ -543,9 +547,9 @@
 .bottom_btn_area {text-align:center;padding-top:40px;border-top:1px solid #BBC4D7}
 .bottom_btn_area .sell_btn {font-family:"Noto Sans KR",sans-serif;font-size:16px;display:inline-block;color:#fff;letter-spacing:-0.06em;background:#192B57;border-radius:50px;height:54px;line-height:54px;padding:0 45px;}
 /* 추모관 */
-.death_cotent_area .text_area.type01 {margin-top:135px;}
-.death_cotent_area .text_area.type01 .text_content{font-family:"AritaBuri",sans-serif;font-size:30px;line-height:46px;text-align:center;letter-spacing:-0.04em;}
-.memorial_section.type01{overflow:inherit; background: #fffef9;}
+.death_cotent_area .text_area.type01 .text_content{font-family:"AritaBuri",sans-serif;font-size:30px;line-height:46px;letter-spacing:-0.04em; width: 660px;}
+.death_cotent_area .text_area.type01  .register_btn{margin-top: 40px; text-align: left;}
+.memorial_section.type01{overflow:inherit; background: #BFE6EE;}
 .memorial_section.type01:before {top:0;}
 .eulogy_area.type01 {padding-top:70px;margin:0}
 .content_infor_03 .grid,.video_list_area .list_video {display:flex;flex-wrap:wrap;}
@@ -648,8 +652,10 @@
     .remember_login .login_form .certi button{width: 28%; height: 30px; margin-left: 3%; font-size: 12px;}
     .remember_login .login_btn a{height: 40px; line-height: 2.6; font-size: 14px;}
     .remember_login .login_btn a.login{line-height: 2.6; font-size: 16px;}
-    .remember_login .login_btn a i{width: 28px; height: 28px;}
+    .remember_login .login_btn a.kakao i{left: 14px; width: 24px; height: 20px;}
+    .remember_login .login_btn a.naver i{left: 16px; width: 16px; height: 16px;}
     .content_wrap.bg_type{background-size: 36%; background-position-y: 5.6%;}
+    .content_wrap.bg_type2{background-size: 36%; background-position-y: 5.6%;}
     .content_wrap .content_title{position: relative; top:auto; left: auto; margin-left: 0; font-size: 30px;}    
     .content_wrap .content_inner,.register_content{width: 90%; margin:0 auto; padding:95px 0 35px;} 
     .content_wrap .content_title::before{display: inline-block; width: 36px; height: 36px; margin-right: 10px; background: url("../images/logo_content.png") no-repeat; background-size: 100%; vertical-align: -8px; content: "";}
@@ -818,23 +824,24 @@
 
     /* 부고 */
     .content_wrap .content_title {font-size:23px;}
-    .death_content {width:90%;position:relative;margin:0 auto;padding:95px 0 35px;z-index:2;}
+    .death_content {width:90%;position:relative;margin:0 auto;padding:95px 0 35px;z-index:6;}
     .death_content .death_inner, .mouming_content .mouming_inner {padding:13% 0 5%}
     .death_cotent_area .top_contents{flex-direction: column;}
-    .death_cotent_area .visual{width: 100%; height: auto;}
+    .death_cotent_area .visual{width: 70%; height: auto; margin:0 auto;}
     .death_cotent_area .visual img {width:100%; border-radius: 15px;}
-    .death_cotent_area .visual .circle-area {width:125px;height:125px;bottom:-65px}
-    .death_cotent_area .visual .circle-area .name {font-size:17px;margin-top:24%}
-    .death_cotent_area .visual .circle-area .date {font-size:12px;margin-top:5%;}
-    .death_cotent_area .visual .circle-area .modify {margin-top:5%;}
     .modify .btn {font-size:10px;}
     .modify .btn::before{width: 18px; height: 18px; margin-right: 4px; background-size: 100%; vertical-align: -5px;}
+    .death_cotent_area .info_area{text-align: center; margin-left: -10%;}
+    .death_cotent_area .info_area .name{font-size: 23px; margin-left: -44px;}
+    .death_cotent_area .info_area .date{margin-top: 6px; font-size: 16px;}
+    .death_cotent_area .info_area .modify_btn{top: 8px; right: -26px; font-size: 14px;}
+    .death_cotent_area .info_area .modify_btn::before{width: 18px; height: 18px; background-size: 100%; vertical-align: -3px;}
     .death_cotent_area .text_area {margin-top:18px; margin-left: 0;}
     .death_cotent_area .text_area h3{font-size:22px;}
     .death_cotent_area .text_area .text_content .title {font-size:12px;width:40px;}
     .death_cotent_area .text_area .text_content .copy {font-size:12px;margin-left:0;width:calc(100% - 40px)}
     .death_cotent_area .register_btn {margin-top:9.7%}
-    .death_cotent_area .register_btn button {width:27.6%;height:100%;font-size:14px;padding:13px 0;}
+    .death_cotent_area .register_btn button {width:27.6%;height:100%;font-size:14px;padding:13px 0; margin:0 0 0 8px;}
     .section_style {width:90%;position:relative;margin:0 auto;}
     .sub_title_area .title{font-size:22px;}
     .sub_title_area .text{font-size:14px;margin-top:2.4%;line-height:20px;}
@@ -871,7 +878,7 @@
     .memorial_section .memorial_slide .swiper-slide-active .img_area:after {width: 40px; height: 40px; bottom:30px; background-size: 100%;}
     .subtab_content_area .subtabe_content .content_visual_area .text_content_area .text_area {margin-top:5%;}
     .eulogy_area.type01 {padding-top:15%;padding-bottom:16%;}
-    .memorial_section:after {background:url(../images/img_bg_type01_m.png) no-repeat;width:100%;height:100%;bottom:0;}    
+    .memorial_section:after {background:url(../images/img_bg_type01_m.png) no-repeat;background-size: 100%; width:100%;height:100%;bottom: 58%; left: 0;}    
     .tab_content_inner{padding-bottom: 40px;}
     .tab_content_area {margin-top:15px}
     .content_infor_03 .btn_area .open_opt{position:relative;left:auto;top:auto;transform:translateY(0);margin-bottom:20px;}
@@ -939,8 +946,9 @@
     .services_content .services_inner_area .services_content .content_area02 .text_02{font-size:14px;line-height:23px;}
     .services_content .services_inner_area .services_content .content_area02 + .content_area02{margin-top:16%;}
     .services_content .services_inner_area .services_content  .block{display: initial;}
-    .death_cotent_area .text_area.type01{margin-top:22%;}
-    .death_cotent_area .text_area.type01 .text_content{font-size:16px;line-height:23px;}
+    .death_cotent_area .text_area.type01{margin-top:14px; text-align: center;}
+    .death_cotent_area .text_area.type01 .text_content{width: 100%; font-size:16px;line-height:23px;}
+    .death_cotent_area .text_area.type01 .register_btn{text-align: center;}
     .grid li {width:50%}
     .grid-item img {display:block;width:calc(100% - 20px);}
     .video_list_area .list_video .list_thumnail {-webkit-box-flex:0;-ms-flex:0 0 48%;flex:0 0 48%;max-width:48%;height:100%;overflow:hidden;margin-left:1%;position:relative;margin-top:1%;}
