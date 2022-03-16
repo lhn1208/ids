@@ -5,37 +5,39 @@
 #drv_header .logo a{display: block; width: 100%; height: 100%;}
 .hearder_top{border-bottom:1px solid #e5e5e5;}
 .hearder_top .header_top_inner{position: relative; width: 980px; margin:30px auto 35px; display: flex;}
-.hearder_top .head_title{margin-top: -4px; margin-left: 18px; color: #3a3d40; font-size: 26px; font-family: 'SpoqaHanSans_bold'; }
+.hearder_top .head_title{margin-top: -4px; margin-left: 18px; color: #3a3d40; font-size: 26px; font-family: 'SpoqaHanSansB'; }
 .hearder_top .member_info{position: absolute; top:0; right: 0;}
 
+body{font-family: 'dotum', '돋움';}
 .member_name{display: inline-block; position: relative;}
 .member_name:hover .link_box{opacity: 1; visibility: visible;}
-.member_name .member{color: #333; font-size: 15px; font-family: 'SpoqaHan_regualr';}
-.member_name .link_box{opacity: 0; visibility: hidden; position: absolute; top:30px; left: -22px; width: 120px; padding:10px 0; background-color: #fff; font-family: 'SpoqaHan_regualr'; z-index: 10; border:1px solid #bbc1cd; transition: all 0.15s ease-in;}
+.member_name .member{color: #333; font-size: 15px; font-family: 'SpoqaHanSansR';}
+.member_name .link_box{opacity: 0; visibility: hidden; position: absolute; top:30px; left: -22px; width: 120px; padding:10px 0; background-color: #fff; font-family: 'SpoqaHanSansR'; z-index: 10; border:1px solid #bbc1cd; transition: all 0.15s ease-in;}
 .member_name .link_box::before{position: absolute; top:-7px; left: 50%; margin-left: -10px; width: 12px; height: 7px; background: url("../images/renew_ico_common.png") -100px -132px no-repeat; content: "";}
 .member_name .link_box li{margin:0 14px; line-height: 1.6;}
-.member_name .link_box a{position: relative; display: inline-block; font-size: 12px; font-family: 'SpoqaHan_light';}
+.member_name .link_box a{position: relative; display: inline-block; font-size: 12px; font-family: 'SpoqaHanSansL';}
 .member_name .link_box a:hover{text-decoration: underline;}
 .member_name .link_box .new{top:2px; right: -6px;}
 .member_info .new{position: absolute; top:-2px; right: -5px; width:5px; height: 5px; border-radius: 50%; background-color: #ff471c; content: ""; font-size:0; line-height:0; text-indent:-9999px}
-.hearder_top .alarm{position: relative; display: inline-block; width: 15px; height: 15px; margin-left: 12px; vertical-align: middle; background: url("../images/renew_ico_common.png") -130px -103px; font-size:0; line-height:0;}
+.hearder_top .alarm{position: relative; display: inline-block; width: 15px; height: 15px; margin-top: -3px; margin-left: 12px; vertical-align: middle; background: url("../images/renew_ico_common.png") -130px -103px; font-size:0; line-height:0;}
 .drv_nav_area{position: relative; letter-spacing: -0.025em; border-bottom: 1px solid #bec5d2;}
 .drv_nav_area .drv_nav_inner{display: flex; width: 980px; margin:0 auto; justify-content:space-between; align-items:center;}
 .drv_nav_area i.ico_new{display: inline-block; width: 14px; height: 14px; vertical-align: 5px; line-height: 12px; margin-left: 4px; border-radius: 50%; font-size: 10px; text-align: center; font-style: normal; background-color: #ff4242; color: #fff;}
 .drv_nav{position: relative; width: 100%;}
 .drv_nav .main_munu{min-width: 662px; display: flex;}
 .drv_nav .main_munu>li{position: relative; height: 63px; padding:20px 0 24px; text-align: left; box-sizing: border-box;}
-.drv_nav .main_munu>li>a{padding-right: 14px; color:#202020; font-family: 'SpoqaHanSans_bold';  font-size: 16px;}
+.drv_nav .main_munu>li>a{padding-right: 14px; color:#202020; font-family: 'SpoqaHanSansB';  font-size: 16px;}
 .drv_nav .main_munu>li:hover{border-bottom: 1px solid #4ea1ff;}
 .drv_nav .main_munu>li:hover>a{color: #4ea1ff;}
-/* .drv_nav .main_munu>li:hover #sub_menu{opacity: 1; visibility: visible;}
-.drv_nav #sub_menu{opacity: 0; visibility: hidden; position: absolute; top:56px; left: -20px; width: 162px; padding:20px 16px 28px 16px; background-color: #fff; border:1px solid #bbc1cd; box-sizing: border-box; z-index: 90; transition: all 0.15s ease-in;}
+
+.drv_nav .main_munu>li:hover #sub_menu{opacity: 1; visibility: visible;}
+.drv_nav #sub_menu{opacity: 0; visibility: hidden; position: absolute; top:56px; left: -20px; width: 162px; padding:20px 16px 16px 16px; background-color: #fff; border:1px solid #bbc1cd; box-sizing: border-box; z-index: 90; transition: all 0.15s ease-in;}
 .drv_nav #sub_menu:before{position: absolute; top:-10px; left: 50%; margin-left: -10px; width: 20px; height: 10px; background: url("../images/renew_ico_common.png") -100px -106px no-repeat; content: "";}
 .drv_nav #sub_menu li{margin-bottom: 8px;}
-.drv_nav #sub_menu a{color: #333;font-size: 14px; font-family: 'SpoqaHan_light';}
-.drv_nav #sub_menu a:hover{text-decoration: underline;} */
+.drv_nav #sub_menu a{color: #333;font-size: 14px; font-family: 'SpoqaHanSansL';}
+.drv_nav #sub_menu a:hover{text-decoration: underline;}
 
-.drv_nav_area .drv_nav .all_menu_btn{position: absolute; top:22px; right: 0; margin-right: 22px; font-size: 13px; font-family: 'SpoqaHan_regualr';}
+.drv_nav_area .drv_nav .all_menu_btn{position: absolute; top:22px; right: 0; margin-right: 22px; font-size: 13px; font-family: 'SpoqaHanSansR';}
 .drv_nav_area .drv_nav .all_menu_btn a::after{display: inline-block; width: 16px; height: 9px; margin-left: 5px; background-image: url("../images/renew_ico_common.png"); background-repeat: no-repeat; background-position: 0px -107px; content: "";}
 .drv_nav_area .drv_nav .all_menu_btn a:hover{text-decoration: none;}
 .drv_nav_area .drv_nav .all_menu_btn.active a{color: #4ea1ff;}
@@ -61,9 +63,9 @@
 .search_recomm_box .search_recomm::-webkit-scrollbar-thumb{background-color:#d6d6d6}
 .search_recomm_box .search_recomm::-webkit-scrollbar-track{background-color: rgba(214,214,214, 0.6);}
 .search_recomm_box .search_recomm::scroll-arrow-color{background-color:#000;}
-.search_recomm_box .search_recomm a{display: block; position: relative; line-height: 1.6; margin-bottom: 13px; color: #43484f; font-family: 'SpoqaHan_light';}
+.search_recomm_box .search_recomm a{display: block; position: relative; line-height: 1.6; margin-bottom: 13px; color: #43484f; font-family: 'SpoqaHanSansL';}
 .search_recomm_box .search_recomm a::after{position: absolute; top:0; left: 0; right: 0; bottom: 0;} 
-.search_recomm_box .search_recomm strong{display: inline-block; position: relative; padding:0 4px; background-color: #fff9a9; z-index: 2; font-family: 'SpoqaHanSans_bold';}
+.search_recomm_box .search_recomm strong{display: inline-block; position: relative; padding:0 4px; background-color: #fff9a9; z-index: 2; font-family: 'SpoqaHanSansB';}
 
 .all_menu_box{display:none; position: absolute; top:65px; left: 0; width: 100%; z-index: 92; box-shadow:0px 20px 30px -15px rgba(0,0,0,0.2); background-color: #fff; }
 .all_menu_box.active{display: block;}
@@ -83,33 +85,143 @@
 .all_menu_box .btn_close::after{bottom:28px; left: 12px; transform: translateY(7px) rotate(45deg);}
 /*header [e]*/
 
-.drv_container_inner{width:980px; margin:0 auto; padding-top: 30px;}
-.drv_container .left_area{float: left; width: 710px;}
+.drv_container_inner{width:980px; margin:0 auto 40px; padding-top: 30px; display: flex; justify-content: space-between;}
+.drv_container .left_area{width: 710px;}
 .drv_container .main_banner{display: block; width: 710px; height: 96px; overflow: hidden;}
-.drv_container .cont_search{display: flex;  justify-content:space-between; margin-bottom: 24px; padding:28px 0 18px; border-bottom: 1px solid #e2e5ea; color: #333e4c; font-family: 'SpoqaHan_regualr'; }
+.drv_container .cont_search{display: flex;  justify-content:space-between; margin-bottom: 24px; padding:28px 0 18px; border-bottom: 1px solid #e2e5ea; color: #333e4c; font-family: 'SpoqaHanSansR'; }
 .cont_search  input[type="text"]::placeholder{height: 34px; color: #c9cacd;}
 .cont_search .data_input input[type="text"]{width: 90px; height: 34px; padding:0 8px; font-size: 12px; border: 1px solid #ced5e4; text-align: center;}
+.seminar_content .content_top{margin-top: 28px;}
+.seminar_content .content_top .title{display: inline-block; font-size: 24px;}
+.seminar_content .content_top .down_btn{width: 104px; height: 30px; margin-left: 6px; font-size: 13px; border:1px solid #ced5e4; box-sizing: border-box; vertical-align: 4px;}
+.seminar_content .content_top .list_set{top:10px; color: #666; font-size: 12px;}
+.seminar_content .content_top .list_set .check_item{display: inline-block; margin-left: 10px;}
+.seminar_content .content_top .list_set .check_item .ico{width: 13px; height: 13px;  background: url("../images/cme/ico_cme.png") no-repeat 0px 0px; vertical-align: top; font-size: 0; line-height: 0; text-indent: -9999px;}
+.seminar_content .content_top .list_set .check_item .ico.purple{background-position-x: -22px;}
+.seminar_content .company_logo{display: inline-block; vertical-align: middle;font-size: 0; line-height: 0; text-indent: -9999px;  background: url("../images/cme/ico_cme.png") no-repeat;}
+.seminar_program{margin-top: 20px; border-top: 1px solid #ced5e4;}
+.seminar_program caption{font-size: 0; line-height: 0; text-indent: 0;}
+.seminar_program .table{width: 100%; border-collapse: collapse; border-spacing:0;}
+.seminar_program .table th, .seminar_program .table td{padding:24px 0; vertical-align: top;}
+.seminar_program .table th{font-size: 18px; color: #484848;}
+.seminar_program .table th em{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.seminar_program .table th .week{display: block; margin-top: 4px; font-size: 12px;}
+.seminar_program .table th, .seminar_program .table td{border-bottom: 1px solid #ced5e4;}
+.seminar_program .table td.time{vertical-align: middle; font-size: 14px; font-family: 'SpoqaHanSansR'; text-align: center;}
+.seminar_program .table td.time em{font-size: 19px; font-family: 'SpoqaHanSansB';}
+.seminar_program .table td.purple{background-color: #ecf0f9; color: #6b93d4;}
+.seminar_program .table td.green{background-color: #eaf8f5; color: #45c1a2;}
+.seminar_program .table .program{display: block; position: relative; padding-left: 12px;}
+.seminar_program .table .program .category{font-size: 12px; font-family: 'SpoqaHanSansR';}
+.seminar_program .table .program .ico{display:inline-block; width: 16px; height: 18px; margin-right: 4px; border-radius: 3px; background-color: #ff6879; color: #fff; font-size: 12px;font-family: 'SpoqaHanSansB'; text-align: center; }
+.seminar_program .table .program .ico.purple{background-color: #866ae2;}
+.seminar_program .table .program .pro_title{width: 440px; height: 24px; margin-bottom: 4px; color: #333; font-size: 18px; font-family: 'SpoqaHanSansR'; white-space:nowrap; text-overflow:ellipsis; overflow: hidden; }
+.seminar_program .table .program:hover .pro_title{text-decoration: underline;}
+.seminar_program .table .program .nm{display: block; margin-bottom: 8px; color: #999; font-size: 11px;}
+.seminar_program .table .program .open_opt{display: inline-block; width: 43px; height: 18px; color: #fff;  font-size: 12px; font-family: 'SpoqaHanSansR'; background-color: #92a0b5; border-radius: 3px; text-align: center;}
+.seminar_program .table .program .company_logo.sev{width: 95px; height: 17px; margin-left: 6px; background-repeat: 0px -35px; }
+.seminar_program .table .program .apply_btn{width: 84px; height: 32px; color: #4ea1ff; font-size: 15px; font-family: 'SpoqaHanSansB'; border:1px solid #4ea1ff; border-radius: 30px; box-sizing: border-box;}
+.seminar_program .table .program .apply_btn.type{border:1px solid #c9cfdb; color: #9da9bf;}
+.seminar_program .table .program .right{position: absolute; top: 12px; right: 0;}
+.seminar_program .table .program .number_area{display: block; margin-top: 4px; color: #848484; font-size: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.seminar_program .table .program .number_area em{color: #333;}
+.seminar_program .program_txt{width: 160px; margin:120px auto; padding-left: 26px; color: #555; font-size: 22px; font-family: 'SpoqaHanSansB'; background: url("../images/cme/ico_cme.png") no-repeat -48px 8px;}
+.seminar_content .seminar_view{margin-bottom: 20px;}
+.seminar_view .category{display: block; margin-bottom: 6px; font-size: 15px; font-family: 'SpoqaHanSansR';}
+.seminar_view .pro_title{margin-bottom: 8px; line-height: 1.2; font-size: 24px; color: #333; font-family: 'SpoqaHanSansB';}
+.seminar_view .hash{color: #484848; font-size: 15px; font-family: 'SpoqaHanSansR';}
+.seminar_view .hash a{margin-left: 6px;}
+.seminar_view .hash a:first-child{margin-left: 0;}
+.seminar_view .info_area{display: flex; justify-content: space-between; padding:10px 0 20px; border-bottom: 1px solid #e7e7e7;}
+.seminar_view .info_list{margin-bottom: 10px;}
+.seminar_view .info_list::after{display: block; clear: both; content: "";}
+.seminar_view .info_list li{float: left; color: #484848; font-size: 15px; font-family: 'SpoqaHanSansR'; vertical-align: top;}
+.seminar_view .info_list li::before{content: "|"; display: inline-block; margin:0 8px; color: #484848; vertical-align: top;}
+.seminar_view .info_list li:first-child::before{margin: 0; display: none;}
+.seminar_view .info_list li span{color: #a2a7ab;}
+.seminar_view .badge_wrap{margin-bottom: 12px;}
+.seminar_view .badge_wrap i{width: 56px; height: 20px; padding-left: 5px; color: #fff; font-size: 12px;  font-family: 'SpoqaHanSansR'; background-color: #866ae2; border-radius: 3px; box-sizing: border-box;}
+.seminar_view .badge_wrap i.red{background-color: #ee6565;}
+.seminar_view .badge_wrap i::before{display: inline-block; width: 9px; height: 9px; margin-right: 2px; background: url("../images/cme/ico_cme.png") no-repeat -78px -4px; content: "";}
+.seminar_view .badge_wrap i.red::before{background-position-x: -100px;}
+.seminar_view .view_info {font-size: 12px; width: 366px;}
+.seminar_view .view_info .row{margin-bottom: 6px;}
+.seminar_view .view_info .row::after{display: block; clear: both; content: "";}
+.seminar_view .view_info .row .col{float: left; margin-left: 20px;}
+.seminar_view .view_info .row .col:first-child{margin-left: 0;}
+.seminar_view .view_info strong{color:#666;}
+.seminar_view .view_info .vip{font-weight: bold; color: #4ea1ff;}
+.seminar_view .view_info strong:after{content: "|"; display: inline-block; margin:0 10px; color: #484848; vertical-align: top; font-weight: normal;}
+.seminar_view .number_area{display: block; margin-bottom: 18px; color: #a2a7ab; font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif; letter-spacing: -0.06em;} 
+.seminar_view .number_area .num{color: #333;}
+.seminar_view .number_area em{font-size: 26px;}
+.seminar_view .circulation{width: 113px; height: 22px; margin-bottom: 18px; background-position: -114px -35px;}
+.seminar_view .link_wrap button{height: 28px; padding:2px 15px; color: #fff; font-size: 12px; background-color: #b6b6c8;}
+.seminar_view .link_wrap button.share{margin-left: -6px; color: #202020; background-color: #fff; border:1px solid #b6b6c8;}
+.seminar_content .seminar_view_wrap{margin-bottom: 30px;}
+.seminar_view_wrap .button_wrap{position: relative; height: 50px; margin-bottom: 20px;}
+.seminar_view_wrap  button.type1{width: 80px; height: 30px; padding-left: 10px; border:1px solid #dadbdd; color: #202020; font-size: 12px; text-align: left;}
+.seminar_view_wrap  button.report::before{display: inline-block; width: 15px; height: 15px; margin-right: 6px; vertical-align: top; background: url("../images/cme/ico_cme.png") no-repeat -117px -4px; content: "";}
+.seminar_view_wrap .btn_right{position: absolute; right: 0; top: 0;}
+.seminar_view_wrap .btn_right button.type2{width: 140px; height: 50px; text-align: center; color: #fff; font-size: 14px; background-color: #4e6fff;}
+.seminar_view_wrap .btn_right button.type2.blue{background-color: #4ea1ff;}
+.seminar_view_wrap .btn_right button.type2.grey{background-color: #e4e4eb; color: #333; font-weight: bold;}
+.seminar_view_wrap .bt_txt{display: block; text-align: right; color: #333; font-size: 18px; letter-spacing: -0.06em;}
+.seminar_content .dr_intro_content {border-bottom: 1px solid #e7e7e7;}
+.dr_intro_content .dr_intro{position: relative; padding:20px 0; border-top: 1px solid #e7e7e7;  font-family: 'SpoqaHanSansR';}
+.dr_intro_content .dr_intro .dr_img{position: absolute; top:20px; left: 0;}
+.dr_intro_content .dr_intro_info{margin-left: 134px;}
+.dr_intro_content .dr_intro_info>span{display: block;}
+.dr_intro_content .dr_intro_info .professor{margin-bottom: 8px; font-size: 24px; color: #333;}
+.dr_intro_content .dr_intro_info .professor span{font-size: 18px;}
+.dr_intro_content .dr_intro_info .professor em{text-decoration: underline;}
+.dr_intro_content .dr_intro_info .belong{margin-bottom: 22px; color: #999; font-size: 16px;} 
+.dr_intro_content .dr_intro_info .major_list>li{display: flex; color: #4b4b4b; font-size: 14px; font-family: 'SpoqaHanSansR';}
+.dr_intro_content .dr_intro_info .major_list>li{margin-bottom: 20px;}
+.dr_intro_content .dr_intro_info .major_list em{display: inline-block; width: 70px;}
+.dr_intro_content .dr_intro_info .major_list .major{width: 250px; line-height: 1.8; color: #4ea1ff;}
+.dr_intro_content .dr_intro_info .major_list li>ul>li{line-height: 1.8;}
+.dr_intro_content .dr_intro .arr{position: absolute; bottom:16px; right: 16px; width: 18px; height: 10px; background:url("../images/renew_ico_common.png") no-repeat -157px -168px;}
+
+.seminar_content .dr_info_box{margin-top: 24px; margin-bottom: 12px; padding:20px; border:1px solid #e7e7e7;}
+.seminar_content .like_btn{display: block; width: 80px; height: 30px; margin:0 auto; border:1px solid #e7e7e7; font-size: 12px; color: #202020;}
+.seminar_content .like_btn::before{display: inline-block; width: 16px; height: 12px; background:url("../images/renew_ico_common.png") no-repeat -187px -138px; content: ""; vertical-align: middle;}
+.notice_box .notice_title{margin-bottom: 14px; color: #202020; font-size: 16px; font-family: 'SpoqaHanSansR'; font-weight: normal;}
+.notice_box .notice_title:before{display: inline-block; width: 26px; height: 24px; margin-right: 8px; background:url("../images/renew_ico_common.png") no-repeat -217px -130px; vertical-align: -4px; content: "";}
+.notice_box ul li{line-height: 1.8; color: #666; font-size: 14px; font-family: 'SpoqaHanSansR';}
+
 /*right*/
-.drv_container .right_area{float: right; width: 240px;}
-.right_area .title{margin-bottom: 12px; color: #535d67; font-size: 15px; font-family: 'SpoqaHanSans_bold';}
-.r_contents .recomm{display: flex; margin-bottom: 30px; font-family: 'SpoqaHan_light';}
+.drv_container .right_area{width: 240px;}
+.right_area .banner{display: block;}
+.right_area .banner_wrap .banner{margin-bottom: 8px;}
+.right_area .title{margin-bottom: 12px; color: #535d67; font-size: 15px; font-family: 'SpoqaHanSansB';}
+.r_contents{margin-bottom: 30px;}
+.r_contents.border_type{border-bottom: 1px solid #e2e5ea;}
+.r_contents .recomm{margin-bottom: 12px; display: flex; font-family: 'SpoqaHanSansL'; }
 .r_contents .recomm .info_area{margin-top: -3px; margin-left: 12px; line-height: 1.2;}
 .r_contents .recomm .txt_blue{display: block; margin-bottom: 2px; font-size: 13px;}
 .r_contents .recomm .txt{height: 34px; overflow: hidden; color: #333; font-size: 14px;}
 .r_contents .recomm .sub_txt{color: #999; font-size: 12px;}
 .r_contents .recomm:hover .txt{text-decoration: underline;}
-
+.dr_intro_wrap{margin-bottom: 30px; padding:25px 0; border-bottom: 1px solid #e2e5ea;}
+.dr_intro_wrap .title{margin-bottom: 10px;}
+.dr_intro_wrap .recomm .info_area{margin-top: 10px;}
+.dr_intro_wrap .info_area em{display: block; margin-bottom: 4px; font-size: 14px; color: #000;}
+.dr_intro_wrap .info_area .txt{font-size: 13px; color: #999;}
+.dr_intro_slide_wrap{position: relative;}
+.dr_intro_slide {margin:0 23px; overflow: hidden;}
+.dr_intro_slide_wrap .swiper-button-next, .dr_intro_slide_wrap .swiper-button-prev{width: 9px; height: 15px; top:44px; background: url("../images/renew_ico_common.png") no-repeat -204px -99px;}
+.dr_intro_slide_wrap .swiper-button-prev{left: 0;}
+.dr_intro_slide_wrap .swiper-button-next{background-position-x: -221px;}
+.r_contents .case_movie{max-height: 364px; overflow-y: scroll; padding-right: 16px;}
+.r_contents .case_movie::-webkit-scrollbar{width: 4px; background-color:rgba(214,214,214, 0.5);}
+.r_contents .case_movie::-webkit-scrollbar-thumb{background-color:rgb(214,214,214);}
 
 /* list 공통 [s]*/
-/* .ad_ico{display: inline-block; padding:0 2px; margin-right: 6px; border-radius: 3px; font-size: 11px; background-color: #7c2cd0; color: #fff; font-family: 'SpoqaHanSans_bold';} */
-.cont_type li{font-family: 'SpoqaHan_regualr'; font-weight: 300;}
+.cont_type li{font-family: 'SpoqaHanSansR'; font-weight: 300;}
 .cont_type li a{display: block;}
-
 .cont_type .thum_img{position: relative;}
 .cont_type .thum_img img{vertical-align: middle;}
-
-
-
 
 /* 컨텐츠 search */
 .search_list::after{display: block; content: ""; clear: both;}
