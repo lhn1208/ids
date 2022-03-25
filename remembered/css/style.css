@@ -582,7 +582,56 @@
 .user_manage .manage_tb th,.user_manage .manage_tb td{padding:8px; border:1px solid #000; text-align: center;}
 .user_manage .manage_tb td.left{text-align: left;}
 
+/* 약관 */
+.terms_content{width: 940px; margin:0 auto; padding:262px 0 66px;}
+.terms_content .terms_top{padding-top: 25px; margin-bottom: 34px; border-top: 2px solid #0C1622;}
+.terms_content .terms_top p{margin-bottom: 34px; font-size: 14px; color: #0C1622;}
+.terms_content .index_list{padding:20px 0; background-color: #fff;}
+.terms_content .flex_style{display: flex; }
+.terms_content .index_list .index{width: 50%; padding:0 30px;}
+.terms_content .index_list .right{border-left: 1px solid #ccc;}
+.terms_content .index_list{line-height: 1.8;}
+.terms_content .index_list li{font-size: 12px; color: #333;}
+.terms_content section{padding-bottom: 20px;}
+.terms_content .terms_tit{font-size: 14px; margin-bottom: 14px; color: #0C1622;}
+.terms_content section,
+.terms_content .terms_txt, 
+.terms_content .terms_list li,
+.terms_content dt,.terms_content dd{font-size: 12px; color: #666;}
+.terms_content .terms_txt{margin-bottom: 14px;}
+.terms_content .terms_list.type1>li{margin-bottom:14px;}
+.terms_content .terms_list.type2>li{text-indent: -4px; padding-left: 4px;}
+.terms_content .terms_list.type3>li{margin-bottom: 14px; text-indent: -14px; padding-left: 14px;}
+.terms_content .mar_14{margin-left: 14px;}
+.terms_content dl{margin-bottom: 14px;}
+.terms_content dd{margin-left: 6px;}
+.terms_content.terms2 .terms_top{background-color: #fff;}
+.terms_content.terms2 .index_list{padding:0 30px;}
+.terms_content.terms2 .index_list .index{width: 33.3%;}
+.terms_content.terms2 .index_list .title_area{margin-bottom: 20px;}
+.terms_content.terms2 .index_list .title_area em{font-size: 18px;}
+.terms_content.terms2 .index_list .title_area:after{display: inline-block; vertical-align: middle; width: 90%; margin-left: 20px; height: 1px; background-color: #E7E7E7; content: "";}
+.terms_content.terms2 .index_list .title_area.type:after{width: 85%;}
+.terms_content.terms2 .index_list .index em{font-size: 12px;}
+.terms_content.terms2 .index_list .index ul{margin-bottom: 24px;}
+.terms_content.terms2 .terms_top_tit{font-size: 16px; margin-bottom: 14px; color: #0C1622;}
+.terms_content.terms2 .terms_tit{margin-bottom: 6px;}
+.terms_content.terms2 .use_terms{display: block; border-top: 1px solid #ccc; padding:10px 0 20px; font-size: 20px;}
+.pop_terms .terms_content{width: 90%; margin:0 auto; padding:0;}
+.pop_terms .terms_content .terms_top{border-top: none;}
+.pop_terms .terms_content .index_list{border:1px solid #ccc;}
+.pop_terms .terms_content.terms2 .index_list{padding-top: 20px;}
+.pop_terms .terms_content.terms2 .index_list .title_area:after{width: 84%;}
+.pop_terms .terms_content.terms2 .index_list .title_area.type:after{width: 78%;}
 @media (max-width: 760px) {   
+    /* 약관 */
+    .terms_content{width: 100%; padding:40px 0;}
+    .terms_content .index_list .index{padding:0 10px;}
+    .terms_content.terms2 .flex_style{flex-direction: column;}
+    .terms_content.terms2 .flex_style .index{width: 100%; padding: 0;}
+    .terms_content.terms2 .index_list .title_area em{display: block; padding-bottom: 10px;}
+    .terms_content.terms2 .index_list .title_area:after{display: block; width: 100%; margin-left: 0;}
+
     /*gnb*/
     .remember_gnb.sub_gnb .gnb_search_form .ico_sch{width: 32px; height: 32px; top: 0; right: 0; background-image: url("../images/ico_search_blue.png");}
     .remember_gnb.sub_gnb .menu{background-image:url("../images/ico_allmenu_on.png");}
